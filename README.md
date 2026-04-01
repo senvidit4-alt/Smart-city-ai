@@ -33,6 +33,8 @@ The system is built on a modern **Agentic AI Architecture**:
 git clone [https://github.com/senvidit4-alt/SmartCity-Agent.git](https://github.com/senvidit4-alt/SmartCity-Agent.git)
 cd SmartCity-Agent
 
+NOTE*- use the SmartCity_Agent HackManthan2.ipynb for testing in Jupiter Notebook
+
 ----
 
 2. Install dependencies:
