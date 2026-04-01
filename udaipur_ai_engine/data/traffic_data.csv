@@ -1,0 +1,2001 @@
+junction,hour,day_of_week,weather,vehicles,congestion_score,high_congestion
+Sector 4,14,Sat,Foggy,95,1.4,0
+Udiapole,11,Fri,Foggy,121,1.8,0
+Fatehsagar,15,Sun,Rainy,285,4.1,0
+Sector 4,23,Sun,Clear,232,3.4,0
+Delhi Gate,18,Mon,Clear,458,6.7,0
+Hathi Pol,7,Sun,Foggy,263,3.8,0
+Fatehsagar,20,Thu,Foggy,134,2.0,0
+Fatehsagar,16,Tue,Foggy,75,1.1,0
+Sector 4,22,Tue,Cloudy,281,4.1,0
+Surajpole,4,Tue,Foggy,134,2.0,0
+Delhi Gate,21,Thu,Cloudy,202,2.9,0
+Sector 4,15,Sat,Clear,282,4.1,0
+Delhi Gate,5,Mon,Rainy,114,1.7,0
+Delhi Gate,7,Sun,Rainy,183,2.7,0
+Hathi Pol,17,Thu,Rainy,469,6.8,0
+Fatehsagar,11,Tue,Rainy,164,2.4,0
+Udiapole,14,Fri,Cloudy,113,1.6,0
+Hathi Pol,8,Wed,Cloudy,487,7.1,1
+Hathi Pol,12,Sun,Foggy,220,3.2,0
+Delhi Gate,14,Thu,Cloudy,156,2.3,0
+Bapu Bazaar,9,Thu,Foggy,446,6.5,0
+Fatehsagar,15,Mon,Foggy,145,2.1,0
+Surajpole,6,Mon,Rainy,207,3.0,0
+Hathi Pol,16,Thu,Cloudy,126,1.8,0
+Udiapole,22,Tue,Cloudy,284,4.1,0
+Bapu Bazaar,20,Wed,Foggy,195,2.8,0
+Bapu Bazaar,21,Sun,Foggy,136,2.0,0
+Surajpole,6,Mon,Clear,256,3.7,0
+Hathi Pol,13,Sun,Clear,274,4.0,0
+Udiapole,14,Tue,Foggy,198,2.9,0
+Fatehsagar,20,Sun,Clear,106,1.5,0
+Chetak Circle,6,Fri,Clear,152,2.2,0
+Udiapole,8,Mon,Foggy,406,5.9,0
+Surajpole,18,Tue,Foggy,329,4.8,0
+Bapu Bazaar,15,Tue,Cloudy,94,1.4,0
+Fatehsagar,7,Wed,Foggy,221,3.2,0
+Udiapole,17,Wed,Foggy,526,7.7,1
+Chetak Circle,22,Fri,Rainy,137,2.0,0
+Chetak Circle,17,Tue,Cloudy,393,5.7,0
+Delhi Gate,19,Sat,Cloudy,373,5.4,0
+Delhi Gate,6,Tue,Cloudy,217,3.2,0
+Sector 4,2,Wed,Rainy,228,3.3,0
+Surajpole,17,Sat,Foggy,541,7.9,1
+Hathi Pol,9,Mon,Cloudy,368,5.4,0
+Udiapole,6,Mon,Cloudy,99,1.4,0
+Udiapole,16,Sun,Clear,225,3.3,0
+Hathi Pol,13,Thu,Cloudy,133,1.9,0
+Sector 4,23,Wed,Foggy,140,2.0,0
+Bapu Bazaar,2,Thu,Foggy,183,2.7,0
+Bapu Bazaar,11,Sat,Clear,140,2.0,0
+Sector 4,12,Wed,Cloudy,186,2.7,0
+Bapu Bazaar,1,Fri,Cloudy,294,4.3,0
+Delhi Gate,2,Tue,Cloudy,158,2.3,0
+Udiapole,4,Fri,Rainy,106,1.5,0
+Sector 4,10,Sat,Cloudy,232,3.4,0
+Udiapole,7,Wed,Foggy,70,1.0,0
+Hathi Pol,22,Sat,Foggy,139,2.0,0
+Chetak Circle,22,Tue,Rainy,89,1.3,0
+Delhi Gate,11,Mon,Rainy,161,2.3,0
+Fatehsagar,6,Mon,Cloudy,94,1.4,0
+Delhi Gate,14,Sat,Clear,126,1.8,0
+Sector 4,23,Thu,Rainy,226,3.3,0
+Fatehsagar,16,Wed,Rainy,136,2.0,0
+Chetak Circle,3,Wed,Cloudy,197,2.9,0
+Sector 4,21,Mon,Cloudy,150,2.2,0
+Surajpole,12,Sun,Rainy,295,4.3,0
+Udiapole,17,Fri,Clear,435,6.3,0
+Chetak Circle,0,Sun,Rainy,141,2.1,0
+Udiapole,15,Tue,Cloudy,194,2.8,0
+Bapu Bazaar,12,Fri,Cloudy,77,1.1,0
+Surajpole,9,Fri,Rainy,372,5.4,0
+Surajpole,11,Sat,Clear,243,3.5,0
+Chetak Circle,1,Mon,Rainy,74,1.1,0
+Surajpole,22,Sun,Rainy,107,1.6,0
+Fatehsagar,2,Sun,Cloudy,291,4.2,0
+Surajpole,9,Mon,Clear,457,6.7,0
+Udiapole,1,Sun,Foggy,183,2.7,0
+Udiapole,22,Mon,Clear,124,1.8,0
+Sector 4,12,Sat,Rainy,298,4.3,0
+Udiapole,12,Thu,Rainy,87,1.3,0
+Sector 4,17,Fri,Rainy,343,5.0,0
+Udiapole,2,Sat,Clear,222,3.2,0
+Fatehsagar,6,Wed,Cloudy,124,1.8,0
+Hathi Pol,13,Tue,Rainy,191,2.8,0
+Sector 4,19,Thu,Rainy,390,5.7,0
+Delhi Gate,16,Wed,Clear,217,3.2,0
+Bapu Bazaar,20,Fri,Foggy,52,0.8,0
+Chetak Circle,11,Sun,Foggy,296,4.3,0
+Udiapole,15,Mon,Cloudy,166,2.4,0
+Surajpole,23,Fri,Cloudy,148,2.2,0
+Hathi Pol,11,Sat,Rainy,274,4.0,0
+Udiapole,14,Tue,Clear,201,2.9,0
+Surajpole,9,Sat,Rainy,288,4.2,0
+Bapu Bazaar,6,Thu,Cloudy,195,2.8,0
+Bapu Bazaar,19,Thu,Clear,507,7.4,1
+Bapu Bazaar,4,Tue,Clear,290,4.2,0
+Surajpole,0,Wed,Cloudy,165,2.4,0
+Udiapole,16,Wed,Foggy,174,2.5,0
+Bapu Bazaar,2,Thu,Foggy,137,2.0,0
+Fatehsagar,12,Thu,Clear,286,4.2,0
+Sector 4,13,Sun,Rainy,84,1.2,0
+Surajpole,23,Mon,Foggy,239,3.5,0
+Surajpole,17,Sun,Rainy,383,5.6,0
+Udiapole,3,Sun,Foggy,277,4.0,0
+Surajpole,17,Wed,Foggy,489,7.1,1
+Surajpole,4,Tue,Rainy,222,3.2,0
+Bapu Bazaar,15,Wed,Cloudy,226,3.3,0
+Udiapole,0,Mon,Foggy,175,2.5,0
+Bapu Bazaar,20,Sat,Foggy,284,4.1,0
+Sector 4,13,Thu,Rainy,275,4.0,0
+Hathi Pol,14,Thu,Cloudy,138,2.0,0
+Sector 4,8,Mon,Foggy,448,6.5,0
+Hathi Pol,14,Sun,Foggy,275,4.0,0
+Bapu Bazaar,16,Tue,Cloudy,270,3.9,0
+Sector 4,23,Thu,Foggy,196,2.9,0
+Udiapole,3,Fri,Cloudy,200,2.9,0
+Chetak Circle,11,Sun,Cloudy,260,3.8,0
+Bapu Bazaar,4,Thu,Rainy,74,1.1,0
+Hathi Pol,4,Fri,Clear,65,0.9,0
+Fatehsagar,10,Mon,Cloudy,496,7.2,1
+Hathi Pol,5,Mon,Rainy,292,4.3,0
+Fatehsagar,6,Sun,Clear,122,1.8,0
+Surajpole,23,Thu,Foggy,178,2.6,0
+Sector 4,13,Wed,Clear,91,1.3,0
+Fatehsagar,23,Fri,Cloudy,196,2.9,0
+Hathi Pol,10,Tue,Cloudy,585,8.5,1
+Surajpole,12,Thu,Cloudy,211,3.1,0
+Chetak Circle,1,Tue,Cloudy,129,1.9,0
+Udiapole,6,Thu,Cloudy,285,4.1,0
+Udiapole,19,Wed,Rainy,369,5.4,0
+Udiapole,3,Wed,Cloudy,232,3.4,0
+Fatehsagar,7,Sun,Rainy,195,2.8,0
+Chetak Circle,19,Sun,Foggy,432,6.3,0
+Fatehsagar,21,Wed,Cloudy,138,2.0,0
+Sector 4,20,Sat,Cloudy,174,2.5,0
+Fatehsagar,18,Wed,Clear,274,4.0,0
+Chetak Circle,12,Mon,Foggy,183,2.7,0
+Chetak Circle,13,Mon,Cloudy,70,1.0,0
+Sector 4,9,Sat,Cloudy,395,5.7,0
+Chetak Circle,10,Fri,Foggy,505,7.4,1
+Hathi Pol,1,Tue,Rainy,145,2.1,0
+Chetak Circle,8,Thu,Cloudy,374,5.4,0
+Udiapole,16,Thu,Clear,97,1.4,0
+Hathi Pol,2,Sat,Cloudy,284,4.1,0
+Hathi Pol,23,Mon,Clear,88,1.3,0
+Sector 4,5,Sun,Clear,80,1.2,0
+Delhi Gate,4,Thu,Cloudy,283,4.1,0
+Delhi Gate,4,Mon,Cloudy,59,0.9,0
+Chetak Circle,21,Fri,Clear,79,1.1,0
+Hathi Pol,14,Tue,Foggy,298,4.3,0
+Delhi Gate,22,Fri,Foggy,293,4.3,0
+Delhi Gate,16,Sat,Cloudy,67,1.0,0
+Chetak Circle,8,Wed,Rainy,623,9.1,1
+Delhi Gate,2,Wed,Foggy,137,2.0,0
+Fatehsagar,19,Wed,Cloudy,508,7.4,1
+Surajpole,16,Fri,Foggy,174,2.5,0
+Sector 4,9,Thu,Rainy,341,5.0,0
+Surajpole,2,Tue,Cloudy,272,4.0,0
+Chetak Circle,17,Wed,Rainy,254,3.7,0
+Udiapole,17,Sat,Cloudy,393,5.7,0
+Sector 4,16,Sat,Rainy,240,3.5,0
+Chetak Circle,23,Wed,Foggy,217,3.2,0
+Hathi Pol,2,Wed,Foggy,58,0.8,0
+Udiapole,2,Tue,Rainy,158,2.3,0
+Surajpole,5,Wed,Rainy,186,2.7,0
+Chetak Circle,12,Tue,Rainy,203,3.0,0
+Hathi Pol,23,Sat,Cloudy,181,2.6,0
+Sector 4,14,Wed,Foggy,258,3.8,0
+Sector 4,8,Fri,Cloudy,374,5.4,0
+Bapu Bazaar,3,Sun,Foggy,192,2.8,0
+Hathi Pol,13,Fri,Clear,148,2.2,0
+Fatehsagar,4,Sat,Cloudy,170,2.5,0
+Delhi Gate,1,Tue,Foggy,101,1.5,0
+Udiapole,10,Fri,Foggy,287,4.2,0
+Hathi Pol,8,Tue,Cloudy,630,9.2,1
+Bapu Bazaar,23,Fri,Cloudy,54,0.8,0
+Delhi Gate,2,Fri,Foggy,69,1.0,0
+Delhi Gate,8,Tue,Cloudy,503,7.3,1
+Chetak Circle,2,Thu,Rainy,195,2.8,0
+Delhi Gate,1,Fri,Cloudy,160,2.3,0
+Fatehsagar,11,Wed,Cloudy,51,0.7,0
+Sector 4,9,Sun,Cloudy,469,6.8,0
+Bapu Bazaar,8,Sat,Foggy,419,6.1,0
+Delhi Gate,14,Thu,Rainy,53,0.8,0
+Chetak Circle,7,Tue,Clear,219,3.2,0
+Fatehsagar,4,Thu,Clear,158,2.3,0
+Surajpole,10,Mon,Rainy,425,6.2,0
+Sector 4,1,Mon,Rainy,238,3.5,0
+Sector 4,23,Fri,Rainy,144,2.1,0
+Bapu Bazaar,14,Fri,Foggy,154,2.2,0
+Sector 4,5,Wed,Clear,57,0.8,0
+Delhi Gate,7,Sun,Rainy,116,1.7,0
+Chetak Circle,4,Sat,Foggy,289,4.2,0
+Sector 4,15,Thu,Clear,240,3.5,0
+Sector 4,17,Mon,Cloudy,448,6.5,0
+Surajpole,5,Fri,Foggy,58,0.8,0
+Surajpole,4,Sat,Clear,271,3.9,0
+Udiapole,15,Thu,Foggy,166,2.4,0
+Fatehsagar,12,Fri,Clear,60,0.9,0
+Delhi Gate,4,Fri,Clear,148,2.2,0
+Sector 4,12,Mon,Cloudy,278,4.0,0
+Hathi Pol,16,Mon,Foggy,91,1.3,0
+Sector 4,17,Fri,Rainy,538,7.8,1
+Chetak Circle,7,Tue,Cloudy,213,3.1,0
+Udiapole,12,Fri,Cloudy,169,2.5,0
+Fatehsagar,18,Sat,Clear,378,5.5,0
+Hathi Pol,2,Fri,Rainy,61,0.9,0
+Udiapole,23,Wed,Foggy,86,1.3,0
+Bapu Bazaar,7,Sun,Rainy,123,1.8,0
+Fatehsagar,1,Wed,Rainy,297,4.3,0
+Sector 4,7,Wed,Rainy,122,1.8,0
+Sector 4,12,Tue,Rainy,101,1.5,0
+Fatehsagar,12,Tue,Rainy,248,3.6,0
+Sector 4,0,Fri,Clear,179,2.6,0
+Delhi Gate,5,Wed,Clear,295,4.3,0
+Fatehsagar,23,Tue,Cloudy,105,1.5,0
+Udiapole,18,Mon,Clear,403,5.9,0
+Fatehsagar,15,Fri,Cloudy,72,1.0,0
+Hathi Pol,7,Sat,Cloudy,152,2.2,0
+Sector 4,0,Sun,Foggy,89,1.3,0
+Delhi Gate,15,Thu,Rainy,113,1.6,0
+Delhi Gate,8,Fri,Clear,474,6.9,0
+Bapu Bazaar,12,Thu,Foggy,134,2.0,0
+Udiapole,10,Wed,Clear,488,7.1,1
+Surajpole,12,Sun,Cloudy,206,3.0,0
+Surajpole,20,Thu,Clear,255,3.7,0
+Fatehsagar,9,Wed,Rainy,486,7.1,1
+Bapu Bazaar,3,Mon,Cloudy,228,3.3,0
+Chetak Circle,5,Thu,Cloudy,246,3.6,0
+Fatehsagar,6,Sun,Foggy,296,4.3,0
+Bapu Bazaar,4,Fri,Rainy,272,4.0,0
+Udiapole,10,Wed,Cloudy,412,6.0,0
+Udiapole,12,Fri,Rainy,80,1.2,0
+Udiapole,18,Sun,Clear,527,7.7,1
+Udiapole,22,Tue,Rainy,69,1.0,0
+Udiapole,9,Wed,Cloudy,525,7.6,1
+Bapu Bazaar,9,Thu,Foggy,619,9.0,1
+Bapu Bazaar,10,Wed,Cloudy,477,6.9,0
+Delhi Gate,20,Fri,Rainy,286,4.2,0
+Hathi Pol,6,Mon,Rainy,179,2.6,0
+Surajpole,17,Wed,Cloudy,517,7.5,1
+Sector 4,3,Thu,Rainy,62,0.9,0
+Udiapole,1,Tue,Clear,171,2.5,0
+Chetak Circle,13,Sat,Cloudy,152,2.2,0
+Sector 4,12,Mon,Foggy,269,3.9,0
+Bapu Bazaar,11,Tue,Cloudy,155,2.3,0
+Chetak Circle,6,Wed,Clear,168,2.4,0
+Chetak Circle,1,Fri,Clear,119,1.7,0
+Chetak Circle,12,Sun,Clear,244,3.6,0
+Delhi Gate,13,Fri,Clear,235,3.4,0
+Bapu Bazaar,16,Thu,Clear,148,2.2,0
+Chetak Circle,8,Fri,Foggy,410,6.0,0
+Udiapole,16,Mon,Rainy,124,1.8,0
+Fatehsagar,7,Fri,Clear,167,2.4,0
+Chetak Circle,1,Thu,Clear,133,1.9,0
+Delhi Gate,23,Sat,Cloudy,241,3.5,0
+Sector 4,12,Wed,Foggy,118,1.7,0
+Bapu Bazaar,2,Sun,Foggy,260,3.8,0
+Hathi Pol,15,Wed,Rainy,263,3.8,0
+Delhi Gate,5,Fri,Foggy,108,1.6,0
+Chetak Circle,18,Tue,Cloudy,600,8.7,1
+Bapu Bazaar,6,Wed,Cloudy,260,3.8,0
+Fatehsagar,9,Sat,Rainy,408,5.9,0
+Chetak Circle,8,Fri,Cloudy,398,5.8,0
+Delhi Gate,1,Sun,Clear,111,1.6,0
+Surajpole,14,Thu,Clear,193,2.8,0
+Udiapole,4,Sat,Cloudy,177,2.6,0
+Hathi Pol,21,Fri,Rainy,265,3.9,0
+Sector 4,3,Sat,Foggy,154,2.2,0
+Delhi Gate,19,Wed,Rainy,345,5.0,0
+Bapu Bazaar,3,Sun,Foggy,64,0.9,0
+Hathi Pol,17,Thu,Cloudy,528,7.7,1
+Hathi Pol,3,Fri,Cloudy,285,4.1,0
+Hathi Pol,16,Mon,Clear,232,3.4,0
+Chetak Circle,11,Thu,Foggy,84,1.2,0
+Udiapole,21,Mon,Rainy,232,3.4,0
+Chetak Circle,16,Sat,Cloudy,63,0.9,0
+Bapu Bazaar,9,Tue,Rainy,468,6.8,0
+Chetak Circle,21,Thu,Clear,260,3.8,0
+Surajpole,0,Sat,Foggy,151,2.2,0
+Udiapole,21,Mon,Foggy,149,2.2,0
+Udiapole,23,Wed,Cloudy,56,0.8,0
+Bapu Bazaar,17,Wed,Foggy,300,4.4,0
+Sector 4,17,Tue,Cloudy,574,8.4,1
+Surajpole,13,Thu,Clear,98,1.4,0
+Delhi Gate,14,Thu,Foggy,266,3.9,0
+Chetak Circle,11,Thu,Cloudy,193,2.8,0
+Fatehsagar,3,Sat,Rainy,160,2.3,0
+Chetak Circle,2,Sun,Cloudy,295,4.3,0
+Hathi Pol,19,Sun,Foggy,479,7.0,0
+Chetak Circle,11,Tue,Clear,228,3.3,0
+Delhi Gate,6,Thu,Foggy,121,1.8,0
+Chetak Circle,10,Sat,Foggy,460,6.7,0
+Surajpole,0,Wed,Cloudy,269,3.9,0
+Surajpole,5,Mon,Rainy,129,1.9,0
+Udiapole,14,Sat,Foggy,293,4.3,0
+Bapu Bazaar,14,Sun,Rainy,132,1.9,0
+Sector 4,18,Sun,Cloudy,273,4.0,0
+Fatehsagar,10,Wed,Rainy,237,3.4,0
+Hathi Pol,22,Wed,Cloudy,240,3.5,0
+Chetak Circle,1,Mon,Clear,222,3.2,0
+Chetak Circle,13,Wed,Rainy,254,3.7,0
+Delhi Gate,1,Tue,Rainy,56,0.8,0
+Bapu Bazaar,3,Mon,Clear,204,3.0,0
+Surajpole,16,Wed,Rainy,59,0.9,0
+Fatehsagar,2,Fri,Clear,83,1.2,0
+Udiapole,12,Sat,Foggy,85,1.2,0
+Surajpole,8,Wed,Cloudy,465,6.8,0
+Hathi Pol,6,Tue,Clear,55,0.8,0
+Bapu Bazaar,14,Thu,Rainy,201,2.9,0
+Hathi Pol,22,Wed,Clear,195,2.8,0
+Sector 4,10,Sun,Rainy,652,9.5,1
+Udiapole,19,Sun,Foggy,465,6.8,0
+Sector 4,1,Sun,Clear,78,1.1,0
+Delhi Gate,14,Thu,Foggy,175,2.5,0
+Hathi Pol,13,Sun,Cloudy,202,2.9,0
+Delhi Gate,19,Fri,Rainy,612,8.9,1
+Chetak Circle,21,Wed,Rainy,130,1.9,0
+Sector 4,10,Sun,Foggy,390,5.7,0
+Bapu Bazaar,2,Mon,Cloudy,201,2.9,0
+Hathi Pol,16,Thu,Clear,124,1.8,0
+Fatehsagar,11,Fri,Clear,75,1.1,0
+Udiapole,23,Mon,Rainy,176,2.6,0
+Surajpole,20,Mon,Foggy,164,2.4,0
+Bapu Bazaar,14,Mon,Foggy,175,2.5,0
+Bapu Bazaar,15,Mon,Clear,275,4.0,0
+Delhi Gate,4,Wed,Cloudy,77,1.1,0
+Sector 4,19,Sun,Cloudy,495,7.2,1
+Hathi Pol,5,Sat,Clear,124,1.8,0
+Hathi Pol,18,Wed,Clear,482,7.0,0
+Chetak Circle,4,Wed,Foggy,238,3.5,0
+Chetak Circle,2,Fri,Cloudy,127,1.8,0
+Udiapole,0,Fri,Clear,228,3.3,0
+Delhi Gate,5,Sun,Clear,139,2.0,0
+Bapu Bazaar,14,Sat,Rainy,225,3.3,0
+Hathi Pol,1,Fri,Clear,70,1.0,0
+Fatehsagar,2,Sun,Clear,103,1.5,0
+Delhi Gate,16,Sun,Cloudy,233,3.4,0
+Udiapole,23,Tue,Foggy,152,2.2,0
+Udiapole,11,Sat,Cloudy,271,3.9,0
+Delhi Gate,17,Fri,Foggy,374,5.4,0
+Udiapole,14,Sat,Rainy,121,1.8,0
+Delhi Gate,11,Wed,Clear,228,3.3,0
+Surajpole,15,Wed,Rainy,69,1.0,0
+Delhi Gate,7,Sat,Foggy,161,2.3,0
+Sector 4,13,Tue,Cloudy,273,4.0,0
+Delhi Gate,16,Tue,Cloudy,263,3.8,0
+Udiapole,20,Sat,Rainy,108,1.6,0
+Hathi Pol,7,Fri,Foggy,120,1.7,0
+Sector 4,14,Thu,Rainy,186,2.7,0
+Udiapole,13,Tue,Rainy,158,2.3,0
+Chetak Circle,17,Mon,Clear,364,5.3,0
+Chetak Circle,19,Wed,Rainy,577,8.4,1
+Hathi Pol,6,Sat,Clear,240,3.5,0
+Hathi Pol,2,Mon,Clear,249,3.6,0
+Sector 4,11,Sat,Cloudy,105,1.5,0
+Surajpole,20,Sun,Clear,295,4.3,0
+Hathi Pol,23,Wed,Clear,245,3.6,0
+Chetak Circle,2,Wed,Cloudy,84,1.2,0
+Delhi Gate,19,Tue,Rainy,564,8.2,1
+Udiapole,13,Tue,Foggy,180,2.6,0
+Chetak Circle,14,Mon,Foggy,295,4.3,0
+Chetak Circle,13,Sun,Foggy,286,4.2,0
+Surajpole,6,Sat,Rainy,153,2.2,0
+Sector 4,16,Sun,Clear,56,0.8,0
+Sector 4,11,Wed,Foggy,76,1.1,0
+Bapu Bazaar,19,Mon,Rainy,422,6.1,0
+Surajpole,3,Thu,Clear,268,3.9,0
+Delhi Gate,8,Mon,Cloudy,470,6.8,0
+Sector 4,5,Fri,Foggy,279,4.1,0
+Udiapole,15,Mon,Clear,248,3.6,0
+Hathi Pol,21,Sun,Foggy,221,3.2,0
+Surajpole,21,Fri,Foggy,136,2.0,0
+Hathi Pol,20,Fri,Foggy,90,1.3,0
+Chetak Circle,20,Fri,Clear,172,2.5,0
+Udiapole,1,Thu,Rainy,124,1.8,0
+Udiapole,23,Mon,Clear,91,1.3,0
+Chetak Circle,7,Sun,Foggy,166,2.4,0
+Surajpole,10,Mon,Clear,497,7.2,1
+Chetak Circle,12,Thu,Cloudy,227,3.3,0
+Hathi Pol,16,Wed,Rainy,112,1.6,0
+Bapu Bazaar,7,Tue,Clear,277,4.0,0
+Udiapole,20,Sun,Cloudy,214,3.1,0
+Fatehsagar,17,Sun,Rainy,510,7.4,1
+Fatehsagar,17,Mon,Cloudy,555,8.1,1
+Hathi Pol,13,Tue,Rainy,176,2.6,0
+Delhi Gate,14,Sat,Clear,258,3.8,0
+Sector 4,5,Sat,Cloudy,276,4.0,0
+Chetak Circle,10,Thu,Foggy,497,7.2,1
+Chetak Circle,12,Sat,Cloudy,182,2.6,0
+Delhi Gate,0,Sun,Rainy,97,1.4,0
+Delhi Gate,5,Sat,Clear,273,4.0,0
+Hathi Pol,8,Wed,Rainy,377,5.5,0
+Hathi Pol,7,Wed,Cloudy,165,2.4,0
+Delhi Gate,10,Wed,Cloudy,417,6.1,0
+Udiapole,21,Sat,Foggy,239,3.5,0
+Hathi Pol,18,Thu,Clear,379,5.5,0
+Bapu Bazaar,23,Fri,Clear,165,2.4,0
+Hathi Pol,8,Fri,Cloudy,299,4.4,0
+Chetak Circle,16,Tue,Clear,240,3.5,0
+Hathi Pol,11,Fri,Foggy,161,2.3,0
+Udiapole,13,Fri,Rainy,110,1.6,0
+Delhi Gate,14,Wed,Clear,208,3.0,0
+Chetak Circle,15,Wed,Cloudy,144,2.1,0
+Hathi Pol,21,Sat,Rainy,66,1.0,0
+Udiapole,21,Tue,Rainy,173,2.5,0
+Bapu Bazaar,19,Mon,Foggy,447,6.5,0
+Hathi Pol,0,Sun,Cloudy,165,2.4,0
+Udiapole,9,Tue,Clear,365,5.3,0
+Bapu Bazaar,7,Tue,Cloudy,131,1.9,0
+Delhi Gate,17,Thu,Rainy,302,4.4,0
+Hathi Pol,0,Sat,Cloudy,295,4.3,0
+Bapu Bazaar,1,Thu,Clear,255,3.7,0
+Chetak Circle,0,Tue,Clear,291,4.2,0
+Delhi Gate,0,Tue,Foggy,128,1.9,0
+Chetak Circle,8,Tue,Clear,379,5.5,0
+Fatehsagar,12,Fri,Clear,119,1.7,0
+Surajpole,0,Sun,Cloudy,76,1.1,0
+Hathi Pol,12,Sun,Cloudy,64,0.9,0
+Bapu Bazaar,19,Thu,Rainy,411,6.0,0
+Surajpole,21,Tue,Foggy,85,1.2,0
+Surajpole,6,Sun,Cloudy,296,4.3,0
+Bapu Bazaar,1,Wed,Clear,57,0.8,0
+Delhi Gate,5,Sun,Rainy,128,1.9,0
+Hathi Pol,6,Sat,Cloudy,180,2.6,0
+Fatehsagar,13,Sat,Foggy,239,3.5,0
+Chetak Circle,17,Sun,Foggy,343,5.0,0
+Udiapole,14,Wed,Rainy,254,3.7,0
+Chetak Circle,1,Sat,Rainy,154,2.2,0
+Udiapole,9,Fri,Rainy,452,6.6,0
+Chetak Circle,22,Sun,Rainy,265,3.9,0
+Bapu Bazaar,11,Fri,Rainy,281,4.1,0
+Fatehsagar,16,Sun,Clear,145,2.1,0
+Hathi Pol,7,Mon,Clear,238,3.5,0
+Udiapole,10,Mon,Cloudy,360,5.2,0
+Hathi Pol,2,Mon,Foggy,271,3.9,0
+Hathi Pol,5,Sat,Clear,165,2.4,0
+Hathi Pol,8,Fri,Clear,533,7.8,1
+Sector 4,5,Fri,Clear,62,0.9,0
+Delhi Gate,8,Fri,Cloudy,340,4.9,0
+Chetak Circle,6,Wed,Rainy,83,1.2,0
+Hathi Pol,8,Fri,Cloudy,557,8.1,1
+Chetak Circle,17,Wed,Foggy,485,7.1,1
+Hathi Pol,11,Mon,Foggy,285,4.1,0
+Udiapole,7,Mon,Foggy,127,1.8,0
+Delhi Gate,7,Sat,Foggy,170,2.5,0
+Delhi Gate,17,Sun,Clear,350,5.1,0
+Bapu Bazaar,19,Mon,Clear,365,5.3,0
+Sector 4,14,Sun,Cloudy,131,1.9,0
+Bapu Bazaar,6,Sun,Rainy,295,4.3,0
+Bapu Bazaar,10,Sat,Foggy,516,7.5,1
+Bapu Bazaar,19,Tue,Cloudy,511,7.4,1
+Bapu Bazaar,15,Tue,Clear,296,4.3,0
+Bapu Bazaar,3,Thu,Clear,208,3.0,0
+Fatehsagar,5,Sat,Rainy,241,3.5,0
+Delhi Gate,21,Thu,Rainy,202,2.9,0
+Bapu Bazaar,2,Thu,Rainy,87,1.3,0
+Hathi Pol,8,Tue,Cloudy,393,5.7,0
+Delhi Gate,9,Sat,Clear,565,8.2,1
+Delhi Gate,13,Tue,Clear,140,2.0,0
+Surajpole,10,Thu,Rainy,297,4.3,0
+Fatehsagar,17,Sat,Foggy,476,6.9,0
+Bapu Bazaar,21,Thu,Rainy,258,3.8,0
+Chetak Circle,11,Fri,Cloudy,150,2.2,0
+Udiapole,22,Sun,Rainy,255,3.7,0
+Sector 4,11,Sat,Rainy,138,2.0,0
+Hathi Pol,12,Sat,Cloudy,105,1.5,0
+Chetak Circle,12,Sun,Rainy,143,2.1,0
+Fatehsagar,18,Thu,Clear,315,4.6,0
+Udiapole,18,Fri,Foggy,471,6.9,0
+Fatehsagar,22,Wed,Rainy,134,2.0,0
+Hathi Pol,13,Sun,Cloudy,238,3.5,0
+Delhi Gate,3,Tue,Foggy,294,4.3,0
+Udiapole,12,Thu,Cloudy,71,1.0,0
+Delhi Gate,7,Sun,Foggy,84,1.2,0
+Hathi Pol,22,Sun,Foggy,278,4.0,0
+Chetak Circle,20,Sat,Rainy,65,0.9,0
+Hathi Pol,22,Tue,Clear,99,1.4,0
+Chetak Circle,18,Tue,Rainy,411,6.0,0
+Udiapole,11,Tue,Cloudy,177,2.6,0
+Udiapole,17,Sun,Cloudy,405,5.9,0
+Bapu Bazaar,5,Wed,Foggy,220,3.2,0
+Fatehsagar,17,Mon,Foggy,273,4.0,0
+Bapu Bazaar,18,Thu,Clear,515,7.5,1
+Fatehsagar,21,Mon,Rainy,235,3.4,0
+Bapu Bazaar,4,Sun,Cloudy,296,4.3,0
+Delhi Gate,23,Mon,Foggy,179,2.6,0
+Udiapole,8,Sun,Clear,485,7.1,1
+Chetak Circle,2,Mon,Cloudy,134,2.0,0
+Fatehsagar,9,Tue,Foggy,519,7.6,1
+Hathi Pol,18,Fri,Cloudy,552,8.0,1
+Fatehsagar,2,Tue,Clear,143,2.1,0
+Chetak Circle,21,Tue,Clear,183,2.7,0
+Bapu Bazaar,14,Sat,Cloudy,130,1.9,0
+Fatehsagar,0,Sat,Rainy,280,4.1,0
+Sector 4,6,Mon,Cloudy,266,3.9,0
+Delhi Gate,11,Sun,Foggy,118,1.7,0
+Udiapole,16,Tue,Rainy,118,1.7,0
+Chetak Circle,20,Mon,Foggy,197,2.9,0
+Udiapole,23,Sat,Cloudy,241,3.5,0
+Sector 4,19,Fri,Rainy,221,3.2,0
+Fatehsagar,4,Thu,Foggy,100,1.5,0
+Fatehsagar,3,Mon,Cloudy,154,2.2,0
+Hathi Pol,11,Fri,Cloudy,214,3.1,0
+Sector 4,19,Thu,Rainy,600,8.7,1
+Chetak Circle,23,Wed,Cloudy,250,3.6,0
+Hathi Pol,17,Mon,Clear,442,6.4,0
+Delhi Gate,16,Mon,Foggy,219,3.2,0
+Hathi Pol,18,Wed,Foggy,436,6.3,0
+Surajpole,8,Wed,Cloudy,451,6.6,0
+Chetak Circle,3,Mon,Cloudy,58,0.8,0
+Surajpole,20,Wed,Clear,156,2.3,0
+Sector 4,1,Tue,Rainy,149,2.2,0
+Bapu Bazaar,3,Thu,Cloudy,135,2.0,0
+Surajpole,1,Thu,Cloudy,113,1.6,0
+Delhi Gate,14,Thu,Cloudy,263,3.8,0
+Hathi Pol,1,Tue,Cloudy,71,1.0,0
+Bapu Bazaar,3,Sun,Foggy,211,3.1,0
+Hathi Pol,5,Wed,Cloudy,232,3.4,0
+Surajpole,6,Fri,Foggy,206,3.0,0
+Hathi Pol,9,Wed,Cloudy,402,5.9,0
+Sector 4,18,Mon,Rainy,505,7.4,1
+Bapu Bazaar,18,Sat,Clear,510,7.4,1
+Sector 4,21,Thu,Rainy,67,1.0,0
+Surajpole,11,Wed,Cloudy,120,1.7,0
+Sector 4,2,Fri,Cloudy,242,3.5,0
+Delhi Gate,12,Mon,Cloudy,176,2.6,0
+Surajpole,17,Tue,Rainy,515,7.5,1
+Surajpole,7,Sun,Cloudy,50,0.7,0
+Surajpole,20,Tue,Rainy,265,3.9,0
+Chetak Circle,14,Fri,Foggy,181,2.6,0
+Hathi Pol,0,Mon,Clear,53,0.8,0
+Chetak Circle,2,Thu,Clear,174,2.5,0
+Chetak Circle,7,Wed,Rainy,131,1.9,0
+Delhi Gate,3,Mon,Foggy,76,1.1,0
+Bapu Bazaar,15,Sun,Rainy,220,3.2,0
+Hathi Pol,22,Tue,Foggy,108,1.6,0
+Sector 4,9,Sun,Cloudy,456,6.6,0
+Fatehsagar,11,Sun,Foggy,210,3.1,0
+Surajpole,13,Fri,Foggy,77,1.1,0
+Sector 4,13,Fri,Foggy,155,2.3,0
+Surajpole,1,Wed,Clear,154,2.2,0
+Delhi Gate,22,Fri,Foggy,232,3.4,0
+Surajpole,4,Fri,Cloudy,277,4.0,0
+Chetak Circle,4,Mon,Cloudy,237,3.4,0
+Hathi Pol,5,Thu,Cloudy,119,1.7,0
+Fatehsagar,12,Wed,Foggy,111,1.6,0
+Udiapole,8,Mon,Rainy,459,6.7,0
+Surajpole,21,Thu,Rainy,83,1.2,0
+Sector 4,14,Sun,Cloudy,136,2.0,0
+Chetak Circle,13,Mon,Clear,163,2.4,0
+Udiapole,23,Sat,Rainy,155,2.3,0
+Fatehsagar,6,Mon,Foggy,265,3.9,0
+Udiapole,19,Fri,Rainy,397,5.8,0
+Chetak Circle,1,Thu,Cloudy,162,2.4,0
+Hathi Pol,6,Wed,Clear,62,0.9,0
+Hathi Pol,5,Wed,Rainy,233,3.4,0
+Bapu Bazaar,16,Thu,Rainy,67,1.0,0
+Hathi Pol,1,Fri,Cloudy,231,3.4,0
+Bapu Bazaar,2,Tue,Clear,254,3.7,0
+Udiapole,4,Mon,Clear,162,2.4,0
+Delhi Gate,4,Fri,Cloudy,278,4.0,0
+Sector 4,0,Sat,Foggy,220,3.2,0
+Sector 4,7,Sun,Rainy,88,1.3,0
+Udiapole,11,Thu,Foggy,238,3.5,0
+Surajpole,23,Mon,Rainy,219,3.2,0
+Surajpole,3,Wed,Rainy,258,3.8,0
+Hathi Pol,12,Sun,Foggy,128,1.9,0
+Sector 4,22,Tue,Cloudy,195,2.8,0
+Sector 4,14,Sat,Cloudy,200,2.9,0
+Bapu Bazaar,10,Wed,Rainy,604,8.8,1
+Delhi Gate,9,Thu,Cloudy,595,8.7,1
+Chetak Circle,2,Mon,Rainy,79,1.1,0
+Surajpole,21,Thu,Cloudy,299,4.4,0
+Sector 4,13,Sun,Rainy,147,2.1,0
+Bapu Bazaar,15,Mon,Cloudy,107,1.6,0
+Fatehsagar,9,Fri,Clear,442,6.4,0
+Bapu Bazaar,9,Tue,Foggy,360,5.2,0
+Surajpole,11,Fri,Clear,120,1.7,0
+Surajpole,8,Fri,Foggy,593,8.6,1
+Bapu Bazaar,0,Thu,Foggy,195,2.8,0
+Chetak Circle,4,Sun,Rainy,155,2.3,0
+Udiapole,19,Tue,Foggy,342,5.0,0
+Surajpole,7,Mon,Clear,89,1.3,0
+Bapu Bazaar,10,Mon,Clear,332,4.8,0
+Sector 4,11,Sat,Cloudy,263,3.8,0
+Bapu Bazaar,0,Wed,Clear,299,4.4,0
+Delhi Gate,21,Sat,Cloudy,242,3.5,0
+Udiapole,19,Sat,Foggy,359,5.2,0
+Fatehsagar,10,Mon,Clear,618,9.0,1
+Chetak Circle,4,Thu,Foggy,98,1.4,0
+Hathi Pol,14,Fri,Clear,101,1.5,0
+Fatehsagar,4,Sun,Clear,163,2.4,0
+Udiapole,11,Fri,Cloudy,156,2.3,0
+Udiapole,4,Fri,Foggy,78,1.1,0
+Udiapole,16,Tue,Clear,198,2.9,0
+Fatehsagar,16,Mon,Rainy,267,3.9,0
+Sector 4,23,Sun,Foggy,127,1.8,0
+Udiapole,11,Thu,Foggy,58,0.8,0
+Bapu Bazaar,23,Tue,Foggy,224,3.3,0
+Fatehsagar,14,Wed,Cloudy,125,1.8,0
+Hathi Pol,14,Thu,Rainy,91,1.3,0
+Udiapole,5,Sat,Foggy,228,3.3,0
+Bapu Bazaar,11,Thu,Clear,233,3.4,0
+Sector 4,19,Thu,Clear,502,7.3,1
+Delhi Gate,17,Fri,Cloudy,646,9.4,1
+Sector 4,13,Thu,Clear,177,2.6,0
+Hathi Pol,1,Sat,Foggy,69,1.0,0
+Udiapole,8,Sat,Clear,593,8.6,1
+Hathi Pol,4,Mon,Foggy,204,3.0,0
+Fatehsagar,19,Thu,Clear,403,5.9,0
+Surajpole,0,Fri,Rainy,121,1.8,0
+Udiapole,22,Thu,Cloudy,114,1.7,0
+Surajpole,2,Wed,Cloudy,231,3.4,0
+Bapu Bazaar,5,Wed,Rainy,290,4.2,0
+Delhi Gate,4,Fri,Rainy,162,2.4,0
+Chetak Circle,20,Mon,Cloudy,73,1.1,0
+Hathi Pol,4,Mon,Rainy,177,2.6,0
+Sector 4,0,Sat,Foggy,224,3.3,0
+Delhi Gate,16,Sat,Clear,248,3.6,0
+Udiapole,18,Tue,Cloudy,285,4.1,0
+Surajpole,13,Fri,Rainy,263,3.8,0
+Sector 4,11,Thu,Foggy,112,1.6,0
+Surajpole,9,Sun,Cloudy,509,7.4,1
+Fatehsagar,19,Fri,Rainy,384,5.6,0
+Surajpole,20,Tue,Cloudy,109,1.6,0
+Fatehsagar,17,Sat,Rainy,545,7.9,1
+Bapu Bazaar,23,Fri,Cloudy,111,1.6,0
+Sector 4,10,Fri,Foggy,292,4.3,0
+Sector 4,1,Sat,Foggy,270,3.9,0
+Chetak Circle,17,Tue,Clear,249,3.6,0
+Udiapole,6,Sat,Cloudy,252,3.7,0
+Fatehsagar,23,Mon,Clear,261,3.8,0
+Chetak Circle,14,Thu,Cloudy,175,2.5,0
+Surajpole,10,Sat,Rainy,471,6.9,0
+Surajpole,17,Tue,Rainy,452,6.6,0
+Chetak Circle,22,Wed,Clear,218,3.2,0
+Sector 4,11,Mon,Cloudy,91,1.3,0
+Surajpole,5,Wed,Clear,147,2.1,0
+Hathi Pol,19,Sun,Foggy,488,7.1,1
+Bapu Bazaar,22,Sat,Clear,80,1.2,0
+Bapu Bazaar,12,Mon,Clear,207,3.0,0
+Hathi Pol,19,Thu,Rainy,412,6.0,0
+Chetak Circle,15,Sat,Clear,195,2.8,0
+Hathi Pol,17,Thu,Cloudy,631,9.2,1
+Fatehsagar,9,Fri,Rainy,523,7.6,1
+Fatehsagar,22,Wed,Clear,66,1.0,0
+Chetak Circle,7,Mon,Foggy,87,1.3,0
+Hathi Pol,17,Thu,Clear,495,7.2,1
+Fatehsagar,20,Tue,Clear,264,3.8,0
+Sector 4,0,Thu,Clear,266,3.9,0
+Hathi Pol,22,Tue,Rainy,256,3.7,0
+Sector 4,7,Sat,Cloudy,159,2.3,0
+Fatehsagar,5,Mon,Foggy,233,3.4,0
+Bapu Bazaar,4,Thu,Clear,71,1.0,0
+Fatehsagar,14,Sun,Cloudy,244,3.6,0
+Sector 4,21,Thu,Cloudy,105,1.5,0
+Delhi Gate,14,Sun,Rainy,168,2.4,0
+Udiapole,1,Mon,Foggy,196,2.9,0
+Surajpole,0,Thu,Rainy,106,1.5,0
+Hathi Pol,22,Tue,Cloudy,221,3.2,0
+Delhi Gate,22,Thu,Cloudy,275,4.0,0
+Fatehsagar,10,Wed,Cloudy,458,6.7,0
+Bapu Bazaar,9,Sat,Rainy,333,4.8,0
+Chetak Circle,17,Fri,Foggy,362,5.3,0
+Fatehsagar,17,Tue,Clear,550,8.0,1
+Bapu Bazaar,16,Wed,Rainy,101,1.5,0
+Udiapole,7,Sun,Cloudy,134,2.0,0
+Fatehsagar,14,Sat,Rainy,270,3.9,0
+Sector 4,7,Mon,Cloudy,247,3.6,0
+Chetak Circle,16,Tue,Clear,214,3.1,0
+Bapu Bazaar,11,Fri,Clear,114,1.7,0
+Bapu Bazaar,7,Sat,Foggy,228,3.3,0
+Bapu Bazaar,13,Sun,Cloudy,178,2.6,0
+Udiapole,3,Fri,Foggy,268,3.9,0
+Fatehsagar,0,Mon,Foggy,70,1.0,0
+Udiapole,0,Mon,Clear,230,3.3,0
+Hathi Pol,18,Sun,Rainy,316,4.6,0
+Surajpole,15,Tue,Rainy,285,4.1,0
+Surajpole,13,Sun,Foggy,172,2.5,0
+Hathi Pol,20,Thu,Clear,110,1.6,0
+Fatehsagar,15,Mon,Cloudy,103,1.5,0
+Sector 4,4,Sat,Rainy,217,3.2,0
+Udiapole,8,Thu,Foggy,270,3.9,0
+Chetak Circle,1,Wed,Rainy,129,1.9,0
+Bapu Bazaar,17,Fri,Rainy,484,7.0,0
+Bapu Bazaar,5,Thu,Cloudy,114,1.7,0
+Fatehsagar,8,Fri,Clear,389,5.7,0
+Sector 4,0,Sun,Cloudy,123,1.8,0
+Surajpole,8,Thu,Clear,554,8.1,1
+Surajpole,15,Sun,Rainy,220,3.2,0
+Bapu Bazaar,12,Wed,Foggy,66,1.0,0
+Fatehsagar,8,Mon,Cloudy,522,7.6,1
+Udiapole,20,Wed,Clear,236,3.4,0
+Surajpole,12,Mon,Rainy,72,1.0,0
+Udiapole,8,Sun,Clear,444,6.5,0
+Sector 4,10,Mon,Clear,452,6.6,0
+Surajpole,3,Fri,Clear,230,3.3,0
+Surajpole,1,Sat,Rainy,120,1.7,0
+Delhi Gate,5,Wed,Foggy,157,2.3,0
+Surajpole,13,Thu,Foggy,128,1.9,0
+Hathi Pol,3,Wed,Foggy,211,3.1,0
+Chetak Circle,5,Fri,Clear,95,1.4,0
+Hathi Pol,18,Mon,Rainy,558,8.1,1
+Fatehsagar,5,Fri,Clear,245,3.6,0
+Fatehsagar,1,Tue,Foggy,255,3.7,0
+Udiapole,17,Tue,Foggy,469,6.8,0
+Hathi Pol,12,Thu,Rainy,65,0.9,0
+Hathi Pol,8,Fri,Clear,460,6.7,0
+Hathi Pol,22,Sun,Cloudy,145,2.1,0
+Sector 4,18,Thu,Cloudy,444,6.5,0
+Surajpole,12,Sun,Foggy,51,0.7,0
+Chetak Circle,10,Thu,Rainy,243,3.5,0
+Udiapole,0,Tue,Clear,227,3.3,0
+Hathi Pol,23,Thu,Clear,174,2.5,0
+Hathi Pol,21,Tue,Foggy,130,1.9,0
+Delhi Gate,6,Mon,Foggy,278,4.0,0
+Udiapole,20,Sun,Clear,189,2.8,0
+Hathi Pol,14,Fri,Clear,119,1.7,0
+Udiapole,0,Thu,Foggy,199,2.9,0
+Surajpole,11,Tue,Clear,81,1.2,0
+Delhi Gate,6,Wed,Cloudy,154,2.2,0
+Udiapole,14,Sun,Foggy,133,1.9,0
+Chetak Circle,20,Thu,Clear,178,2.6,0
+Chetak Circle,18,Sat,Foggy,539,7.8,1
+Fatehsagar,0,Mon,Rainy,288,4.2,0
+Delhi Gate,16,Mon,Foggy,294,4.3,0
+Delhi Gate,16,Wed,Foggy,107,1.6,0
+Fatehsagar,2,Tue,Rainy,247,3.6,0
+Udiapole,11,Thu,Cloudy,260,3.8,0
+Delhi Gate,5,Sun,Clear,195,2.8,0
+Chetak Circle,10,Tue,Rainy,488,7.1,1
+Chetak Circle,2,Mon,Foggy,94,1.4,0
+Hathi Pol,7,Tue,Clear,146,2.1,0
+Surajpole,13,Mon,Rainy,72,1.0,0
+Delhi Gate,13,Tue,Clear,72,1.0,0
+Udiapole,9,Wed,Clear,455,6.6,0
+Fatehsagar,1,Fri,Rainy,254,3.7,0
+Fatehsagar,13,Wed,Clear,184,2.7,0
+Udiapole,8,Wed,Cloudy,406,5.9,0
+Sector 4,2,Fri,Rainy,93,1.4,0
+Bapu Bazaar,20,Fri,Cloudy,76,1.1,0
+Surajpole,7,Thu,Foggy,75,1.1,0
+Fatehsagar,15,Sun,Clear,146,2.1,0
+Delhi Gate,1,Sun,Foggy,256,3.7,0
+Surajpole,5,Thu,Foggy,85,1.2,0
+Delhi Gate,20,Wed,Clear,158,2.3,0
+Sector 4,11,Wed,Rainy,104,1.5,0
+Chetak Circle,4,Mon,Clear,241,3.5,0
+Surajpole,1,Mon,Foggy,268,3.9,0
+Hathi Pol,15,Sun,Foggy,234,3.4,0
+Fatehsagar,4,Thu,Rainy,118,1.7,0
+Surajpole,14,Sat,Clear,110,1.6,0
+Surajpole,11,Sat,Foggy,179,2.6,0
+Surajpole,3,Thu,Cloudy,104,1.5,0
+Bapu Bazaar,14,Mon,Foggy,171,2.5,0
+Surajpole,10,Sun,Foggy,320,4.7,0
+Delhi Gate,15,Sun,Rainy,129,1.9,0
+Chetak Circle,22,Mon,Cloudy,136,2.0,0
+Sector 4,5,Sat,Foggy,87,1.3,0
+Udiapole,13,Tue,Foggy,168,2.4,0
+Surajpole,17,Tue,Cloudy,449,6.5,0
+Fatehsagar,11,Mon,Clear,127,1.8,0
+Surajpole,10,Tue,Clear,585,8.5,1
+Fatehsagar,12,Fri,Foggy,203,3.0,0
+Delhi Gate,20,Thu,Foggy,84,1.2,0
+Fatehsagar,22,Thu,Clear,128,1.9,0
+Hathi Pol,10,Mon,Rainy,349,5.1,0
+Udiapole,22,Wed,Cloudy,136,2.0,0
+Chetak Circle,15,Sat,Cloudy,206,3.0,0
+Fatehsagar,14,Mon,Rainy,83,1.2,0
+Fatehsagar,20,Tue,Rainy,146,2.1,0
+Chetak Circle,14,Sat,Rainy,218,3.2,0
+Udiapole,3,Wed,Rainy,218,3.2,0
+Surajpole,10,Tue,Rainy,544,7.9,1
+Fatehsagar,18,Sun,Rainy,460,6.7,0
+Chetak Circle,14,Fri,Cloudy,52,0.8,0
+Hathi Pol,3,Tue,Rainy,107,1.6,0
+Hathi Pol,20,Fri,Clear,81,1.2,0
+Delhi Gate,12,Sat,Rainy,80,1.2,0
+Chetak Circle,21,Fri,Rainy,131,1.9,0
+Delhi Gate,18,Sat,Cloudy,292,4.3,0
+Hathi Pol,1,Sat,Cloudy,184,2.7,0
+Udiapole,13,Sat,Rainy,154,2.2,0
+Surajpole,3,Sat,Cloudy,50,0.7,0
+Chetak Circle,15,Sat,Foggy,110,1.6,0
+Sector 4,20,Tue,Cloudy,63,0.9,0
+Hathi Pol,19,Sat,Cloudy,508,7.4,1
+Hathi Pol,13,Tue,Cloudy,273,4.0,0
+Sector 4,14,Sat,Cloudy,55,0.8,0
+Bapu Bazaar,2,Fri,Clear,152,2.2,0
+Hathi Pol,7,Sun,Clear,59,0.9,0
+Fatehsagar,15,Sat,Clear,120,1.7,0
+Udiapole,9,Wed,Rainy,498,7.2,1
+Chetak Circle,3,Sat,Rainy,275,4.0,0
+Sector 4,17,Sat,Foggy,482,7.0,0
+Fatehsagar,1,Fri,Clear,277,4.0,0
+Sector 4,16,Thu,Rainy,198,2.9,0
+Chetak Circle,12,Fri,Cloudy,175,2.5,0
+Delhi Gate,3,Wed,Cloudy,237,3.4,0
+Chetak Circle,10,Thu,Clear,643,9.4,1
+Bapu Bazaar,6,Mon,Foggy,146,2.1,0
+Chetak Circle,11,Mon,Foggy,123,1.8,0
+Chetak Circle,9,Wed,Cloudy,505,7.4,1
+Bapu Bazaar,6,Fri,Foggy,240,3.5,0
+Udiapole,12,Tue,Clear,288,4.2,0
+Hathi Pol,6,Wed,Cloudy,219,3.2,0
+Chetak Circle,23,Sun,Rainy,100,1.5,0
+Bapu Bazaar,16,Thu,Rainy,241,3.5,0
+Fatehsagar,9,Thu,Foggy,604,8.8,1
+Delhi Gate,9,Sat,Cloudy,323,4.7,0
+Delhi Gate,23,Mon,Cloudy,257,3.7,0
+Chetak Circle,3,Thu,Rainy,90,1.3,0
+Udiapole,19,Wed,Cloudy,239,3.5,0
+Udiapole,3,Thu,Cloudy,64,0.9,0
+Fatehsagar,21,Wed,Cloudy,111,1.6,0
+Chetak Circle,6,Tue,Foggy,204,3.0,0
+Delhi Gate,21,Sat,Cloudy,77,1.1,0
+Udiapole,0,Mon,Clear,258,3.8,0
+Chetak Circle,11,Thu,Foggy,113,1.6,0
+Sector 4,23,Wed,Cloudy,287,4.2,0
+Udiapole,12,Fri,Cloudy,236,3.4,0
+Bapu Bazaar,9,Mon,Clear,442,6.4,0
+Sector 4,14,Tue,Foggy,235,3.4,0
+Hathi Pol,12,Wed,Rainy,179,2.6,0
+Udiapole,22,Sun,Rainy,176,2.6,0
+Delhi Gate,21,Sun,Foggy,85,1.2,0
+Surajpole,21,Sat,Cloudy,163,2.4,0
+Sector 4,20,Sat,Cloudy,248,3.6,0
+Hathi Pol,21,Tue,Rainy,62,0.9,0
+Fatehsagar,8,Tue,Rainy,375,5.5,0
+Fatehsagar,8,Sat,Rainy,475,6.9,0
+Delhi Gate,14,Thu,Clear,264,3.8,0
+Udiapole,9,Thu,Rainy,616,9.0,1
+Chetak Circle,23,Wed,Clear,71,1.0,0
+Udiapole,9,Fri,Foggy,578,8.4,1
+Delhi Gate,7,Wed,Cloudy,267,3.9,0
+Fatehsagar,23,Fri,Rainy,274,4.0,0
+Udiapole,15,Tue,Cloudy,252,3.7,0
+Fatehsagar,16,Mon,Cloudy,123,1.8,0
+Sector 4,4,Wed,Rainy,74,1.1,0
+Hathi Pol,3,Wed,Rainy,150,2.2,0
+Chetak Circle,17,Fri,Foggy,533,7.8,1
+Sector 4,23,Tue,Clear,220,3.2,0
+Fatehsagar,18,Tue,Clear,325,4.7,0
+Fatehsagar,3,Sun,Cloudy,215,3.1,0
+Surajpole,6,Fri,Rainy,90,1.3,0
+Surajpole,9,Tue,Foggy,485,7.1,1
+Sector 4,17,Sat,Foggy,362,5.3,0
+Bapu Bazaar,18,Thu,Foggy,530,7.7,1
+Sector 4,3,Sun,Foggy,159,2.3,0
+Surajpole,9,Sat,Foggy,564,8.2,1
+Fatehsagar,0,Mon,Clear,146,2.1,0
+Delhi Gate,22,Wed,Clear,194,2.8,0
+Sector 4,17,Sun,Clear,499,7.3,1
+Fatehsagar,4,Mon,Rainy,278,4.0,0
+Delhi Gate,14,Wed,Cloudy,106,1.5,0
+Delhi Gate,16,Thu,Foggy,179,2.6,0
+Surajpole,2,Tue,Rainy,145,2.1,0
+Sector 4,11,Sat,Foggy,170,2.5,0
+Udiapole,1,Fri,Clear,111,1.6,0
+Chetak Circle,0,Sat,Rainy,265,3.9,0
+Surajpole,22,Thu,Clear,186,2.7,0
+Surajpole,20,Mon,Foggy,117,1.7,0
+Udiapole,16,Fri,Foggy,130,1.9,0
+Chetak Circle,21,Tue,Cloudy,66,1.0,0
+Fatehsagar,15,Thu,Foggy,166,2.4,0
+Bapu Bazaar,4,Fri,Clear,99,1.4,0
+Sector 4,14,Thu,Foggy,161,2.3,0
+Bapu Bazaar,2,Thu,Cloudy,143,2.1,0
+Fatehsagar,6,Tue,Cloudy,217,3.2,0
+Hathi Pol,10,Sun,Clear,433,6.3,0
+Surajpole,9,Wed,Rainy,640,9.3,1
+Chetak Circle,8,Fri,Foggy,353,5.1,0
+Surajpole,13,Tue,Cloudy,198,2.9,0
+Delhi Gate,12,Thu,Foggy,195,2.8,0
+Surajpole,1,Tue,Foggy,232,3.4,0
+Surajpole,2,Sun,Rainy,206,3.0,0
+Fatehsagar,6,Wed,Cloudy,201,2.9,0
+Fatehsagar,20,Sat,Foggy,123,1.8,0
+Fatehsagar,17,Fri,Cloudy,547,8.0,1
+Bapu Bazaar,2,Wed,Clear,194,2.8,0
+Delhi Gate,9,Mon,Clear,393,5.7,0
+Hathi Pol,21,Fri,Foggy,91,1.3,0
+Hathi Pol,6,Wed,Cloudy,289,4.2,0
+Fatehsagar,8,Thu,Foggy,541,7.9,1
+Chetak Circle,16,Fri,Cloudy,150,2.2,0
+Bapu Bazaar,10,Fri,Cloudy,445,6.5,0
+Udiapole,6,Tue,Rainy,131,1.9,0
+Chetak Circle,23,Thu,Rainy,66,1.0,0
+Sector 4,13,Mon,Rainy,122,1.8,0
+Sector 4,18,Sat,Foggy,345,5.0,0
+Chetak Circle,3,Sun,Rainy,226,3.3,0
+Fatehsagar,5,Wed,Rainy,206,3.0,0
+Udiapole,9,Tue,Clear,659,9.6,1
+Udiapole,6,Wed,Cloudy,181,2.6,0
+Bapu Bazaar,12,Mon,Cloudy,131,1.9,0
+Udiapole,13,Mon,Rainy,197,2.9,0
+Sector 4,3,Fri,Cloudy,169,2.5,0
+Delhi Gate,7,Sun,Clear,169,2.5,0
+Fatehsagar,4,Mon,Clear,96,1.4,0
+Udiapole,0,Wed,Rainy,156,2.3,0
+Bapu Bazaar,3,Thu,Clear,157,2.3,0
+Sector 4,2,Thu,Cloudy,58,0.8,0
+Delhi Gate,8,Fri,Foggy,621,9.0,1
+Surajpole,7,Sat,Cloudy,128,1.9,0
+Surajpole,0,Wed,Foggy,204,3.0,0
+Delhi Gate,5,Wed,Rainy,64,0.9,0
+Sector 4,8,Mon,Foggy,607,8.8,1
+Bapu Bazaar,6,Sun,Clear,278,4.0,0
+Delhi Gate,3,Wed,Cloudy,296,4.3,0
+Fatehsagar,12,Tue,Foggy,68,1.0,0
+Fatehsagar,16,Sat,Cloudy,139,2.0,0
+Surajpole,1,Mon,Rainy,229,3.3,0
+Udiapole,4,Tue,Rainy,75,1.1,0
+Bapu Bazaar,11,Fri,Clear,266,3.9,0
+Surajpole,20,Thu,Rainy,203,3.0,0
+Udiapole,7,Fri,Foggy,203,3.0,0
+Udiapole,5,Thu,Rainy,223,3.2,0
+Hathi Pol,7,Fri,Clear,141,2.1,0
+Fatehsagar,17,Wed,Cloudy,588,8.6,1
+Sector 4,2,Tue,Cloudy,131,1.9,0
+Chetak Circle,21,Thu,Rainy,273,4.0,0
+Sector 4,11,Mon,Foggy,230,3.3,0
+Chetak Circle,2,Tue,Clear,180,2.6,0
+Delhi Gate,21,Mon,Foggy,243,3.5,0
+Fatehsagar,5,Tue,Clear,274,4.0,0
+Udiapole,1,Tue,Rainy,91,1.3,0
+Bapu Bazaar,22,Fri,Clear,68,1.0,0
+Chetak Circle,11,Thu,Clear,66,1.0,0
+Sector 4,1,Thu,Rainy,285,4.1,0
+Udiapole,5,Sun,Foggy,210,3.1,0
+Chetak Circle,16,Tue,Rainy,125,1.8,0
+Chetak Circle,2,Wed,Clear,226,3.3,0
+Hathi Pol,1,Wed,Rainy,233,3.4,0
+Chetak Circle,22,Mon,Clear,112,1.6,0
+Bapu Bazaar,19,Mon,Rainy,566,8.2,1
+Fatehsagar,7,Fri,Cloudy,156,2.3,0
+Bapu Bazaar,21,Tue,Cloudy,98,1.4,0
+Surajpole,11,Mon,Rainy,104,1.5,0
+Udiapole,3,Mon,Foggy,203,3.0,0
+Fatehsagar,4,Sat,Clear,148,2.2,0
+Hathi Pol,12,Tue,Cloudy,249,3.6,0
+Fatehsagar,14,Fri,Foggy,101,1.5,0
+Fatehsagar,22,Mon,Clear,149,2.2,0
+Sector 4,15,Fri,Cloudy,166,2.4,0
+Fatehsagar,9,Thu,Cloudy,406,5.9,0
+Hathi Pol,22,Fri,Rainy,56,0.8,0
+Bapu Bazaar,15,Wed,Clear,95,1.4,0
+Fatehsagar,11,Wed,Foggy,95,1.4,0
+Delhi Gate,16,Fri,Foggy,149,2.2,0
+Udiapole,15,Wed,Foggy,193,2.8,0
+Fatehsagar,11,Thu,Clear,201,2.9,0
+Udiapole,7,Tue,Foggy,238,3.5,0
+Delhi Gate,19,Wed,Foggy,482,7.0,0
+Delhi Gate,2,Wed,Foggy,111,1.6,0
+Udiapole,15,Fri,Rainy,178,2.6,0
+Chetak Circle,12,Thu,Rainy,98,1.4,0
+Surajpole,22,Sun,Clear,74,1.1,0
+Sector 4,18,Sun,Clear,444,6.5,0
+Chetak Circle,7,Sun,Foggy,167,2.4,0
+Chetak Circle,21,Sun,Rainy,257,3.7,0
+Bapu Bazaar,4,Tue,Cloudy,193,2.8,0
+Sector 4,19,Fri,Cloudy,410,6.0,0
+Sector 4,7,Fri,Foggy,249,3.6,0
+Chetak Circle,23,Sat,Foggy,206,3.0,0
+Fatehsagar,11,Thu,Rainy,280,4.1,0
+Bapu Bazaar,0,Sun,Rainy,141,2.1,0
+Bapu Bazaar,20,Tue,Rainy,183,2.7,0
+Delhi Gate,19,Thu,Clear,414,6.0,0
+Hathi Pol,5,Sun,Clear,197,2.9,0
+Sector 4,21,Tue,Foggy,129,1.9,0
+Chetak Circle,17,Thu,Clear,274,4.0,0
+Delhi Gate,7,Fri,Rainy,282,4.1,0
+Udiapole,6,Fri,Rainy,127,1.8,0
+Surajpole,0,Mon,Clear,92,1.3,0
+Hathi Pol,20,Wed,Cloudy,203,3.0,0
+Hathi Pol,15,Sun,Foggy,139,2.0,0
+Hathi Pol,11,Sat,Cloudy,127,1.8,0
+Bapu Bazaar,5,Thu,Foggy,248,3.6,0
+Udiapole,19,Sat,Cloudy,374,5.4,0
+Hathi Pol,1,Mon,Clear,75,1.1,0
+Udiapole,13,Wed,Foggy,170,2.5,0
+Fatehsagar,3,Thu,Foggy,94,1.4,0
+Hathi Pol,0,Tue,Foggy,261,3.8,0
+Surajpole,22,Sun,Rainy,112,1.6,0
+Udiapole,17,Wed,Rainy,516,7.5,1
+Udiapole,12,Fri,Cloudy,229,3.3,0
+Surajpole,1,Mon,Clear,117,1.7,0
+Hathi Pol,8,Wed,Rainy,496,7.2,1
+Surajpole,20,Sun,Foggy,252,3.7,0
+Udiapole,1,Wed,Rainy,51,0.7,0
+Surajpole,8,Sun,Clear,341,5.0,0
+Udiapole,0,Fri,Rainy,157,2.3,0
+Udiapole,10,Thu,Foggy,372,5.4,0
+Fatehsagar,2,Tue,Cloudy,98,1.4,0
+Chetak Circle,19,Fri,Foggy,503,7.3,1
+Udiapole,22,Tue,Clear,267,3.9,0
+Hathi Pol,3,Thu,Cloudy,93,1.4,0
+Delhi Gate,17,Wed,Rainy,362,5.3,0
+Bapu Bazaar,22,Tue,Rainy,62,0.9,0
+Sector 4,5,Mon,Rainy,127,1.8,0
+Chetak Circle,2,Mon,Cloudy,265,3.9,0
+Chetak Circle,21,Sun,Foggy,175,2.5,0
+Chetak Circle,10,Fri,Cloudy,476,6.9,0
+Fatehsagar,14,Thu,Cloudy,285,4.1,0
+Udiapole,21,Sun,Clear,75,1.1,0
+Fatehsagar,4,Fri,Cloudy,198,2.9,0
+Udiapole,19,Fri,Rainy,401,5.8,0
+Hathi Pol,9,Sun,Foggy,341,5.0,0
+Fatehsagar,11,Sat,Foggy,277,4.0,0
+Fatehsagar,14,Fri,Foggy,217,3.2,0
+Bapu Bazaar,16,Sat,Rainy,115,1.7,0
+Delhi Gate,9,Mon,Rainy,445,6.5,0
+Fatehsagar,5,Mon,Rainy,250,3.6,0
+Bapu Bazaar,17,Fri,Rainy,405,5.9,0
+Surajpole,12,Mon,Rainy,128,1.9,0
+Delhi Gate,2,Thu,Cloudy,254,3.7,0
+Hathi Pol,23,Sat,Rainy,72,1.0,0
+Fatehsagar,9,Sat,Rainy,487,7.1,1
+Sector 4,13,Fri,Rainy,97,1.4,0
+Chetak Circle,5,Mon,Rainy,173,2.5,0
+Surajpole,2,Tue,Foggy,179,2.6,0
+Surajpole,15,Sun,Rainy,133,1.9,0
+Hathi Pol,6,Sun,Cloudy,69,1.0,0
+Bapu Bazaar,19,Sat,Cloudy,440,6.4,0
+Surajpole,13,Fri,Cloudy,95,1.4,0
+Delhi Gate,8,Fri,Clear,564,8.2,1
+Fatehsagar,14,Thu,Foggy,232,3.4,0
+Fatehsagar,20,Wed,Rainy,61,0.9,0
+Sector 4,2,Wed,Clear,89,1.3,0
+Hathi Pol,1,Sat,Rainy,115,1.7,0
+Chetak Circle,1,Sun,Clear,149,2.2,0
+Bapu Bazaar,2,Thu,Clear,127,1.8,0
+Chetak Circle,17,Thu,Cloudy,363,5.3,0
+Surajpole,13,Thu,Cloudy,132,1.9,0
+Hathi Pol,19,Sat,Clear,426,6.2,0
+Sector 4,17,Wed,Cloudy,424,6.2,0
+Chetak Circle,9,Sun,Clear,591,8.6,1
+Delhi Gate,1,Thu,Foggy,183,2.7,0
+Fatehsagar,21,Sun,Cloudy,254,3.7,0
+Surajpole,0,Mon,Cloudy,241,3.5,0
+Sector 4,3,Fri,Cloudy,149,2.2,0
+Chetak Circle,13,Fri,Foggy,71,1.0,0
+Bapu Bazaar,0,Sun,Clear,67,1.0,0
+Delhi Gate,13,Tue,Rainy,61,0.9,0
+Delhi Gate,15,Tue,Cloudy,229,3.3,0
+Chetak Circle,21,Sat,Clear,172,2.5,0
+Fatehsagar,13,Sat,Foggy,295,4.3,0
+Chetak Circle,19,Fri,Rainy,586,8.5,1
+Surajpole,2,Mon,Cloudy,166,2.4,0
+Chetak Circle,2,Wed,Foggy,100,1.5,0
+Delhi Gate,8,Wed,Foggy,520,7.6,1
+Sector 4,5,Sat,Rainy,120,1.7,0
+Chetak Circle,12,Mon,Clear,273,4.0,0
+Fatehsagar,20,Sat,Cloudy,97,1.4,0
+Hathi Pol,1,Wed,Cloudy,68,1.0,0
+Sector 4,7,Sun,Clear,55,0.8,0
+Bapu Bazaar,20,Sat,Clear,133,1.9,0
+Udiapole,1,Thu,Clear,204,3.0,0
+Chetak Circle,3,Sun,Rainy,102,1.5,0
+Fatehsagar,14,Sat,Rainy,156,2.3,0
+Sector 4,3,Fri,Cloudy,150,2.2,0
+Fatehsagar,12,Sat,Rainy,97,1.4,0
+Bapu Bazaar,11,Fri,Foggy,184,2.7,0
+Delhi Gate,12,Mon,Cloudy,236,3.4,0
+Fatehsagar,13,Wed,Rainy,118,1.7,0
+Sector 4,19,Sun,Clear,395,5.7,0
+Fatehsagar,17,Sun,Foggy,403,5.9,0
+Fatehsagar,5,Tue,Clear,241,3.5,0
+Fatehsagar,10,Tue,Cloudy,431,6.3,0
+Surajpole,1,Wed,Clear,171,2.5,0
+Surajpole,22,Tue,Rainy,118,1.7,0
+Delhi Gate,18,Sun,Rainy,395,5.7,0
+Chetak Circle,18,Sat,Cloudy,596,8.7,1
+Fatehsagar,4,Mon,Clear,86,1.3,0
+Bapu Bazaar,18,Mon,Cloudy,346,5.0,0
+Chetak Circle,1,Wed,Clear,64,0.9,0
+Bapu Bazaar,9,Tue,Foggy,529,7.7,1
+Chetak Circle,1,Sat,Rainy,142,2.1,0
+Delhi Gate,10,Mon,Cloudy,404,5.9,0
+Fatehsagar,17,Mon,Foggy,312,4.5,0
+Fatehsagar,23,Thu,Foggy,203,3.0,0
+Udiapole,14,Thu,Cloudy,198,2.9,0
+Bapu Bazaar,8,Sun,Cloudy,387,5.6,0
+Chetak Circle,22,Mon,Foggy,198,2.9,0
+Chetak Circle,18,Wed,Clear,518,7.5,1
+Hathi Pol,8,Fri,Foggy,273,4.0,0
+Hathi Pol,2,Fri,Cloudy,215,3.1,0
+Surajpole,20,Sat,Foggy,121,1.8,0
+Udiapole,8,Mon,Clear,534,7.8,1
+Sector 4,13,Mon,Rainy,265,3.9,0
+Hathi Pol,18,Sun,Rainy,344,5.0,0
+Sector 4,6,Mon,Foggy,84,1.2,0
+Surajpole,15,Wed,Clear,168,2.4,0
+Surajpole,15,Thu,Rainy,63,0.9,0
+Surajpole,0,Mon,Foggy,296,4.3,0
+Bapu Bazaar,3,Mon,Foggy,63,0.9,0
+Bapu Bazaar,3,Sun,Clear,59,0.9,0
+Delhi Gate,6,Tue,Cloudy,189,2.8,0
+Delhi Gate,7,Sun,Foggy,87,1.3,0
+Surajpole,16,Sun,Cloudy,157,2.3,0
+Udiapole,4,Wed,Cloudy,168,2.4,0
+Chetak Circle,6,Sat,Rainy,287,4.2,0
+Bapu Bazaar,19,Mon,Cloudy,432,6.3,0
+Udiapole,19,Sun,Clear,482,7.0,0
+Fatehsagar,3,Sun,Rainy,59,0.9,0
+Bapu Bazaar,5,Tue,Rainy,171,2.5,0
+Bapu Bazaar,6,Sun,Rainy,194,2.8,0
+Delhi Gate,17,Fri,Foggy,589,8.6,1
+Chetak Circle,4,Sat,Foggy,244,3.6,0
+Chetak Circle,19,Mon,Cloudy,579,8.4,1
+Hathi Pol,2,Mon,Rainy,272,4.0,0
+Sector 4,6,Tue,Rainy,164,2.4,0
+Sector 4,21,Wed,Clear,50,0.7,0
+Sector 4,13,Mon,Cloudy,61,0.9,0
+Sector 4,6,Fri,Clear,152,2.2,0
+Fatehsagar,4,Mon,Cloudy,53,0.8,0
+Fatehsagar,21,Fri,Cloudy,219,3.2,0
+Bapu Bazaar,4,Sat,Foggy,190,2.8,0
+Surajpole,22,Sat,Foggy,147,2.1,0
+Delhi Gate,1,Thu,Clear,155,2.3,0
+Delhi Gate,20,Thu,Cloudy,134,2.0,0
+Sector 4,21,Fri,Rainy,263,3.8,0
+Bapu Bazaar,5,Wed,Foggy,170,2.5,0
+Hathi Pol,14,Mon,Rainy,181,2.6,0
+Udiapole,20,Sun,Clear,131,1.9,0
+Surajpole,9,Mon,Foggy,480,7.0,0
+Bapu Bazaar,22,Thu,Foggy,68,1.0,0
+Surajpole,23,Sun,Cloudy,179,2.6,0
+Surajpole,6,Fri,Clear,61,0.9,0
+Surajpole,4,Sun,Cloudy,130,1.9,0
+Bapu Bazaar,0,Mon,Foggy,123,1.8,0
+Sector 4,12,Mon,Clear,147,2.1,0
+Delhi Gate,20,Wed,Foggy,55,0.8,0
+Delhi Gate,17,Tue,Clear,526,7.7,1
+Sector 4,12,Sun,Foggy,174,2.5,0
+Surajpole,20,Thu,Rainy,100,1.5,0
+Udiapole,20,Thu,Rainy,60,0.9,0
+Chetak Circle,17,Tue,Cloudy,637,9.3,1
+Bapu Bazaar,4,Mon,Rainy,234,3.4,0
+Chetak Circle,12,Wed,Foggy,176,2.6,0
+Hathi Pol,3,Wed,Foggy,189,2.8,0
+Sector 4,16,Thu,Rainy,122,1.8,0
+Udiapole,2,Wed,Cloudy,51,0.7,0
+Bapu Bazaar,16,Sat,Rainy,57,0.8,0
+Sector 4,10,Tue,Clear,468,6.8,0
+Surajpole,20,Mon,Clear,188,2.7,0
+Delhi Gate,19,Sat,Clear,330,4.8,0
+Chetak Circle,22,Tue,Rainy,102,1.5,0
+Fatehsagar,20,Fri,Rainy,277,4.0,0
+Fatehsagar,3,Sun,Rainy,59,0.9,0
+Udiapole,1,Thu,Clear,262,3.8,0
+Surajpole,19,Wed,Cloudy,468,6.8,0
+Hathi Pol,15,Fri,Foggy,161,2.3,0
+Chetak Circle,17,Wed,Rainy,252,3.7,0
+Surajpole,7,Sat,Cloudy,85,1.2,0
+Chetak Circle,2,Mon,Foggy,270,3.9,0
+Udiapole,8,Mon,Foggy,335,4.9,0
+Udiapole,19,Mon,Foggy,644,9.4,1
+Hathi Pol,5,Wed,Cloudy,63,0.9,0
+Fatehsagar,9,Fri,Cloudy,687,10.0,1
+Surajpole,20,Mon,Clear,231,3.4,0
+Bapu Bazaar,9,Fri,Cloudy,533,7.8,1
+Fatehsagar,12,Wed,Cloudy,262,3.8,0
+Surajpole,16,Sat,Cloudy,135,2.0,0
+Fatehsagar,8,Fri,Foggy,587,8.5,1
+Bapu Bazaar,16,Sat,Rainy,285,4.1,0
+Delhi Gate,23,Wed,Clear,99,1.4,0
+Delhi Gate,8,Wed,Rainy,429,6.2,0
+Hathi Pol,8,Thu,Rainy,380,5.5,0
+Delhi Gate,0,Wed,Cloudy,69,1.0,0
+Delhi Gate,1,Wed,Clear,265,3.9,0
+Sector 4,15,Tue,Rainy,136,2.0,0
+Chetak Circle,0,Mon,Rainy,184,2.7,0
+Sector 4,9,Thu,Clear,429,6.2,0
+Sector 4,17,Sun,Cloudy,481,7.0,0
+Hathi Pol,7,Thu,Rainy,203,3.0,0
+Sector 4,20,Thu,Foggy,215,3.1,0
+Delhi Gate,10,Sun,Rainy,374,5.4,0
+Bapu Bazaar,22,Tue,Foggy,295,4.3,0
+Hathi Pol,1,Sat,Cloudy,238,3.5,0
+Hathi Pol,7,Wed,Rainy,93,1.4,0
+Udiapole,21,Mon,Clear,135,2.0,0
+Hathi Pol,7,Fri,Clear,93,1.4,0
+Udiapole,16,Sun,Rainy,123,1.8,0
+Hathi Pol,14,Sat,Cloudy,168,2.4,0
+Chetak Circle,16,Sun,Cloudy,239,3.5,0
+Delhi Gate,22,Wed,Clear,171,2.5,0
+Hathi Pol,23,Tue,Rainy,183,2.7,0
+Delhi Gate,12,Sun,Cloudy,194,2.8,0
+Delhi Gate,18,Wed,Clear,278,4.0,0
+Fatehsagar,4,Wed,Foggy,291,4.2,0
+Hathi Pol,11,Tue,Rainy,87,1.3,0
+Surajpole,0,Thu,Foggy,201,2.9,0
+Fatehsagar,22,Thu,Foggy,100,1.5,0
+Surajpole,4,Mon,Cloudy,59,0.9,0
+Delhi Gate,7,Mon,Cloudy,169,2.5,0
+Delhi Gate,12,Thu,Cloudy,249,3.6,0
+Fatehsagar,7,Sat,Rainy,198,2.9,0
+Fatehsagar,22,Fri,Foggy,297,4.3,0
+Surajpole,10,Wed,Rainy,514,7.5,1
+Udiapole,0,Fri,Cloudy,134,2.0,0
+Surajpole,12,Wed,Foggy,106,1.5,0
+Fatehsagar,18,Thu,Rainy,404,5.9,0
+Bapu Bazaar,23,Mon,Rainy,88,1.3,0
+Fatehsagar,2,Sat,Clear,265,3.9,0
+Bapu Bazaar,23,Mon,Rainy,82,1.2,0
+Chetak Circle,16,Fri,Cloudy,236,3.4,0
+Fatehsagar,4,Mon,Rainy,67,1.0,0
+Chetak Circle,19,Thu,Foggy,418,6.1,0
+Udiapole,20,Sat,Rainy,269,3.9,0
+Surajpole,7,Fri,Clear,106,1.5,0
+Bapu Bazaar,13,Sat,Foggy,293,4.3,0
+Surajpole,3,Wed,Foggy,145,2.1,0
+Chetak Circle,10,Mon,Clear,486,7.1,1
+Bapu Bazaar,19,Sat,Cloudy,355,5.2,0
+Surajpole,14,Tue,Foggy,91,1.3,0
+Fatehsagar,18,Mon,Cloudy,343,5.0,0
+Delhi Gate,6,Wed,Foggy,123,1.8,0
+Chetak Circle,18,Sat,Foggy,345,5.0,0
+Surajpole,18,Fri,Cloudy,533,7.8,1
+Chetak Circle,10,Wed,Foggy,449,6.5,0
+Sector 4,4,Tue,Cloudy,219,3.2,0
+Chetak Circle,4,Sat,Clear,81,1.2,0
+Bapu Bazaar,21,Sun,Cloudy,283,4.1,0
+Sector 4,7,Sun,Clear,75,1.1,0
+Hathi Pol,9,Thu,Foggy,374,5.4,0
+Bapu Bazaar,5,Mon,Cloudy,124,1.8,0
+Delhi Gate,14,Fri,Foggy,72,1.0,0
+Sector 4,15,Thu,Cloudy,275,4.0,0
+Hathi Pol,16,Sat,Clear,106,1.5,0
+Fatehsagar,7,Sun,Clear,229,3.3,0
+Chetak Circle,7,Sun,Cloudy,281,4.1,0
+Surajpole,8,Sun,Clear,493,7.2,1
+Udiapole,1,Sat,Foggy,136,2.0,0
+Chetak Circle,14,Sun,Foggy,270,3.9,0
+Hathi Pol,17,Wed,Rainy,461,6.7,0
+Chetak Circle,2,Sat,Clear,113,1.6,0
+Delhi Gate,16,Fri,Foggy,248,3.6,0
+Fatehsagar,3,Thu,Cloudy,281,4.1,0
+Udiapole,3,Fri,Clear,82,1.2,0
+Sector 4,13,Tue,Foggy,262,3.8,0
+Sector 4,8,Sun,Clear,293,4.3,0
+Sector 4,8,Tue,Cloudy,296,4.3,0
+Hathi Pol,22,Mon,Foggy,224,3.3,0
+Bapu Bazaar,17,Mon,Rainy,461,6.7,0
+Bapu Bazaar,9,Tue,Rainy,583,8.5,1
+Surajpole,20,Sat,Clear,275,4.0,0
+Udiapole,3,Fri,Cloudy,133,1.9,0
+Sector 4,11,Tue,Foggy,84,1.2,0
+Bapu Bazaar,7,Mon,Cloudy,228,3.3,0
+Hathi Pol,1,Tue,Foggy,163,2.4,0
+Surajpole,21,Sat,Clear,295,4.3,0
+Fatehsagar,12,Tue,Foggy,195,2.8,0
+Surajpole,20,Fri,Cloudy,159,2.3,0
+Bapu Bazaar,15,Thu,Cloudy,137,2.0,0
+Delhi Gate,1,Sat,Clear,121,1.8,0
+Hathi Pol,10,Mon,Cloudy,499,7.3,1
+Delhi Gate,9,Fri,Foggy,394,5.7,0
+Sector 4,14,Tue,Clear,221,3.2,0
+Delhi Gate,16,Tue,Foggy,102,1.5,0
+Sector 4,7,Thu,Cloudy,187,2.7,0
+Sector 4,17,Mon,Clear,444,6.5,0
+Bapu Bazaar,22,Mon,Foggy,229,3.3,0
+Delhi Gate,8,Wed,Cloudy,389,5.7,0
+Sector 4,7,Mon,Cloudy,188,2.7,0
+Udiapole,13,Thu,Rainy,243,3.5,0
+Fatehsagar,17,Sun,Cloudy,501,7.3,1
+Surajpole,21,Wed,Foggy,267,3.9,0
+Surajpole,19,Wed,Clear,587,8.5,1
+Bapu Bazaar,19,Tue,Rainy,608,8.9,1
+Delhi Gate,20,Tue,Cloudy,224,3.3,0
+Delhi Gate,11,Mon,Cloudy,62,0.9,0
+Sector 4,18,Wed,Cloudy,311,4.5,0
+Hathi Pol,13,Tue,Foggy,138,2.0,0
+Chetak Circle,16,Thu,Rainy,117,1.7,0
+Sector 4,23,Tue,Foggy,91,1.3,0
+Fatehsagar,20,Sat,Rainy,196,2.9,0
+Udiapole,2,Sat,Clear,259,3.8,0
+Surajpole,22,Tue,Foggy,278,4.0,0
+Sector 4,6,Wed,Foggy,143,2.1,0
+Chetak Circle,16,Sun,Clear,68,1.0,0
+Chetak Circle,11,Sun,Rainy,235,3.4,0
+Sector 4,8,Wed,Cloudy,470,6.8,0
+Bapu Bazaar,14,Fri,Clear,103,1.5,0
+Surajpole,17,Sun,Cloudy,497,7.2,1
+Bapu Bazaar,20,Sat,Cloudy,114,1.7,0
+Udiapole,12,Thu,Clear,189,2.8,0
+Chetak Circle,20,Wed,Rainy,73,1.1,0
+Chetak Circle,7,Mon,Cloudy,83,1.2,0
+Fatehsagar,13,Sat,Clear,102,1.5,0
+Udiapole,7,Thu,Foggy,298,4.3,0
+Chetak Circle,13,Thu,Foggy,185,2.7,0
+Udiapole,6,Wed,Foggy,67,1.0,0
+Surajpole,22,Thu,Clear,106,1.5,0
+Delhi Gate,11,Wed,Foggy,161,2.3,0
+Chetak Circle,10,Sun,Cloudy,419,6.1,0
+Fatehsagar,21,Tue,Foggy,203,3.0,0
+Surajpole,21,Sat,Foggy,207,3.0,0
+Sector 4,10,Fri,Cloudy,585,8.5,1
+Udiapole,21,Tue,Foggy,62,0.9,0
+Sector 4,12,Sat,Cloudy,132,1.9,0
+Bapu Bazaar,17,Wed,Foggy,317,4.6,0
+Surajpole,1,Sat,Cloudy,52,0.8,0
+Sector 4,20,Sun,Foggy,139,2.0,0
+Hathi Pol,14,Wed,Cloudy,153,2.2,0
+Hathi Pol,19,Tue,Clear,350,5.1,0
+Chetak Circle,17,Mon,Cloudy,563,8.2,1
+Udiapole,14,Mon,Foggy,299,4.4,0
+Delhi Gate,18,Sat,Foggy,323,4.7,0
+Surajpole,22,Mon,Rainy,179,2.6,0
+Chetak Circle,23,Wed,Cloudy,252,3.7,0
+Fatehsagar,11,Thu,Clear,157,2.3,0
+Bapu Bazaar,12,Wed,Cloudy,205,3.0,0
+Udiapole,21,Thu,Cloudy,131,1.9,0
+Surajpole,10,Tue,Clear,446,6.5,0
+Hathi Pol,4,Fri,Cloudy,278,4.0,0
+Surajpole,0,Thu,Clear,263,3.8,0
+Delhi Gate,23,Mon,Clear,253,3.7,0
+Hathi Pol,2,Wed,Cloudy,51,0.7,0
+Delhi Gate,21,Tue,Cloudy,176,2.6,0
+Fatehsagar,18,Mon,Foggy,647,9.4,1
+Bapu Bazaar,22,Tue,Foggy,184,2.7,0
+Fatehsagar,6,Fri,Rainy,75,1.1,0
+Chetak Circle,11,Sun,Rainy,267,3.9,0
+Chetak Circle,14,Wed,Cloudy,137,2.0,0
+Fatehsagar,4,Sat,Clear,253,3.7,0
+Bapu Bazaar,14,Wed,Rainy,65,0.9,0
+Fatehsagar,7,Fri,Cloudy,200,2.9,0
+Bapu Bazaar,9,Wed,Rainy,586,8.5,1
+Bapu Bazaar,15,Sat,Clear,237,3.4,0
+Sector 4,7,Thu,Cloudy,122,1.8,0
+Hathi Pol,0,Tue,Clear,81,1.2,0
+Udiapole,11,Sat,Cloudy,64,0.9,0
+Bapu Bazaar,4,Mon,Rainy,278,4.0,0
+Delhi Gate,2,Fri,Foggy,190,2.8,0
+Bapu Bazaar,0,Thu,Rainy,54,0.8,0
+Bapu Bazaar,3,Mon,Rainy,252,3.7,0
+Bapu Bazaar,7,Mon,Foggy,123,1.8,0
+Sector 4,2,Fri,Foggy,101,1.5,0
+Hathi Pol,9,Thu,Cloudy,347,5.1,0
+Sector 4,1,Sun,Cloudy,218,3.2,0
+Chetak Circle,10,Mon,Clear,594,8.6,1
+Sector 4,9,Mon,Clear,529,7.7,1
+Delhi Gate,20,Thu,Rainy,227,3.3,0
+Delhi Gate,13,Wed,Foggy,192,2.8,0
+Sector 4,6,Mon,Clear,155,2.3,0
+Hathi Pol,1,Tue,Rainy,297,4.3,0
+Fatehsagar,8,Thu,Foggy,458,6.7,0
+Udiapole,15,Mon,Cloudy,56,0.8,0
+Hathi Pol,12,Fri,Rainy,89,1.3,0
+Sector 4,8,Sat,Cloudy,396,5.8,0
+Bapu Bazaar,19,Tue,Clear,493,7.2,1
+Surajpole,3,Sat,Clear,148,2.2,0
+Udiapole,21,Sat,Foggy,192,2.8,0
+Udiapole,9,Mon,Rainy,480,7.0,0
+Delhi Gate,21,Tue,Cloudy,277,4.0,0
+Udiapole,11,Tue,Foggy,134,2.0,0
+Sector 4,16,Wed,Clear,247,3.6,0
+Bapu Bazaar,13,Sat,Clear,114,1.7,0
+Bapu Bazaar,13,Tue,Rainy,181,2.6,0
+Chetak Circle,1,Wed,Cloudy,60,0.9,0
+Bapu Bazaar,20,Thu,Rainy,157,2.3,0
+Hathi Pol,19,Wed,Cloudy,388,5.6,0
+Bapu Bazaar,10,Fri,Cloudy,492,7.2,1
+Delhi Gate,15,Sun,Rainy,214,3.1,0
+Bapu Bazaar,18,Mon,Foggy,376,5.5,0
+Chetak Circle,22,Thu,Rainy,270,3.9,0
+Surajpole,5,Sun,Rainy,134,2.0,0
+Sector 4,23,Sun,Clear,289,4.2,0
+Delhi Gate,18,Thu,Clear,493,7.2,1
+Hathi Pol,4,Fri,Rainy,286,4.2,0
+Surajpole,3,Wed,Rainy,290,4.2,0
+Delhi Gate,14,Mon,Clear,268,3.9,0
+Fatehsagar,3,Wed,Cloudy,280,4.1,0
+Udiapole,19,Tue,Rainy,412,6.0,0
+Fatehsagar,9,Wed,Foggy,469,6.8,0
+Bapu Bazaar,23,Thu,Foggy,200,2.9,0
+Surajpole,21,Mon,Foggy,172,2.5,0
+Bapu Bazaar,2,Wed,Rainy,193,2.8,0
+Udiapole,4,Mon,Cloudy,271,3.9,0
+Delhi Gate,5,Mon,Cloudy,238,3.5,0
+Udiapole,20,Tue,Clear,117,1.7,0
+Chetak Circle,21,Tue,Rainy,153,2.2,0
+Udiapole,7,Thu,Cloudy,129,1.9,0
+Chetak Circle,6,Fri,Rainy,208,3.0,0
+Udiapole,20,Sun,Clear,102,1.5,0
+Sector 4,9,Mon,Clear,329,4.8,0
+Chetak Circle,5,Fri,Clear,202,2.9,0
+Surajpole,13,Sun,Foggy,93,1.4,0
+Bapu Bazaar,3,Sun,Rainy,189,2.8,0
+Hathi Pol,12,Thu,Clear,139,2.0,0
+Bapu Bazaar,19,Sun,Rainy,372,5.4,0
+Fatehsagar,16,Sun,Foggy,289,4.2,0
+Bapu Bazaar,22,Mon,Foggy,146,2.1,0
+Delhi Gate,6,Mon,Clear,269,3.9,0
+Sector 4,3,Sat,Clear,58,0.8,0
+Udiapole,13,Fri,Cloudy,61,0.9,0
+Fatehsagar,2,Wed,Rainy,118,1.7,0
+Delhi Gate,23,Tue,Clear,231,3.4,0
+Delhi Gate,4,Wed,Cloudy,293,4.3,0
+Chetak Circle,15,Fri,Rainy,231,3.4,0
+Bapu Bazaar,22,Tue,Clear,77,1.1,0
+Surajpole,19,Wed,Cloudy,371,5.4,0
+Hathi Pol,3,Sat,Cloudy,148,2.2,0
+Surajpole,23,Tue,Rainy,246,3.6,0
+Fatehsagar,23,Mon,Cloudy,275,4.0,0
+Sector 4,1,Wed,Rainy,159,2.3,0
+Surajpole,17,Tue,Rainy,579,8.4,1
+Udiapole,18,Sat,Rainy,404,5.9,0
+Surajpole,18,Sun,Foggy,388,5.6,0
+Fatehsagar,16,Tue,Cloudy,155,2.3,0
+Hathi Pol,13,Tue,Rainy,158,2.3,0
+Surajpole,18,Sat,Clear,384,5.6,0
+Udiapole,21,Sun,Foggy,107,1.6,0
+Chetak Circle,23,Wed,Foggy,127,1.8,0
+Sector 4,12,Thu,Cloudy,124,1.8,0
+Fatehsagar,11,Wed,Rainy,91,1.3,0
+Chetak Circle,5,Sun,Cloudy,215,3.1,0
+Chetak Circle,20,Fri,Foggy,117,1.7,0
+Chetak Circle,3,Sat,Rainy,230,3.3,0
+Delhi Gate,18,Wed,Clear,401,5.8,0
+Sector 4,15,Tue,Rainy,120,1.7,0
+Hathi Pol,12,Sat,Foggy,105,1.5,0
+Bapu Bazaar,3,Mon,Clear,154,2.2,0
+Sector 4,22,Sun,Rainy,249,3.6,0
+Delhi Gate,16,Wed,Clear,150,2.2,0
+Bapu Bazaar,22,Sat,Clear,100,1.5,0
+Sector 4,0,Wed,Foggy,123,1.8,0
+Chetak Circle,17,Sat,Clear,549,8.0,1
+Fatehsagar,19,Tue,Cloudy,472,6.9,0
+Bapu Bazaar,16,Mon,Foggy,192,2.8,0
+Udiapole,14,Mon,Cloudy,215,3.1,0
+Udiapole,10,Fri,Clear,523,7.6,1
+Surajpole,21,Sat,Cloudy,54,0.8,0
+Bapu Bazaar,12,Wed,Rainy,270,3.9,0
+Fatehsagar,0,Mon,Clear,132,1.9,0
+Hathi Pol,16,Sun,Rainy,231,3.4,0
+Delhi Gate,5,Mon,Cloudy,100,1.5,0
+Chetak Circle,3,Thu,Rainy,59,0.9,0
+Surajpole,19,Thu,Clear,463,6.7,0
+Udiapole,15,Mon,Rainy,295,4.3,0
+Delhi Gate,14,Sat,Cloudy,53,0.8,0
+Delhi Gate,14,Fri,Cloudy,144,2.1,0
+Chetak Circle,5,Mon,Cloudy,195,2.8,0
+Hathi Pol,14,Tue,Clear,129,1.9,0
+Hathi Pol,13,Wed,Cloudy,281,4.1,0
+Bapu Bazaar,10,Fri,Clear,301,4.4,0
+Udiapole,6,Tue,Rainy,74,1.1,0
+Hathi Pol,8,Fri,Cloudy,419,6.1,0
+Fatehsagar,15,Tue,Rainy,253,3.7,0
+Hathi Pol,4,Wed,Foggy,147,2.1,0
+Delhi Gate,19,Wed,Rainy,487,7.1,1
+Chetak Circle,9,Thu,Foggy,357,5.2,0
+Fatehsagar,17,Sat,Rainy,463,6.7,0
+Bapu Bazaar,2,Tue,Clear,58,0.8,0
+Udiapole,12,Thu,Rainy,110,1.6,0
+Bapu Bazaar,10,Tue,Clear,304,4.4,0
+Delhi Gate,16,Thu,Clear,195,2.8,0
+Fatehsagar,21,Wed,Cloudy,220,3.2,0
+Fatehsagar,12,Fri,Clear,212,3.1,0
+Fatehsagar,5,Sun,Foggy,112,1.6,0
+Delhi Gate,16,Thu,Cloudy,170,2.5,0
+Delhi Gate,12,Tue,Cloudy,296,4.3,0
+Bapu Bazaar,18,Tue,Rainy,490,7.1,1
+Surajpole,20,Sun,Clear,154,2.2,0
+Bapu Bazaar,18,Sat,Clear,462,6.7,0
+Udiapole,9,Wed,Foggy,452,6.6,0
+Chetak Circle,2,Tue,Rainy,142,2.1,0
+Fatehsagar,13,Mon,Rainy,218,3.2,0
+Surajpole,18,Fri,Cloudy,453,6.6,0
+Chetak Circle,4,Thu,Cloudy,227,3.3,0
+Surajpole,4,Sat,Cloudy,256,3.7,0
+Hathi Pol,19,Sun,Foggy,313,4.6,0
+Hathi Pol,16,Fri,Foggy,219,3.2,0
+Sector 4,20,Wed,Cloudy,129,1.9,0
+Hathi Pol,9,Sat,Rainy,276,4.0,0
+Bapu Bazaar,4,Thu,Foggy,165,2.4,0
+Hathi Pol,3,Thu,Rainy,118,1.7,0
+Delhi Gate,5,Sun,Rainy,147,2.1,0
+Fatehsagar,3,Mon,Clear,283,4.1,0
+Bapu Bazaar,6,Sun,Cloudy,50,0.7,0
+Chetak Circle,6,Wed,Clear,216,3.1,0
+Sector 4,17,Sat,Cloudy,498,7.2,1
+Sector 4,2,Sat,Cloudy,267,3.9,0
+Sector 4,0,Tue,Rainy,66,1.0,0
+Chetak Circle,23,Mon,Cloudy,161,2.3,0
+Chetak Circle,3,Mon,Rainy,140,2.0,0
+Chetak Circle,5,Sat,Rainy,137,2.0,0
+Chetak Circle,8,Sat,Cloudy,511,7.4,1
+Sector 4,21,Fri,Rainy,223,3.2,0
+Sector 4,13,Fri,Rainy,219,3.2,0
+Surajpole,11,Fri,Rainy,295,4.3,0
+Bapu Bazaar,19,Mon,Foggy,402,5.9,0
+Fatehsagar,23,Tue,Rainy,139,2.0,0
+Hathi Pol,3,Thu,Foggy,98,1.4,0
+Hathi Pol,20,Fri,Foggy,239,3.5,0
+Delhi Gate,23,Tue,Rainy,87,1.3,0
+Sector 4,11,Sun,Rainy,200,2.9,0
+Delhi Gate,9,Wed,Foggy,496,7.2,1
+Bapu Bazaar,21,Fri,Foggy,181,2.6,0
+Bapu Bazaar,6,Sun,Rainy,226,3.3,0
+Delhi Gate,2,Thu,Rainy,108,1.6,0
+Sector 4,22,Wed,Cloudy,250,3.6,0
+Delhi Gate,13,Wed,Foggy,117,1.7,0
+Hathi Pol,23,Thu,Foggy,248,3.6,0
+Surajpole,9,Fri,Cloudy,516,7.5,1
+Hathi Pol,15,Mon,Foggy,179,2.6,0
+Udiapole,15,Thu,Clear,98,1.4,0
+Sector 4,21,Thu,Foggy,265,3.9,0
+Sector 4,9,Thu,Cloudy,454,6.6,0
+Fatehsagar,12,Wed,Clear,296,4.3,0
+Chetak Circle,5,Tue,Rainy,175,2.5,0
+Udiapole,11,Sun,Cloudy,272,4.0,0
+Bapu Bazaar,8,Mon,Cloudy,549,8.0,1
+Sector 4,12,Fri,Rainy,208,3.0,0
+Delhi Gate,3,Fri,Cloudy,160,2.3,0
+Udiapole,23,Sun,Foggy,217,3.2,0
+Fatehsagar,10,Tue,Rainy,458,6.7,0
+Bapu Bazaar,19,Thu,Cloudy,314,4.6,0
+Chetak Circle,17,Mon,Rainy,434,6.3,0
+Chetak Circle,10,Fri,Rainy,505,7.4,1
+Fatehsagar,20,Sun,Rainy,232,3.4,0
+Fatehsagar,3,Sat,Clear,265,3.9,0
+Delhi Gate,17,Sun,Cloudy,504,7.3,1
+Sector 4,0,Fri,Clear,173,2.5,0
+Chetak Circle,6,Thu,Cloudy,267,3.9,0
+Bapu Bazaar,5,Sat,Foggy,129,1.9,0
+Udiapole,14,Tue,Foggy,234,3.4,0
+Bapu Bazaar,17,Mon,Foggy,426,6.2,0
+Surajpole,23,Tue,Cloudy,254,3.7,0
+Surajpole,10,Tue,Rainy,457,6.7,0
+Fatehsagar,19,Sun,Rainy,462,6.7,0
+Delhi Gate,23,Mon,Clear,245,3.6,0
+Surajpole,14,Mon,Clear,257,3.7,0
+Chetak Circle,15,Fri,Foggy,241,3.5,0
+Bapu Bazaar,6,Fri,Clear,271,3.9,0
+Bapu Bazaar,20,Mon,Cloudy,285,4.1,0
+Fatehsagar,9,Sat,Cloudy,578,8.4,1
+Sector 4,11,Wed,Clear,213,3.1,0
+Sector 4,23,Fri,Clear,244,3.6,0
+Udiapole,13,Wed,Clear,263,3.8,0
+Fatehsagar,4,Sun,Clear,162,2.4,0
+Hathi Pol,20,Sat,Foggy,135,2.0,0
+Udiapole,17,Mon,Foggy,417,6.1,0
+Hathi Pol,4,Sat,Clear,298,4.3,0
+Sector 4,2,Fri,Cloudy,291,4.2,0
+Fatehsagar,22,Tue,Foggy,296,4.3,0
+Hathi Pol,4,Sun,Cloudy,173,2.5,0
+Fatehsagar,23,Mon,Rainy,98,1.4,0
+Fatehsagar,16,Thu,Cloudy,125,1.8,0
+Sector 4,18,Sun,Clear,492,7.2,1
+Udiapole,18,Wed,Rainy,414,6.0,0
+Udiapole,20,Sat,Foggy,105,1.5,0
+Fatehsagar,11,Mon,Foggy,245,3.6,0
+Surajpole,8,Sun,Rainy,339,4.9,0
+Delhi Gate,0,Sat,Cloudy,93,1.4,0
+Sector 4,17,Mon,Foggy,412,6.0,0
+Delhi Gate,20,Fri,Clear,235,3.4,0
+Delhi Gate,3,Sun,Rainy,136,2.0,0
+Udiapole,9,Fri,Clear,519,7.6,1
+Udiapole,6,Sun,Rainy,230,3.3,0
+Surajpole,21,Fri,Foggy,133,1.9,0
+Delhi Gate,22,Sat,Cloudy,256,3.7,0
+Delhi Gate,0,Thu,Rainy,200,2.9,0
+Fatehsagar,16,Sun,Rainy,205,3.0,0
+Udiapole,23,Sun,Clear,65,0.9,0
+Delhi Gate,1,Fri,Foggy,214,3.1,0
+Bapu Bazaar,10,Mon,Clear,563,8.2,1
+Surajpole,8,Sun,Foggy,619,9.0,1
+Hathi Pol,6,Fri,Clear,194,2.8,0
+Bapu Bazaar,21,Tue,Rainy,291,4.2,0
+Bapu Bazaar,16,Fri,Clear,86,1.3,0
+Hathi Pol,16,Sat,Cloudy,126,1.8,0
+Sector 4,1,Thu,Foggy,196,2.9,0
+Sector 4,5,Tue,Foggy,207,3.0,0
+Surajpole,13,Sat,Rainy,94,1.4,0
+Bapu Bazaar,5,Sat,Foggy,195,2.8,0
+Delhi Gate,1,Sat,Cloudy,255,3.7,0
+Udiapole,0,Mon,Clear,111,1.6,0
+Surajpole,9,Sat,Rainy,554,8.1,1
+Fatehsagar,20,Mon,Cloudy,149,2.2,0
+Hathi Pol,4,Sat,Foggy,261,3.8,0
+Bapu Bazaar,1,Wed,Foggy,101,1.5,0
+Surajpole,21,Tue,Cloudy,68,1.0,0
+Chetak Circle,15,Wed,Clear,158,2.3,0
+Chetak Circle,1,Sat,Clear,93,1.4,0
+Sector 4,9,Tue,Rainy,441,6.4,0
+Hathi Pol,1,Tue,Foggy,298,4.3,0
+Udiapole,15,Sun,Cloudy,221,3.2,0
+Delhi Gate,15,Thu,Clear,166,2.4,0
+Udiapole,18,Wed,Rainy,311,4.5,0
+Udiapole,6,Thu,Foggy,83,1.2,0
+Udiapole,21,Tue,Foggy,243,3.5,0
+Hathi Pol,11,Mon,Rainy,118,1.7,0
+Udiapole,23,Tue,Rainy,104,1.5,0
+Fatehsagar,14,Thu,Clear,59,0.9,0
+Hathi Pol,7,Wed,Cloudy,273,4.0,0
+Fatehsagar,5,Sat,Foggy,91,1.3,0
+Hathi Pol,9,Sun,Cloudy,393,5.7,0
+Sector 4,2,Sun,Foggy,254,3.7,0
+Surajpole,18,Sun,Foggy,506,7.4,1
+Chetak Circle,16,Sat,Cloudy,246,3.6,0
+Udiapole,6,Sun,Rainy,171,2.5,0
+Sector 4,20,Wed,Clear,187,2.7,0
+Surajpole,19,Sat,Foggy,401,5.8,0
+Chetak Circle,3,Sun,Rainy,151,2.2,0
+Bapu Bazaar,13,Sat,Foggy,268,3.9,0
+Delhi Gate,19,Thu,Clear,410,6.0,0
+Fatehsagar,21,Wed,Foggy,177,2.6,0
+Bapu Bazaar,14,Fri,Clear,228,3.3,0
+Hathi Pol,23,Mon,Clear,198,2.9,0
+Chetak Circle,7,Sun,Foggy,185,2.7,0
+Bapu Bazaar,20,Mon,Foggy,242,3.5,0
+Delhi Gate,14,Sat,Clear,141,2.1,0
+Sector 4,21,Mon,Rainy,162,2.4,0
+Chetak Circle,19,Wed,Cloudy,631,9.2,1
+Bapu Bazaar,13,Wed,Clear,127,1.8,0
+Fatehsagar,8,Tue,Foggy,318,4.6,0
+Fatehsagar,7,Sun,Foggy,79,1.1,0
+Surajpole,16,Tue,Rainy,262,3.8,0
+Bapu Bazaar,1,Mon,Cloudy,98,1.4,0
+Udiapole,23,Fri,Clear,58,0.8,0
+Bapu Bazaar,2,Tue,Clear,194,2.8,0
+Sector 4,7,Tue,Cloudy,118,1.7,0
+Chetak Circle,11,Wed,Clear,107,1.6,0
+Chetak Circle,0,Fri,Cloudy,234,3.4,0
+Sector 4,9,Sat,Foggy,284,4.1,0
+Bapu Bazaar,19,Mon,Cloudy,449,6.5,0
+Sector 4,2,Tue,Clear,101,1.5,0
+Delhi Gate,5,Fri,Cloudy,238,3.5,0
+Hathi Pol,6,Sun,Rainy,89,1.3,0
+Sector 4,19,Fri,Foggy,592,8.6,1
+Fatehsagar,22,Mon,Foggy,220,3.2,0
+Sector 4,17,Fri,Cloudy,469,6.8,0
+Chetak Circle,10,Fri,Clear,577,8.4,1
+Fatehsagar,18,Fri,Rainy,442,6.4,0
+Chetak Circle,4,Sun,Foggy,99,1.4,0
+Surajpole,18,Tue,Foggy,418,6.1,0
+Udiapole,10,Mon,Clear,548,8.0,1
+Chetak Circle,23,Sun,Clear,127,1.8,0
+Fatehsagar,11,Fri,Rainy,297,4.3,0
+Surajpole,9,Fri,Cloudy,538,7.8,1
+Chetak Circle,7,Tue,Clear,239,3.5,0
+Delhi Gate,23,Mon,Cloudy,270,3.9,0
+Sector 4,8,Wed,Rainy,423,6.2,0
+Udiapole,3,Sun,Cloudy,226,3.3,0
+Chetak Circle,4,Tue,Foggy,85,1.2,0
+Surajpole,20,Mon,Cloudy,171,2.5,0
+Delhi Gate,7,Sun,Rainy,157,2.3,0
+Bapu Bazaar,22,Fri,Rainy,59,0.9,0
+Surajpole,8,Mon,Rainy,500,7.3,1
+Sector 4,14,Mon,Cloudy,55,0.8,0
+Surajpole,14,Sat,Foggy,106,1.5,0
+Delhi Gate,15,Mon,Clear,178,2.6,0
+Surajpole,13,Wed,Foggy,120,1.7,0
+Delhi Gate,7,Mon,Cloudy,235,3.4,0
+Chetak Circle,17,Wed,Cloudy,561,8.2,1
+Hathi Pol,9,Fri,Clear,234,3.4,0
+Delhi Gate,19,Wed,Cloudy,539,7.8,1
+Delhi Gate,5,Sun,Rainy,176,2.6,0
+Udiapole,11,Fri,Rainy,129,1.9,0
+Delhi Gate,1,Fri,Rainy,105,1.5,0
+Delhi Gate,6,Wed,Rainy,287,4.2,0
+Bapu Bazaar,15,Tue,Rainy,264,3.8,0
+Hathi Pol,2,Thu,Cloudy,165,2.4,0
+Chetak Circle,12,Mon,Clear,197,2.9,0
+Sector 4,2,Sat,Clear,279,4.1,0
+Udiapole,17,Thu,Rainy,606,8.8,1
+Bapu Bazaar,10,Mon,Cloudy,234,3.4,0
+Fatehsagar,7,Mon,Foggy,205,3.0,0
+Hathi Pol,5,Fri,Foggy,54,0.8,0
+Chetak Circle,0,Mon,Cloudy,169,2.5,0
+Chetak Circle,0,Sat,Rainy,70,1.0,0
+Fatehsagar,22,Mon,Clear,67,1.0,0
+Sector 4,7,Wed,Cloudy,224,3.3,0
+Delhi Gate,4,Thu,Foggy,247,3.6,0
+Bapu Bazaar,15,Wed,Foggy,106,1.5,0
+Surajpole,10,Sat,Foggy,484,7.0,0
+Udiapole,4,Mon,Rainy,68,1.0,0
+Surajpole,3,Sun,Foggy,177,2.6,0
+Fatehsagar,5,Sat,Cloudy,146,2.1,0
+Chetak Circle,13,Fri,Cloudy,242,3.5,0
+Sector 4,21,Wed,Foggy,286,4.2,0
+Chetak Circle,18,Wed,Cloudy,408,5.9,0
+Udiapole,8,Tue,Foggy,586,8.5,1
+Chetak Circle,11,Mon,Foggy,70,1.0,0
+Chetak Circle,10,Fri,Clear,540,7.9,1
+Udiapole,13,Sun,Rainy,282,4.1,0
+Bapu Bazaar,22,Wed,Rainy,89,1.3,0
+Bapu Bazaar,15,Wed,Clear,116,1.7,0
+Udiapole,0,Fri,Clear,202,2.9,0
+Sector 4,12,Sat,Rainy,176,2.6,0
+Fatehsagar,22,Sat,Foggy,286,4.2,0
+Hathi Pol,20,Mon,Foggy,279,4.1,0
+Chetak Circle,20,Tue,Rainy,286,4.2,0
+Sector 4,12,Wed,Foggy,104,1.5,0
+Chetak Circle,1,Tue,Clear,261,3.8,0
+Hathi Pol,3,Sat,Foggy,229,3.3,0
+Fatehsagar,5,Sat,Foggy,221,3.2,0
+Bapu Bazaar,22,Thu,Cloudy,158,2.3,0
+Sector 4,4,Sun,Cloudy,147,2.1,0
+Delhi Gate,2,Mon,Cloudy,262,3.8,0
+Delhi Gate,0,Thu,Foggy,233,3.4,0
+Hathi Pol,3,Sun,Rainy,232,3.4,0
+Delhi Gate,19,Thu,Clear,378,5.5,0
+Bapu Bazaar,1,Thu,Foggy,264,3.8,0
+Hathi Pol,4,Mon,Rainy,247,3.6,0
+Bapu Bazaar,2,Mon,Foggy,164,2.4,0
+Fatehsagar,8,Fri,Clear,358,5.2,0
+Chetak Circle,19,Tue,Foggy,472,6.9,0
+Fatehsagar,5,Tue,Clear,290,4.2,0
+Fatehsagar,17,Fri,Foggy,512,7.5,1
+Bapu Bazaar,5,Fri,Clear,250,3.6,0
+Hathi Pol,18,Sat,Foggy,420,6.1,0
+Hathi Pol,11,Sun,Clear,115,1.7,0
+Delhi Gate,10,Thu,Cloudy,355,5.2,0
+Surajpole,1,Fri,Foggy,260,3.8,0
+Chetak Circle,14,Wed,Foggy,297,4.3,0
+Bapu Bazaar,11,Tue,Rainy,184,2.7,0
+Delhi Gate,11,Fri,Rainy,167,2.4,0
+Sector 4,8,Wed,Clear,464,6.8,0
+Surajpole,20,Wed,Foggy,91,1.3,0
+Surajpole,23,Wed,Clear,91,1.3,0
+Bapu Bazaar,1,Sat,Cloudy,108,1.6,0
+Udiapole,21,Sat,Rainy,69,1.0,0
+Chetak Circle,2,Wed,Clear,122,1.8,0
+Surajpole,11,Sun,Clear,66,1.0,0
+Bapu Bazaar,15,Sat,Rainy,76,1.1,0
+Bapu Bazaar,20,Thu,Foggy,224,3.3,0
+Delhi Gate,23,Wed,Clear,51,0.7,0
+Sector 4,0,Thu,Rainy,112,1.6,0
+Udiapole,20,Thu,Foggy,111,1.6,0
+Chetak Circle,2,Wed,Cloudy,149,2.2,0
+Hathi Pol,19,Tue,Rainy,427,6.2,0
+Fatehsagar,1,Sun,Clear,66,1.0,0
+Sector 4,8,Wed,Cloudy,493,7.2,1
+Sector 4,18,Wed,Foggy,468,6.8,0
+Delhi Gate,14,Sat,Foggy,259,3.8,0
+Hathi Pol,17,Wed,Rainy,356,5.2,0
+Surajpole,10,Tue,Rainy,678,9.9,1
+Surajpole,22,Sat,Rainy,248,3.6,0
+Delhi Gate,15,Mon,Foggy,130,1.9,0
+Bapu Bazaar,21,Mon,Cloudy,88,1.3,0
+Surajpole,16,Thu,Foggy,85,1.2,0
+Udiapole,4,Sun,Clear,217,3.2,0
+Chetak Circle,11,Thu,Foggy,222,3.2,0
+Sector 4,10,Tue,Clear,508,7.4,1
+Sector 4,14,Fri,Cloudy,279,4.1,0
+Udiapole,2,Sun,Rainy,202,2.9,0
+Hathi Pol,0,Mon,Rainy,246,3.6,0
+Surajpole,19,Thu,Foggy,571,8.3,1
+Sector 4,15,Mon,Rainy,253,3.7,0
+Fatehsagar,1,Tue,Cloudy,245,3.6,0
+Hathi Pol,1,Tue,Rainy,265,3.9,0
+Chetak Circle,2,Fri,Foggy,78,1.1,0
+Chetak Circle,7,Fri,Cloudy,250,3.6,0
+Sector 4,23,Sat,Clear,245,3.6,0
+Delhi Gate,14,Sun,Foggy,100,1.5,0
+Hathi Pol,6,Tue,Clear,201,2.9,0
+Sector 4,5,Thu,Cloudy,63,0.9,0
+Delhi Gate,8,Mon,Foggy,466,6.8,0
+Sector 4,19,Wed,Foggy,403,5.9,0
+Fatehsagar,0,Fri,Cloudy,219,3.2,0
+Hathi Pol,7,Wed,Rainy,106,1.5,0
+Bapu Bazaar,22,Thu,Foggy,260,3.8,0
+Chetak Circle,22,Fri,Foggy,61,0.9,0
+Sector 4,2,Wed,Clear,259,3.8,0
+Fatehsagar,3,Sun,Rainy,66,1.0,0
+Delhi Gate,14,Thu,Clear,79,1.1,0
+Delhi Gate,5,Mon,Clear,137,2.0,0
+Chetak Circle,14,Sun,Rainy,252,3.7,0
+Udiapole,20,Thu,Rainy,148,2.2,0
+Sector 4,2,Sat,Cloudy,72,1.0,0
+Hathi Pol,20,Fri,Rainy,258,3.8,0
+Surajpole,20,Tue,Foggy,178,2.6,0
+Delhi Gate,13,Mon,Rainy,128,1.9,0
+Hathi Pol,19,Sun,Cloudy,269,3.9,0
+Hathi Pol,13,Sun,Cloudy,58,0.8,0
+Bapu Bazaar,3,Wed,Cloudy,64,0.9,0
+Hathi Pol,11,Fri,Rainy,205,3.0,0
+Hathi Pol,16,Tue,Rainy,201,2.9,0
+Bapu Bazaar,6,Thu,Clear,237,3.4,0
+Delhi Gate,8,Tue,Clear,364,5.3,0
+Hathi Pol,2,Fri,Foggy,263,3.8,0
+Udiapole,12,Fri,Clear,76,1.1,0
+Udiapole,14,Sat,Foggy,260,3.8,0
+Fatehsagar,17,Sat,Cloudy,511,7.4,1
+Bapu Bazaar,18,Tue,Clear,281,4.1,0
+Fatehsagar,0,Thu,Rainy,197,2.9,0
+Bapu Bazaar,5,Tue,Clear,114,1.7,0
+Sector 4,22,Fri,Foggy,262,3.8,0
+Sector 4,1,Fri,Clear,226,3.3,0
+Hathi Pol,23,Wed,Cloudy,158,2.3,0
+Surajpole,13,Sat,Rainy,178,2.6,0
+Sector 4,5,Wed,Foggy,59,0.9,0
+Surajpole,13,Mon,Rainy,96,1.4,0
+Sector 4,3,Fri,Rainy,172,2.5,0
+Chetak Circle,20,Wed,Foggy,108,1.6,0
+Sector 4,7,Tue,Rainy,145,2.1,0
+Fatehsagar,2,Sat,Rainy,239,3.5,0
+Delhi Gate,18,Sat,Clear,350,5.1,0
+Hathi Pol,13,Thu,Rainy,173,2.5,0
+Fatehsagar,19,Tue,Rainy,310,4.5,0
+Delhi Gate,16,Thu,Rainy,195,2.8,0
+Udiapole,7,Wed,Rainy,161,2.3,0
+Fatehsagar,23,Sun,Foggy,223,3.2,0
+Udiapole,13,Mon,Cloudy,209,3.0,0
+Surajpole,5,Tue,Clear,76,1.1,0
+Surajpole,22,Tue,Rainy,269,3.9,0
+Chetak Circle,21,Tue,Rainy,67,1.0,0
+Sector 4,15,Thu,Foggy,216,3.1,0
+Fatehsagar,18,Wed,Cloudy,536,7.8,1
+Udiapole,13,Tue,Rainy,270,3.9,0
+Delhi Gate,18,Sun,Foggy,381,5.5,0
+Surajpole,2,Tue,Clear,221,3.2,0
+Sector 4,9,Sat,Clear,446,6.5,0
+Surajpole,18,Mon,Rainy,331,4.8,0
+Delhi Gate,8,Sat,Rainy,423,6.2,0
+Sector 4,19,Sat,Cloudy,593,8.6,1
+Sector 4,12,Mon,Cloudy,120,1.7,0
+Udiapole,6,Sun,Rainy,213,3.1,0
+Udiapole,13,Wed,Foggy,195,2.8,0
+Fatehsagar,8,Sat,Cloudy,363,5.3,0
+Fatehsagar,22,Wed,Rainy,236,3.4,0
+Bapu Bazaar,18,Sat,Cloudy,534,7.8,1
+Hathi Pol,14,Fri,Rainy,250,3.6,0
+Bapu Bazaar,19,Mon,Clear,596,8.7,1
+Chetak Circle,13,Sat,Rainy,249,3.6,0
+Surajpole,23,Fri,Clear,228,3.3,0
+Fatehsagar,5,Thu,Cloudy,84,1.2,0
+Udiapole,20,Fri,Rainy,131,1.9,0
+Delhi Gate,3,Tue,Cloudy,182,2.6,0
+Udiapole,7,Sat,Clear,191,2.8,0
+Surajpole,16,Fri,Rainy,269,3.9,0
+Bapu Bazaar,8,Wed,Cloudy,488,7.1,1
+Udiapole,0,Thu,Clear,53,0.8,0
+Hathi Pol,23,Sun,Cloudy,216,3.1,0
+Chetak Circle,19,Sat,Foggy,430,6.3,0
+Surajpole,13,Tue,Clear,241,3.5,0
+Bapu Bazaar,10,Sun,Clear,593,8.6,1
+Hathi Pol,20,Fri,Clear,205,3.0,0
+Delhi Gate,2,Sun,Rainy,253,3.7,0
+Bapu Bazaar,8,Sun,Rainy,509,7.4,1
+Sector 4,13,Thu,Rainy,284,4.1,0
+Hathi Pol,8,Sun,Foggy,568,8.3,1
+Hathi Pol,3,Sun,Foggy,199,2.9,0
+Chetak Circle,3,Sat,Clear,208,3.0,0
+Surajpole,7,Thu,Foggy,72,1.0,0
+Delhi Gate,1,Tue,Cloudy,97,1.4,0
+Chetak Circle,8,Fri,Clear,378,5.5,0
+Bapu Bazaar,13,Thu,Clear,174,2.5,0
+Chetak Circle,21,Thu,Cloudy,215,3.1,0
+Hathi Pol,8,Mon,Clear,281,4.1,0
+Surajpole,23,Thu,Foggy,117,1.7,0
+Fatehsagar,22,Mon,Rainy,256,3.7,0
+Chetak Circle,15,Fri,Cloudy,137,2.0,0
+Sector 4,16,Sun,Foggy,266,3.9,0
+Chetak Circle,15,Sat,Cloudy,50,0.7,0
+Bapu Bazaar,11,Sat,Cloudy,184,2.7,0
+Bapu Bazaar,2,Fri,Clear,234,3.4,0
+Delhi Gate,10,Fri,Clear,370,5.4,0
+Bapu Bazaar,13,Wed,Foggy,189,2.8,0
+Udiapole,17,Sun,Cloudy,305,4.4,0
+Surajpole,20,Fri,Clear,182,2.6,0
+Surajpole,20,Thu,Clear,157,2.3,0
+Fatehsagar,4,Sat,Cloudy,227,3.3,0
+Fatehsagar,15,Tue,Foggy,91,1.3,0
+Surajpole,19,Sat,Foggy,488,7.1,1
+Sector 4,4,Mon,Cloudy,173,2.5,0
+Fatehsagar,2,Sat,Foggy,189,2.8,0
+Delhi Gate,11,Wed,Clear,152,2.2,0
+Bapu Bazaar,0,Sun,Cloudy,195,2.8,0
+Surajpole,20,Fri,Clear,243,3.5,0
+Hathi Pol,8,Sun,Rainy,328,4.8,0
+Fatehsagar,8,Fri,Rainy,440,6.4,0
+Surajpole,3,Sat,Foggy,271,3.9,0
+Udiapole,2,Tue,Rainy,157,2.3,0
+Chetak Circle,16,Tue,Clear,171,2.5,0
+Bapu Bazaar,1,Wed,Rainy,66,1.0,0
+Surajpole,23,Mon,Clear,245,3.6,0
+Chetak Circle,0,Sat,Foggy,120,1.7,0
+Fatehsagar,7,Fri,Foggy,111,1.6,0
+Chetak Circle,12,Sat,Clear,90,1.3,0
+Bapu Bazaar,22,Wed,Rainy,272,4.0,0
+Surajpole,14,Thu,Foggy,292,4.3,0
+Udiapole,7,Thu,Cloudy,296,4.3,0
+Sector 4,11,Wed,Foggy,280,4.1,0
+Fatehsagar,21,Fri,Rainy,168,2.4,0
+Surajpole,11,Sun,Cloudy,211,3.1,0
+Bapu Bazaar,13,Wed,Rainy,247,3.6,0
+Fatehsagar,14,Fri,Clear,291,4.2,0
+Delhi Gate,14,Tue,Cloudy,279,4.1,0
+Chetak Circle,8,Wed,Rainy,355,5.2,0
+Sector 4,18,Fri,Cloudy,286,4.2,0
+Bapu Bazaar,19,Wed,Rainy,431,6.3,0
+Delhi Gate,21,Wed,Cloudy,175,2.5,0
+Hathi Pol,7,Sun,Rainy,211,3.1,0
+Surajpole,20,Sun,Clear,93,1.4,0
+Udiapole,18,Fri,Cloudy,249,3.6,0
+Fatehsagar,5,Fri,Cloudy,127,1.8,0
+Chetak Circle,19,Mon,Cloudy,517,7.5,1
+Fatehsagar,18,Wed,Cloudy,559,8.1,1
+Sector 4,3,Thu,Clear,150,2.2,0
+Surajpole,22,Wed,Cloudy,291,4.2,0
+Fatehsagar,6,Wed,Foggy,209,3.0,0
+Chetak Circle,3,Fri,Clear,244,3.6,0
+Surajpole,21,Wed,Foggy,52,0.8,0
+Fatehsagar,11,Sat,Cloudy,263,3.8,0
+Udiapole,12,Wed,Rainy,135,2.0,0
+Bapu Bazaar,2,Sat,Foggy,123,1.8,0
+Surajpole,21,Sun,Cloudy,100,1.5,0
+Bapu Bazaar,11,Thu,Foggy,116,1.7,0
+Hathi Pol,1,Fri,Cloudy,125,1.8,0
+Surajpole,23,Wed,Cloudy,142,2.1,0
+Udiapole,1,Sat,Cloudy,225,3.3,0
+Bapu Bazaar,22,Sat,Rainy,194,2.8,0
+Delhi Gate,8,Sun,Foggy,422,6.1,0
+Chetak Circle,0,Sat,Clear,62,0.9,0
+Delhi Gate,7,Tue,Clear,169,2.5,0
+Fatehsagar,22,Mon,Clear,115,1.7,0
+Udiapole,5,Thu,Clear,53,0.8,0
+Delhi Gate,5,Sun,Cloudy,187,2.7,0
+Surajpole,21,Sun,Foggy,280,4.1,0
+Fatehsagar,17,Wed,Foggy,366,5.3,0
+Fatehsagar,16,Tue,Rainy,66,1.0,0
+Delhi Gate,11,Wed,Foggy,101,1.5,0
+Hathi Pol,5,Wed,Foggy,183,2.7,0
+Delhi Gate,7,Fri,Foggy,260,3.8,0
+Hathi Pol,18,Fri,Rainy,325,4.7,0
+Udiapole,9,Fri,Clear,505,7.4,1
+Chetak Circle,0,Tue,Foggy,251,3.7,0
+Delhi Gate,12,Wed,Rainy,186,2.7,0
+Sector 4,16,Mon,Rainy,268,3.9,0
+Hathi Pol,2,Thu,Cloudy,254,3.7,0
+Delhi Gate,7,Fri,Rainy,260,3.8,0
+Bapu Bazaar,13,Fri,Clear,70,1.0,0
+Surajpole,2,Sun,Foggy,73,1.1,0
+Sector 4,15,Wed,Rainy,279,4.1,0
+Sector 4,12,Wed,Clear,53,0.8,0
+Hathi Pol,19,Tue,Rainy,415,6.0,0
+Bapu Bazaar,23,Tue,Rainy,236,3.4,0
+Bapu Bazaar,16,Fri,Rainy,276,4.0,0
+Fatehsagar,12,Wed,Rainy,52,0.8,0
+Hathi Pol,5,Mon,Rainy,117,1.7,0
+Chetak Circle,16,Thu,Clear,298,4.3,0
+Surajpole,13,Wed,Foggy,150,2.2,0
+Udiapole,16,Sun,Foggy,217,3.2,0
+Sector 4,7,Wed,Foggy,225,3.3,0
+Udiapole,10,Sat,Foggy,321,4.7,0
+Delhi Gate,19,Tue,Clear,361,5.3,0
+Delhi Gate,0,Sun,Cloudy,272,4.0,0
+Udiapole,6,Thu,Cloudy,105,1.5,0
+Delhi Gate,20,Fri,Clear,157,2.3,0
+Chetak Circle,20,Sun,Clear,266,3.9,0
+Bapu Bazaar,16,Wed,Rainy,89,1.3,0
+Delhi Gate,9,Fri,Rainy,454,6.6,0
+Fatehsagar,10,Wed,Rainy,288,4.2,0
+Delhi Gate,21,Fri,Foggy,95,1.4,0
+Surajpole,8,Thu,Rainy,492,7.2,1
+Chetak Circle,8,Tue,Cloudy,446,6.5,0
+Surajpole,23,Thu,Foggy,204,3.0,0
+Surajpole,4,Sat,Rainy,55,0.8,0
+Fatehsagar,16,Mon,Foggy,66,1.0,0
+Chetak Circle,8,Tue,Cloudy,471,6.9,0
+Chetak Circle,16,Thu,Rainy,281,4.1,0
+Hathi Pol,23,Sat,Cloudy,290,4.2,0
+Chetak Circle,20,Mon,Cloudy,148,2.2,0
+Chetak Circle,18,Sat,Cloudy,395,5.7,0
+Chetak Circle,6,Wed,Rainy,282,4.1,0
+Fatehsagar,22,Wed,Clear,51,0.7,0
+Delhi Gate,8,Fri,Rainy,548,8.0,1
+Hathi Pol,6,Tue,Cloudy,126,1.8,0
+Surajpole,12,Wed,Rainy,229,3.3,0
+Chetak Circle,10,Sun,Cloudy,445,6.5,0
+Sector 4,13,Sat,Clear,101,1.5,0
+Delhi Gate,18,Tue,Foggy,390,5.7,0
+Delhi Gate,10,Sun,Clear,533,7.8,1
+Surajpole,12,Wed,Clear,267,3.9,0
+Fatehsagar,13,Fri,Foggy,71,1.0,0
+Udiapole,12,Thu,Rainy,160,2.3,0
+Udiapole,0,Fri,Foggy,156,2.3,0
+Delhi Gate,7,Sun,Rainy,232,3.4,0
+Bapu Bazaar,11,Mon,Rainy,116,1.7,0
+Bapu Bazaar,18,Wed,Cloudy,493,7.2,1
+Surajpole,11,Sun,Cloudy,237,3.4,0
+Udiapole,7,Mon,Foggy,235,3.4,0
+Delhi Gate,7,Mon,Clear,189,2.8,0
+Fatehsagar,20,Sat,Foggy,265,3.9,0
+Udiapole,12,Tue,Rainy,118,1.7,0
+Delhi Gate,11,Sat,Cloudy,133,1.9,0
+Delhi Gate,15,Wed,Foggy,152,2.2,0
+Chetak Circle,0,Mon,Foggy,88,1.3,0
+Fatehsagar,12,Sun,Cloudy,62,0.9,0
+Chetak Circle,6,Thu,Cloudy,90,1.3,0
+Surajpole,4,Mon,Cloudy,106,1.5,0
+Chetak Circle,7,Sun,Rainy,230,3.3,0
+Sector 4,13,Thu,Cloudy,286,4.2,0
+Chetak Circle,22,Sat,Clear,61,0.9,0

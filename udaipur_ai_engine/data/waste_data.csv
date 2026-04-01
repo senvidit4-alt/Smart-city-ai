@@ -1,0 +1,501 @@
+area,population_density,last_collection_days,bin_fill_pct,overflow_risk
+Fatehpura,High,7,77,1
+Fatehpura,Medium,5,24,0
+Shobhagpura,Low,7,30,0
+Hiran Magri,High,2,61,0
+Hiran Magri,Low,6,79,1
+Sector 14,High,6,60,0
+Hiran Magri,Medium,1,74,0
+Madhuban,Low,4,32,0
+Hiran Magri,Medium,3,35,0
+Shobhagpura,Medium,1,43,0
+Fatehpura,High,6,55,0
+Fatehpura,Low,1,43,0
+Shobhagpura,Medium,2,73,0
+Madhuban,High,4,70,0
+Hiran Magri,High,6,50,0
+Shobhagpura,High,6,59,0
+Sector 14,Medium,3,57,0
+Fatehpura,High,7,75,0
+Panchwati,Low,4,20,0
+Sector 14,Low,2,68,0
+Madhuban,Medium,5,30,0
+Sector 14,Low,1,70,0
+Shobhagpura,High,3,80,1
+Hiran Magri,Medium,6,62,0
+Fatehpura,High,5,70,0
+Madhuban,Medium,2,56,0
+Madhuban,Medium,4,36,0
+Panchwati,High,1,100,1
+Sector 14,Low,3,73,0
+Panchwati,Low,6,58,0
+Hiran Magri,Medium,6,61,0
+Hiran Magri,High,5,72,0
+Panchwati,High,5,73,0
+Fatehpura,Medium,1,62,0
+Hiran Magri,Low,4,22,0
+Panchwati,High,2,82,1
+Sector 14,Low,7,29,0
+Panchwati,Low,4,78,1
+Panchwati,Medium,4,61,0
+Shobhagpura,Medium,4,33,0
+Hiran Magri,Low,7,31,0
+Fatehpura,High,1,92,1
+Fatehpura,High,7,81,1
+Shobhagpura,Medium,1,49,0
+Madhuban,Low,7,51,0
+Fatehpura,High,2,68,0
+Panchwati,High,4,90,1
+Shobhagpura,Medium,1,51,0
+Sector 14,Low,7,45,0
+Hiran Magri,High,2,82,1
+Hiran Magri,Medium,7,20,0
+Hiran Magri,High,6,96,1
+Panchwati,High,2,100,1
+Sector 14,High,4,86,1
+Shobhagpura,Medium,3,21,0
+Shobhagpura,Low,4,36,0
+Hiran Magri,Medium,3,49,0
+Sector 14,Low,2,75,0
+Sector 14,High,6,81,1
+Sector 14,Low,6,26,0
+Fatehpura,High,1,96,1
+Fatehpura,High,6,72,0
+Hiran Magri,Medium,5,28,0
+Sector 14,High,2,61,0
+Madhuban,Medium,1,53,0
+Sector 14,Low,6,65,0
+Shobhagpura,Low,2,68,0
+Shobhagpura,High,4,46,0
+Hiran Magri,Medium,6,28,0
+Madhuban,High,7,67,0
+Sector 14,Medium,3,72,0
+Madhuban,Medium,2,38,0
+Hiran Magri,Medium,1,55,0
+Shobhagpura,Low,4,79,1
+Shobhagpura,Medium,5,59,0
+Fatehpura,Low,4,64,0
+Hiran Magri,Medium,6,23,0
+Hiran Magri,Low,3,28,0
+Sector 14,Low,4,60,0
+Sector 14,Low,5,41,0
+Fatehpura,High,7,47,0
+Panchwati,Medium,1,31,0
+Madhuban,High,2,82,1
+Panchwati,Medium,3,62,0
+Panchwati,Medium,5,58,0
+Hiran Magri,High,6,52,0
+Madhuban,Low,6,25,0
+Hiran Magri,Medium,6,38,0
+Madhuban,Low,3,67,0
+Shobhagpura,High,4,93,1
+Hiran Magri,Low,3,26,0
+Hiran Magri,Medium,6,35,0
+Hiran Magri,Medium,7,24,0
+Fatehpura,Medium,5,35,0
+Hiran Magri,High,2,43,0
+Sector 14,Medium,2,70,0
+Sector 14,High,3,66,0
+Madhuban,Low,6,58,0
+Shobhagpura,Medium,1,38,0
+Fatehpura,Medium,7,73,0
+Madhuban,Medium,3,56,0
+Sector 14,Low,6,36,0
+Fatehpura,Medium,4,45,0
+Fatehpura,High,2,63,0
+Shobhagpura,Low,2,27,0
+Fatehpura,Low,7,52,0
+Hiran Magri,Low,2,21,0
+Fatehpura,Low,1,49,0
+Shobhagpura,Low,6,66,0
+Madhuban,High,6,63,0
+Shobhagpura,Low,7,79,1
+Shobhagpura,Medium,6,37,0
+Sector 14,Low,7,62,0
+Hiran Magri,Low,6,76,1
+Sector 14,Low,1,29,0
+Madhuban,Low,5,43,0
+Panchwati,Low,3,75,0
+Madhuban,High,3,39,0
+Hiran Magri,High,6,80,1
+Fatehpura,Low,4,23,0
+Shobhagpura,High,2,61,0
+Panchwati,Medium,1,44,0
+Hiran Magri,Low,4,32,0
+Sector 14,Medium,4,37,0
+Shobhagpura,Medium,6,78,1
+Madhuban,Low,1,43,0
+Sector 14,Medium,3,21,0
+Hiran Magri,Medium,2,67,0
+Hiran Magri,Medium,3,52,0
+Madhuban,Low,4,77,1
+Panchwati,Low,2,38,0
+Madhuban,Medium,5,28,0
+Fatehpura,Low,4,47,0
+Sector 14,Low,3,54,0
+Panchwati,Medium,3,76,1
+Shobhagpura,Low,6,58,0
+Fatehpura,High,3,48,0
+Panchwati,Low,1,20,0
+Sector 14,High,4,84,1
+Hiran Magri,Medium,7,40,0
+Shobhagpura,Low,7,28,0
+Madhuban,Medium,2,79,1
+Sector 14,Medium,3,66,0
+Fatehpura,Medium,6,34,0
+Fatehpura,Medium,6,54,0
+Hiran Magri,Medium,3,76,1
+Hiran Magri,Low,1,24,0
+Shobhagpura,High,6,75,0
+Madhuban,Low,7,77,1
+Shobhagpura,Low,2,41,0
+Hiran Magri,Low,4,60,0
+Hiran Magri,Low,5,42,0
+Fatehpura,High,1,49,0
+Hiran Magri,Low,6,75,0
+Panchwati,Medium,4,42,0
+Sector 14,Low,5,63,0
+Hiran Magri,Low,3,44,0
+Shobhagpura,High,3,67,0
+Madhuban,High,2,80,1
+Madhuban,Medium,5,25,0
+Madhuban,Low,3,74,0
+Panchwati,Low,3,53,0
+Shobhagpura,Low,7,28,0
+Panchwati,Medium,6,79,1
+Hiran Magri,High,2,97,1
+Sector 14,Medium,4,52,0
+Madhuban,Low,3,70,0
+Shobhagpura,High,7,100,1
+Madhuban,High,1,36,0
+Panchwati,Medium,1,56,0
+Fatehpura,High,4,79,1
+Hiran Magri,High,5,63,0
+Sector 14,Low,2,60,0
+Hiran Magri,Low,7,48,0
+Fatehpura,High,6,94,1
+Sector 14,High,7,56,0
+Fatehpura,Medium,1,55,0
+Hiran Magri,Medium,1,55,0
+Panchwati,High,4,90,1
+Hiran Magri,Low,5,34,0
+Hiran Magri,High,5,38,0
+Hiran Magri,High,4,59,0
+Shobhagpura,Low,7,55,0
+Fatehpura,Low,1,67,0
+Fatehpura,Medium,7,40,0
+Madhuban,Medium,7,47,0
+Fatehpura,Medium,2,23,0
+Madhuban,Medium,1,35,0
+Shobhagpura,Low,5,41,0
+Panchwati,High,6,48,0
+Madhuban,Medium,7,35,0
+Hiran Magri,Medium,1,70,0
+Panchwati,Low,7,59,0
+Shobhagpura,Low,2,57,0
+Fatehpura,High,3,86,1
+Madhuban,High,1,81,1
+Hiran Magri,Low,4,48,0
+Sector 14,Medium,3,37,0
+Sector 14,Medium,7,29,0
+Panchwati,Medium,4,61,0
+Fatehpura,High,4,80,1
+Sector 14,Medium,4,37,0
+Panchwati,Medium,1,20,0
+Shobhagpura,Low,5,58,0
+Panchwati,Medium,7,40,0
+Panchwati,Low,3,20,0
+Panchwati,Medium,2,34,0
+Hiran Magri,High,5,52,0
+Panchwati,Medium,7,79,1
+Madhuban,Medium,1,39,0
+Panchwati,Low,4,29,0
+Hiran Magri,Low,2,42,0
+Hiran Magri,Low,7,60,0
+Shobhagpura,Medium,3,53,0
+Fatehpura,Medium,7,79,1
+Sector 14,High,5,89,1
+Sector 14,Medium,6,67,0
+Panchwati,High,5,62,0
+Shobhagpura,Low,7,53,0
+Panchwati,Low,2,58,0
+Sector 14,Low,7,29,0
+Hiran Magri,High,7,85,1
+Fatehpura,Medium,1,39,0
+Shobhagpura,Low,3,20,0
+Hiran Magri,Medium,2,32,0
+Fatehpura,Medium,7,20,0
+Shobhagpura,Low,4,24,0
+Shobhagpura,High,3,50,0
+Sector 14,Medium,5,34,0
+Hiran Magri,Low,2,68,0
+Shobhagpura,Medium,5,47,0
+Madhuban,Medium,7,50,0
+Shobhagpura,Medium,5,42,0
+Fatehpura,Medium,5,67,0
+Sector 14,Medium,1,64,0
+Panchwati,High,5,85,1
+Sector 14,High,4,49,0
+Panchwati,Low,4,68,0
+Hiran Magri,High,3,80,1
+Hiran Magri,High,7,56,0
+Shobhagpura,High,6,51,0
+Madhuban,Medium,5,30,0
+Hiran Magri,Medium,5,47,0
+Shobhagpura,Low,2,61,0
+Sector 14,Low,1,51,0
+Hiran Magri,Low,6,54,0
+Sector 14,Medium,3,78,1
+Sector 14,High,6,77,1
+Madhuban,High,5,48,0
+Hiran Magri,Medium,2,66,0
+Sector 14,Low,7,28,0
+Madhuban,Low,1,29,0
+Madhuban,Low,7,27,0
+Hiran Magri,Medium,3,40,0
+Madhuban,Low,6,32,0
+Hiran Magri,Low,3,78,1
+Hiran Magri,Medium,5,69,0
+Panchwati,High,3,43,0
+Sector 14,Medium,7,25,0
+Fatehpura,Medium,2,49,0
+Hiran Magri,Medium,3,50,0
+Sector 14,Medium,4,36,0
+Madhuban,High,2,56,0
+Shobhagpura,Low,6,39,0
+Hiran Magri,Medium,1,67,0
+Madhuban,High,1,44,0
+Madhuban,Low,5,21,0
+Madhuban,Low,5,56,0
+Madhuban,Low,4,20,0
+Madhuban,Medium,6,23,0
+Hiran Magri,Medium,7,55,0
+Fatehpura,Low,1,73,0
+Panchwati,Low,1,77,1
+Madhuban,Low,1,44,0
+Madhuban,Low,7,22,0
+Panchwati,Low,1,28,0
+Hiran Magri,Low,3,41,0
+Sector 14,High,6,66,0
+Shobhagpura,Low,2,31,0
+Shobhagpura,Medium,2,29,0
+Sector 14,Medium,4,53,0
+Hiran Magri,Medium,3,62,0
+Shobhagpura,Low,1,29,0
+Panchwati,Medium,1,49,0
+Sector 14,High,5,51,0
+Fatehpura,Low,5,25,0
+Hiran Magri,Medium,4,69,0
+Sector 14,High,1,41,0
+Shobhagpura,High,4,75,0
+Hiran Magri,Medium,3,21,0
+Panchwati,High,2,65,0
+Hiran Magri,Medium,1,61,0
+Hiran Magri,High,6,51,0
+Panchwati,Low,7,31,0
+Madhuban,Low,3,20,0
+Panchwati,Low,1,72,0
+Hiran Magri,Low,7,27,0
+Panchwati,Low,6,67,0
+Madhuban,Medium,5,69,0
+Sector 14,Low,4,32,0
+Panchwati,Low,5,34,0
+Panchwati,Low,2,72,0
+Hiran Magri,Low,5,63,0
+Sector 14,High,1,55,0
+Fatehpura,Low,6,29,0
+Fatehpura,Low,5,65,0
+Shobhagpura,Medium,1,24,0
+Panchwati,High,2,93,1
+Panchwati,Medium,7,38,0
+Sector 14,Low,6,66,0
+Madhuban,Medium,5,57,0
+Fatehpura,Medium,4,78,1
+Shobhagpura,Low,4,30,0
+Sector 14,High,6,84,1
+Panchwati,High,4,86,1
+Fatehpura,Medium,5,39,0
+Shobhagpura,Low,5,39,0
+Hiran Magri,Medium,6,40,0
+Fatehpura,Medium,5,37,0
+Shobhagpura,Medium,7,76,1
+Sector 14,Low,1,69,0
+Hiran Magri,Low,2,29,0
+Shobhagpura,High,7,67,0
+Shobhagpura,Low,7,45,0
+Panchwati,Medium,4,49,0
+Madhuban,Medium,1,28,0
+Fatehpura,High,6,86,1
+Panchwati,Low,4,70,0
+Hiran Magri,Medium,1,50,0
+Madhuban,High,5,90,1
+Shobhagpura,High,6,88,1
+Panchwati,Medium,6,23,0
+Madhuban,Medium,4,25,0
+Fatehpura,Low,5,33,0
+Hiran Magri,High,4,35,0
+Sector 14,Medium,3,45,0
+Panchwati,High,1,84,1
+Hiran Magri,Low,3,67,0
+Sector 14,Medium,1,58,0
+Panchwati,Low,2,36,0
+Hiran Magri,High,7,56,0
+Hiran Magri,Low,6,70,0
+Madhuban,Low,4,68,0
+Panchwati,High,2,41,0
+Hiran Magri,Low,2,48,0
+Shobhagpura,High,6,41,0
+Panchwati,Medium,6,35,0
+Hiran Magri,High,1,74,0
+Madhuban,High,3,62,0
+Sector 14,Medium,5,59,0
+Sector 14,High,1,52,0
+Shobhagpura,Medium,5,26,0
+Panchwati,Medium,2,45,0
+Madhuban,High,5,100,1
+Hiran Magri,Low,3,41,0
+Hiran Magri,Low,1,44,0
+Sector 14,Medium,6,38,0
+Madhuban,Low,3,50,0
+Shobhagpura,Low,7,45,0
+Sector 14,High,3,90,1
+Sector 14,Medium,7,60,0
+Shobhagpura,Medium,1,55,0
+Panchwati,High,6,68,0
+Hiran Magri,Low,3,66,0
+Panchwati,Medium,7,32,0
+Madhuban,Low,6,44,0
+Fatehpura,Medium,4,21,0
+Fatehpura,Medium,4,21,0
+Fatehpura,Medium,4,35,0
+Shobhagpura,Medium,5,28,0
+Sector 14,Low,3,47,0
+Panchwati,Low,1,32,0
+Hiran Magri,Low,1,54,0
+Fatehpura,Low,5,60,0
+Panchwati,High,1,47,0
+Fatehpura,Medium,7,50,0
+Fatehpura,Medium,4,40,0
+Hiran Magri,Medium,3,51,0
+Madhuban,High,1,86,1
+Madhuban,Low,1,53,0
+Madhuban,Medium,2,27,0
+Shobhagpura,Low,2,78,1
+Sector 14,Low,2,60,0
+Shobhagpura,High,3,77,1
+Panchwati,High,4,48,0
+Shobhagpura,Low,6,57,0
+Panchwati,Medium,4,51,0
+Panchwati,Medium,4,73,0
+Sector 14,High,3,87,1
+Hiran Magri,High,7,95,1
+Sector 14,High,7,69,0
+Madhuban,High,3,73,0
+Madhuban,High,2,82,1
+Shobhagpura,High,1,44,0
+Panchwati,High,5,80,1
+Fatehpura,Medium,5,29,0
+Fatehpura,High,6,95,1
+Panchwati,High,1,46,0
+Sector 14,Medium,6,54,0
+Hiran Magri,Medium,2,29,0
+Sector 14,Low,6,66,0
+Panchwati,High,1,43,0
+Panchwati,High,1,43,0
+Hiran Magri,High,5,70,0
+Shobhagpura,High,7,59,0
+Shobhagpura,Low,2,64,0
+Hiran Magri,Medium,3,36,0
+Shobhagpura,Medium,6,35,0
+Fatehpura,High,5,72,0
+Shobhagpura,High,6,40,0
+Shobhagpura,High,6,43,0
+Shobhagpura,Low,3,60,0
+Fatehpura,Low,2,22,0
+Shobhagpura,Medium,1,48,0
+Madhuban,High,4,66,0
+Fatehpura,High,6,57,0
+Hiran Magri,High,4,88,1
+Sector 14,High,2,54,0
+Hiran Magri,Low,4,53,0
+Sector 14,Medium,6,68,0
+Hiran Magri,Medium,3,73,0
+Madhuban,Low,4,50,0
+Sector 14,High,2,97,1
+Sector 14,Medium,2,59,0
+Panchwati,Medium,7,61,0
+Sector 14,Low,7,77,1
+Sector 14,High,3,58,0
+Panchwati,Medium,4,49,0
+Shobhagpura,High,4,71,0
+Shobhagpura,Medium,7,38,0
+Panchwati,Low,1,27,0
+Fatehpura,High,5,68,0
+Sector 14,Low,2,27,0
+Sector 14,Medium,1,50,0
+Panchwati,Low,2,22,0
+Panchwati,Low,1,22,0
+Fatehpura,Low,7,63,0
+Madhuban,Medium,7,41,0
+Shobhagpura,High,5,61,0
+Hiran Magri,Low,1,55,0
+Madhuban,High,2,50,0
+Shobhagpura,Medium,4,33,0
+Sector 14,High,2,99,1
+Madhuban,Low,6,28,0
+Panchwati,Low,7,49,0
+Fatehpura,Low,3,40,0
+Shobhagpura,Low,3,31,0
+Fatehpura,Low,7,56,0
+Shobhagpura,Low,6,51,0
+Madhuban,Medium,3,30,0
+Sector 14,Medium,7,39,0
+Hiran Magri,Medium,3,54,0
+Fatehpura,High,7,93,1
+Fatehpura,High,5,86,1
+Hiran Magri,Medium,4,65,0
+Fatehpura,High,4,48,0
+Fatehpura,High,2,98,1
+Shobhagpura,Low,6,27,0
+Shobhagpura,Low,7,23,0
+Hiran Magri,High,1,58,0
+Sector 14,High,2,92,1
+Madhuban,Medium,2,59,0
+Madhuban,High,7,83,1
+Fatehpura,Low,7,66,0
+Sector 14,High,2,72,0
+Hiran Magri,Medium,2,63,0
+Hiran Magri,Low,4,67,0
+Shobhagpura,Low,1,67,0
+Fatehpura,Low,2,46,0
+Panchwati,Low,4,40,0
+Hiran Magri,High,2,81,1
+Fatehpura,Medium,3,39,0
+Sector 14,High,2,100,1
+Shobhagpura,High,7,40,0
+Madhuban,Low,6,30,0
+Sector 14,Medium,6,32,0
+Hiran Magri,Low,2,28,0
+Hiran Magri,High,5,37,0
+Sector 14,High,3,45,0
+Hiran Magri,Low,1,28,0
+Fatehpura,High,2,50,0
+Hiran Magri,High,1,79,1
+Shobhagpura,Low,3,45,0
+Fatehpura,High,2,85,1
+Panchwati,Medium,5,61,0
+Hiran Magri,Low,4,32,0
+Hiran Magri,Medium,5,58,0
+Shobhagpura,High,7,65,0
+Shobhagpura,High,5,100,1
+Madhuban,Low,4,38,0
+Sector 14,High,7,68,0
+Sector 14,Low,4,38,0
+Sector 14,Low,6,68,0
+Shobhagpura,Low,4,32,0
+Sector 14,Low,2,32,0
+Sector 14,Low,1,77,1
+Panchwati,Medium,6,47,0
+Sector 14,Low,6,72,0
+Hiran Magri,Medium,1,21,0
+Madhuban,High,6,39,0

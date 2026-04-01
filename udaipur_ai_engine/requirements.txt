@@ -1,0 +1,6 @@
+
+langgraph
+pandas
+joblib
+requests
+langchain-groq

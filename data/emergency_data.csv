@@ -1,0 +1,301 @@
+zone,hour,day_of_week,weather,road_condition,incident_count,risk_score,high_risk
+City Station Zone,4,2,Clear,Fair,4,2.9,0
+Hiran Magri Zone,1,5,Cloudy,Fair,2,1.4,0
+City Station Zone,18,3,Clear,Fair,3,2.1,0
+Bhupalpura Zone,23,1,Cloudy,Poor,4,2.9,0
+Bhupalpura Zone,19,5,Cloudy,Poor,5,3.6,0
+Airport Zone,1,3,Cloudy,Good,3,2.1,0
+Bhupalpura Zone,1,0,Clear,Fair,6,4.3,0
+Bhupalpura Zone,21,0,Cloudy,Good,2,1.4,0
+Bhupalpura Zone,23,1,Sunny,Poor,7,5.0,0
+Hiran Magri Zone,22,3,Cloudy,Good,6,4.3,0
+Airport Zone,19,0,Clear,Poor,3,2.1,0
+Delhi Gate Zone,17,6,Clear,Fair,2,1.4,0
+Airport Zone,19,5,Sunny,Good,0,0.0,0
+Airport Zone,20,4,Rainy,Good,6,4.3,0
+Airport Zone,13,3,Sunny,Good,0,0.0,0
+City Station Zone,14,1,Sunny,Good,3,2.1,0
+Delhi Gate Zone,11,3,Clear,Fair,1,0.7,0
+City Station Zone,10,2,Cloudy,Poor,5,3.6,0
+Hiran Magri Zone,10,2,Cloudy,Poor,2,1.4,0
+Hiran Magri Zone,6,0,Rainy,Fair,7,5.0,0
+Sukhadia Circle Zone,11,2,Rainy,Poor,9,6.4,1
+Sukhadia Circle Zone,15,1,Rainy,Good,3,2.1,0
+Hiran Magri Zone,4,0,Rainy,Fair,4,2.9,0
+Hiran Magri Zone,1,1,Sunny,Poor,7,5.0,0
+City Station Zone,21,5,Sunny,Fair,0,0.0,0
+Hiran Magri Zone,15,1,Cloudy,Fair,3,2.1,0
+Delhi Gate Zone,22,2,Sunny,Poor,10,7.1,1
+City Station Zone,14,5,Cloudy,Poor,3,2.1,0
+Hiran Magri Zone,10,2,Cloudy,Fair,1,0.7,0
+City Station Zone,5,1,Cloudy,Fair,1,0.7,0
+City Station Zone,12,2,Cloudy,Poor,5,3.6,0
+Bhupalpura Zone,18,2,Clear,Fair,0,0.0,0
+Sukhadia Circle Zone,9,2,Cloudy,Poor,6,4.3,0
+City Station Zone,23,3,Sunny,Fair,4,2.9,0
+Airport Zone,18,5,Sunny,Fair,0,0.0,0
+City Station Zone,4,5,Sunny,Fair,3,2.1,0
+Airport Zone,20,6,Sunny,Poor,3,2.1,0
+Bhupalpura Zone,6,5,Clear,Good,1,0.7,0
+Hiran Magri Zone,10,6,Rainy,Poor,10,7.1,1
+City Station Zone,13,1,Rainy,Fair,3,2.1,0
+Bhupalpura Zone,22,6,Cloudy,Good,4,2.9,0
+Delhi Gate Zone,20,6,Cloudy,Good,4,2.9,0
+Bhupalpura Zone,15,4,Sunny,Fair,1,0.7,0
+Sukhadia Circle Zone,17,1,Sunny,Poor,4,2.9,0
+Sukhadia Circle Zone,20,5,Rainy,Good,7,5.0,0
+Hiran Magri Zone,22,0,Rainy,Good,7,5.0,0
+Airport Zone,22,2,Sunny,Poor,8,5.7,0
+Hiran Magri Zone,3,2,Cloudy,Poor,6,4.3,0
+Airport Zone,0,4,Clear,Good,4,2.9,0
+Airport Zone,21,0,Clear,Poor,2,1.4,0
+Airport Zone,14,3,Rainy,Good,6,4.3,0
+Airport Zone,13,6,Rainy,Fair,6,4.3,0
+Sukhadia Circle Zone,18,1,Rainy,Poor,11,7.9,1
+Sukhadia Circle Zone,4,3,Clear,Good,1,0.7,0
+City Station Zone,3,0,Clear,Poor,6,4.3,0
+Sukhadia Circle Zone,12,4,Sunny,Poor,2,1.4,0
+Hiran Magri Zone,17,0,Cloudy,Good,0,0.0,0
+Sukhadia Circle Zone,11,4,Rainy,Fair,8,5.7,0
+Hiran Magri Zone,22,3,Sunny,Good,3,2.1,0
+Delhi Gate Zone,20,3,Clear,Poor,2,1.4,0
+Sukhadia Circle Zone,14,0,Sunny,Good,1,0.7,0
+Hiran Magri Zone,22,0,Clear,Poor,9,6.4,1
+Airport Zone,8,6,Cloudy,Good,2,1.4,0
+Bhupalpura Zone,3,2,Clear,Fair,7,5.0,0
+Airport Zone,4,4,Sunny,Fair,0,0.0,0
+City Station Zone,8,2,Cloudy,Fair,2,1.4,0
+Hiran Magri Zone,12,1,Clear,Fair,3,2.1,0
+Airport Zone,9,1,Rainy,Good,5,3.6,0
+Sukhadia Circle Zone,15,0,Clear,Fair,1,0.7,0
+Sukhadia Circle Zone,12,3,Cloudy,Good,3,2.1,0
+Delhi Gate Zone,3,1,Sunny,Poor,7,5.0,0
+Bhupalpura Zone,20,1,Cloudy,Poor,5,3.6,0
+Hiran Magri Zone,12,2,Sunny,Poor,5,3.6,0
+Airport Zone,20,2,Clear,Fair,0,0.0,0
+Bhupalpura Zone,7,6,Clear,Fair,2,1.4,0
+Delhi Gate Zone,12,6,Cloudy,Fair,2,1.4,0
+City Station Zone,14,1,Rainy,Poor,6,4.3,0
+Bhupalpura Zone,19,0,Clear,Poor,4,2.9,0
+Delhi Gate Zone,19,2,Rainy,Poor,11,7.9,1
+Hiran Magri Zone,12,1,Rainy,Poor,8,5.7,0
+City Station Zone,22,3,Cloudy,Good,3,2.1,0
+Sukhadia Circle Zone,4,2,Clear,Good,2,1.4,0
+Delhi Gate Zone,21,1,Rainy,Fair,5,3.6,0
+Sukhadia Circle Zone,21,6,Clear,Fair,4,2.9,0
+City Station Zone,5,4,Sunny,Poor,5,3.6,0
+Delhi Gate Zone,4,2,Rainy,Good,6,4.3,0
+Delhi Gate Zone,12,4,Cloudy,Good,3,2.1,0
+City Station Zone,4,2,Cloudy,Fair,1,0.7,0
+Hiran Magri Zone,12,2,Rainy,Good,6,4.3,0
+Delhi Gate Zone,23,6,Clear,Fair,4,2.9,0
+City Station Zone,19,5,Sunny,Poor,5,3.6,0
+Bhupalpura Zone,22,5,Sunny,Poor,7,5.0,0
+Sukhadia Circle Zone,7,4,Cloudy,Fair,1,0.7,0
+Delhi Gate Zone,8,0,Cloudy,Poor,2,1.4,0
+Bhupalpura Zone,20,1,Clear,Poor,7,5.0,0
+Delhi Gate Zone,18,0,Cloudy,Good,3,2.1,0
+Hiran Magri Zone,19,0,Clear,Good,4,2.9,0
+City Station Zone,14,5,Rainy,Good,8,5.7,0
+Delhi Gate Zone,21,1,Sunny,Good,2,1.4,0
+City Station Zone,9,5,Rainy,Good,6,4.3,0
+Airport Zone,10,5,Cloudy,Fair,4,2.9,0
+Delhi Gate Zone,4,6,Sunny,Fair,0,0.0,0
+Hiran Magri Zone,8,5,Sunny,Good,1,0.7,0
+Hiran Magri Zone,10,3,Rainy,Poor,10,7.1,1
+Bhupalpura Zone,18,0,Clear,Poor,7,5.0,0
+Hiran Magri Zone,1,6,Sunny,Fair,4,2.9,0
+City Station Zone,5,6,Clear,Fair,4,2.9,0
+Airport Zone,22,0,Rainy,Fair,8,5.7,0
+Hiran Magri Zone,20,6,Rainy,Poor,7,5.0,0
+Delhi Gate Zone,0,0,Clear,Fair,2,1.4,0
+Hiran Magri Zone,2,3,Rainy,Poor,7,5.0,0
+Airport Zone,2,2,Sunny,Fair,2,1.4,0
+City Station Zone,13,6,Rainy,Poor,11,7.9,1
+Delhi Gate Zone,19,4,Rainy,Fair,7,5.0,0
+Bhupalpura Zone,21,4,Sunny,Fair,1,0.7,0
+Bhupalpura Zone,4,3,Clear,Poor,4,2.9,0
+Bhupalpura Zone,16,0,Rainy,Fair,5,3.6,0
+Delhi Gate Zone,14,4,Clear,Good,4,2.9,0
+Bhupalpura Zone,5,3,Sunny,Poor,2,1.4,0
+Hiran Magri Zone,13,5,Clear,Fair,1,0.7,0
+Delhi Gate Zone,13,1,Clear,Poor,8,5.7,0
+Delhi Gate Zone,16,4,Cloudy,Fair,1,0.7,0
+Delhi Gate Zone,7,1,Cloudy,Good,0,0.0,0
+Sukhadia Circle Zone,7,0,Rainy,Fair,5,3.6,0
+City Station Zone,18,4,Cloudy,Fair,0,0.0,0
+Sukhadia Circle Zone,8,3,Cloudy,Good,4,2.9,0
+Sukhadia Circle Zone,10,2,Cloudy,Poor,6,4.3,0
+Sukhadia Circle Zone,12,4,Clear,Fair,3,2.1,0
+City Station Zone,12,4,Clear,Fair,1,0.7,0
+Sukhadia Circle Zone,23,4,Cloudy,Good,6,4.3,0
+Bhupalpura Zone,18,4,Sunny,Poor,3,2.1,0
+Delhi Gate Zone,20,3,Cloudy,Poor,5,3.6,0
+Delhi Gate Zone,18,3,Sunny,Good,4,2.9,0
+Hiran Magri Zone,4,2,Clear,Good,4,2.9,0
+Airport Zone,15,3,Sunny,Fair,3,2.1,0
+Bhupalpura Zone,8,3,Clear,Good,4,2.9,0
+City Station Zone,19,0,Sunny,Good,4,2.9,0
+Airport Zone,21,6,Clear,Good,3,2.1,0
+Delhi Gate Zone,2,0,Clear,Poor,7,5.0,0
+Sukhadia Circle Zone,18,6,Cloudy,Good,1,0.7,0
+Hiran Magri Zone,4,1,Rainy,Fair,6,4.3,0
+Hiran Magri Zone,7,2,Rainy,Fair,7,5.0,0
+Delhi Gate Zone,13,6,Clear,Fair,0,0.0,0
+Bhupalpura Zone,23,0,Cloudy,Good,3,2.1,0
+Airport Zone,2,2,Rainy,Poor,14,10.0,1
+Hiran Magri Zone,23,2,Rainy,Good,6,4.3,0
+Delhi Gate Zone,12,4,Cloudy,Good,0,0.0,0
+Bhupalpura Zone,10,5,Cloudy,Fair,1,0.7,0
+Delhi Gate Zone,7,5,Rainy,Good,5,3.6,0
+Delhi Gate Zone,18,5,Rainy,Poor,8,5.7,0
+Bhupalpura Zone,9,2,Sunny,Fair,0,0.0,0
+Bhupalpura Zone,17,4,Sunny,Poor,4,2.9,0
+Bhupalpura Zone,17,1,Clear,Poor,8,5.7,0
+Delhi Gate Zone,6,1,Rainy,Poor,8,5.7,0
+Hiran Magri Zone,15,5,Cloudy,Good,3,2.1,0
+City Station Zone,5,1,Cloudy,Good,1,0.7,0
+City Station Zone,15,4,Rainy,Good,6,4.3,0
+Delhi Gate Zone,15,5,Clear,Good,2,1.4,0
+Delhi Gate Zone,22,6,Cloudy,Fair,4,2.9,0
+Hiran Magri Zone,23,6,Rainy,Good,9,6.4,1
+Bhupalpura Zone,0,4,Rainy,Fair,8,5.7,0
+Delhi Gate Zone,23,1,Clear,Poor,6,4.3,0
+Sukhadia Circle Zone,18,5,Rainy,Fair,10,7.1,1
+Bhupalpura Zone,2,6,Cloudy,Good,4,2.9,0
+Delhi Gate Zone,5,4,Sunny,Fair,1,0.7,0
+Sukhadia Circle Zone,3,3,Clear,Good,3,2.1,0
+Airport Zone,3,6,Rainy,Good,5,3.6,0
+Hiran Magri Zone,3,3,Clear,Fair,7,5.0,0
+Sukhadia Circle Zone,9,4,Rainy,Fair,7,5.0,0
+Delhi Gate Zone,8,4,Sunny,Poor,3,2.1,0
+City Station Zone,7,0,Clear,Poor,8,5.7,0
+Delhi Gate Zone,18,6,Rainy,Poor,9,6.4,1
+City Station Zone,16,0,Sunny,Poor,1,0.7,0
+Hiran Magri Zone,16,2,Cloudy,Poor,2,1.4,0
+Hiran Magri Zone,0,6,Rainy,Fair,12,8.6,1
+Bhupalpura Zone,19,5,Sunny,Poor,4,2.9,0
+Bhupalpura Zone,13,2,Sunny,Fair,2,1.4,0
+City Station Zone,21,2,Clear,Poor,4,2.9,0
+City Station Zone,19,1,Rainy,Good,5,3.6,0
+Hiran Magri Zone,10,3,Cloudy,Poor,3,2.1,0
+Sukhadia Circle Zone,2,1,Rainy,Good,8,5.7,0
+City Station Zone,23,5,Sunny,Fair,4,2.9,0
+City Station Zone,7,4,Cloudy,Poor,4,2.9,0
+Sukhadia Circle Zone,21,0,Sunny,Fair,4,2.9,0
+Bhupalpura Zone,9,5,Clear,Poor,6,4.3,0
+Bhupalpura Zone,16,4,Rainy,Fair,4,2.9,0
+City Station Zone,7,5,Sunny,Poor,3,2.1,0
+Bhupalpura Zone,21,4,Sunny,Poor,7,5.0,0
+Bhupalpura Zone,0,6,Rainy,Good,9,6.4,1
+Airport Zone,19,0,Cloudy,Fair,1,0.7,0
+Bhupalpura Zone,20,4,Sunny,Fair,4,2.9,0
+Hiran Magri Zone,6,2,Rainy,Fair,6,4.3,0
+Delhi Gate Zone,23,5,Clear,Fair,5,3.6,0
+City Station Zone,8,0,Clear,Fair,4,2.9,0
+City Station Zone,11,4,Rainy,Good,9,6.4,1
+Hiran Magri Zone,21,2,Sunny,Poor,4,2.9,0
+Delhi Gate Zone,8,2,Rainy,Good,5,3.6,0
+Delhi Gate Zone,19,6,Rainy,Fair,5,3.6,0
+Hiran Magri Zone,23,3,Sunny,Fair,7,5.0,0
+Sukhadia Circle Zone,2,2,Cloudy,Poor,6,4.3,0
+Sukhadia Circle Zone,3,1,Cloudy,Good,4,2.9,0
+Delhi Gate Zone,9,0,Clear,Poor,5,3.6,0
+Sukhadia Circle Zone,3,0,Cloudy,Poor,5,3.6,0
+Sukhadia Circle Zone,21,0,Rainy,Good,4,2.9,0
+Sukhadia Circle Zone,8,4,Sunny,Poor,5,3.6,0
+Delhi Gate Zone,21,5,Clear,Good,4,2.9,0
+Sukhadia Circle Zone,0,4,Cloudy,Good,6,4.3,0
+City Station Zone,4,1,Rainy,Fair,3,2.1,0
+Airport Zone,8,5,Clear,Poor,2,1.4,0
+Delhi Gate Zone,4,6,Sunny,Fair,3,2.1,0
+Hiran Magri Zone,5,2,Cloudy,Poor,7,5.0,0
+Sukhadia Circle Zone,18,4,Rainy,Poor,11,7.9,1
+Bhupalpura Zone,7,5,Sunny,Fair,4,2.9,0
+Delhi Gate Zone,9,2,Rainy,Fair,7,5.0,0
+Hiran Magri Zone,10,5,Rainy,Fair,6,4.3,0
+Airport Zone,12,2,Rainy,Good,9,6.4,1
+City Station Zone,19,5,Sunny,Poor,5,3.6,0
+Hiran Magri Zone,3,4,Clear,Good,5,3.6,0
+Sukhadia Circle Zone,10,4,Rainy,Poor,9,6.4,1
+Bhupalpura Zone,11,1,Clear,Poor,2,1.4,0
+Sukhadia Circle Zone,4,6,Clear,Good,1,0.7,0
+Hiran Magri Zone,9,6,Cloudy,Good,0,0.0,0
+Delhi Gate Zone,23,3,Cloudy,Poor,4,2.9,0
+Bhupalpura Zone,6,0,Clear,Fair,0,0.0,0
+Bhupalpura Zone,20,4,Cloudy,Fair,0,0.0,0
+Hiran Magri Zone,8,4,Cloudy,Fair,1,0.7,0
+Airport Zone,8,2,Clear,Fair,4,2.9,0
+Airport Zone,9,3,Sunny,Poor,5,3.6,0
+Sukhadia Circle Zone,9,6,Cloudy,Fair,4,2.9,0
+Hiran Magri Zone,1,4,Cloudy,Fair,2,1.4,0
+Bhupalpura Zone,3,5,Sunny,Fair,3,2.1,0
+Hiran Magri Zone,7,6,Sunny,Poor,3,2.1,0
+Bhupalpura Zone,13,3,Sunny,Good,1,0.7,0
+Sukhadia Circle Zone,16,0,Clear,Fair,1,0.7,0
+Delhi Gate Zone,12,5,Sunny,Poor,3,2.1,0
+Delhi Gate Zone,20,2,Clear,Poor,4,2.9,0
+Hiran Magri Zone,23,1,Rainy,Fair,5,3.6,0
+Bhupalpura Zone,17,5,Rainy,Good,5,3.6,0
+Delhi Gate Zone,17,6,Sunny,Good,4,2.9,0
+Bhupalpura Zone,12,0,Sunny,Good,3,2.1,0
+Sukhadia Circle Zone,7,5,Rainy,Poor,9,6.4,1
+Hiran Magri Zone,11,3,Clear,Fair,1,0.7,0
+Bhupalpura Zone,22,3,Clear,Fair,4,2.9,0
+Hiran Magri Zone,23,0,Sunny,Poor,8,5.7,0
+Bhupalpura Zone,20,6,Sunny,Fair,1,0.7,0
+Airport Zone,0,3,Sunny,Fair,3,2.1,0
+Airport Zone,19,5,Rainy,Good,4,2.9,0
+Bhupalpura Zone,17,1,Cloudy,Fair,3,2.1,0
+Sukhadia Circle Zone,2,5,Sunny,Fair,5,3.6,0
+Hiran Magri Zone,11,1,Clear,Poor,6,4.3,0
+City Station Zone,18,3,Cloudy,Poor,3,2.1,0
+Bhupalpura Zone,12,5,Clear,Good,0,0.0,0
+Bhupalpura Zone,9,3,Cloudy,Poor,3,2.1,0
+Airport Zone,14,6,Rainy,Good,3,2.1,0
+Delhi Gate Zone,19,1,Cloudy,Good,1,0.7,0
+Airport Zone,1,6,Clear,Fair,1,0.7,0
+Hiran Magri Zone,18,3,Cloudy,Good,1,0.7,0
+Airport Zone,2,4,Rainy,Fair,10,7.1,1
+City Station Zone,13,2,Clear,Good,3,2.1,0
+Sukhadia Circle Zone,6,5,Sunny,Poor,6,4.3,0
+City Station Zone,7,4,Cloudy,Poor,5,3.6,0
+Sukhadia Circle Zone,10,6,Clear,Poor,2,1.4,0
+City Station Zone,21,3,Cloudy,Good,1,0.7,0
+Airport Zone,19,3,Rainy,Good,5,3.6,0
+City Station Zone,5,2,Clear,Fair,0,0.0,0
+Airport Zone,10,3,Sunny,Fair,1,0.7,0
+Airport Zone,16,2,Sunny,Fair,0,0.0,0
+Hiran Magri Zone,9,5,Cloudy,Fair,3,2.1,0
+Airport Zone,23,1,Rainy,Good,10,7.1,1
+Delhi Gate Zone,16,2,Rainy,Good,4,2.9,0
+City Station Zone,20,2,Cloudy,Fair,3,2.1,0
+Bhupalpura Zone,1,4,Clear,Good,7,5.0,0
+Bhupalpura Zone,5,3,Clear,Good,1,0.7,0
+Bhupalpura Zone,4,5,Cloudy,Good,3,2.1,0
+Delhi Gate Zone,3,1,Clear,Good,6,4.3,0
+Airport Zone,1,0,Clear,Fair,3,2.1,0
+City Station Zone,11,6,Clear,Fair,0,0.0,0
+Sukhadia Circle Zone,2,2,Cloudy,Good,6,4.3,0
+Sukhadia Circle Zone,5,0,Sunny,Poor,5,3.6,0
+Hiran Magri Zone,23,3,Rainy,Fair,7,5.0,0
+Delhi Gate Zone,13,6,Sunny,Fair,0,0.0,0
+City Station Zone,7,2,Clear,Poor,6,4.3,0
+Airport Zone,20,0,Cloudy,Fair,2,1.4,0
+Bhupalpura Zone,20,4,Rainy,Poor,6,4.3,0
+Delhi Gate Zone,13,0,Clear,Poor,8,5.7,0
+Delhi Gate Zone,2,6,Rainy,Good,10,7.1,1
+City Station Zone,15,4,Rainy,Fair,3,2.1,0
+Airport Zone,14,6,Sunny,Poor,4,2.9,0
+Hiran Magri Zone,6,1,Clear,Good,4,2.9,0
+Airport Zone,14,3,Rainy,Fair,6,4.3,0
+Hiran Magri Zone,12,5,Sunny,Good,3,2.1,0
+Hiran Magri Zone,5,0,Cloudy,Good,4,2.9,0
+Bhupalpura Zone,14,2,Rainy,Poor,10,7.1,1
+Bhupalpura Zone,16,6,Clear,Fair,2,1.4,0
+City Station Zone,3,6,Cloudy,Good,6,4.3,0
+Airport Zone,21,3,Rainy,Poor,5,3.6,0
+Hiran Magri Zone,21,0,Rainy,Poor,8,5.7,0
+City Station Zone,13,2,Clear,Good,1,0.7,0
+Hiran Magri Zone,14,2,Rainy,Good,6,4.3,0
+Delhi Gate Zone,11,6,Clear,Poor,3,2.1,0
