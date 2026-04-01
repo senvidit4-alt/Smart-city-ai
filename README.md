@@ -33,10 +33,14 @@ The system is built on a modern **Agentic AI Architecture**:
 git clone [https://github.com/senvidit4-alt/SmartCity-Agent.git](https://github.com/senvidit4-alt/SmartCity-Agent.git)
 cd SmartCity-Agent
 
+----
+
 2. Install dependencies:
 
 Bash
 pip install -r udaipur_ai_engine/requirements.txt
+
+----
 
 3. Environment Variables:
 Create a .env file in the root directory with your API keys:
@@ -46,6 +50,8 @@ GROQ_API_KEY=your_groq_api_key
 OPENWEATHER_API_KEY=your_openweather_api_key
 OPENAI_API_KEY=your_openai_api_key
 GOOGLE_API_KEY=your_google_api_key
+
+----
 
 
 4. Run the application:
