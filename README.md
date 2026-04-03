@@ -1,6 +1,6 @@
-# SmartCity Agent
+# 🤖 SmartCity Agent (Udaipur Smart City Copilot)
 
-A smart city management system using AI agents for traffic, waste, and emergency management in Udaipur.
+A smart city management system using AI agents for traffic, waste, and emergency management in Udaipur. 
 
 ## How It Works
 
@@ -53,24 +53,28 @@ This project combines machine learning, AI agents, and real-time data to create 
    ```
 
 2. Install dependencies:
-   ```
-   pip install -r udaipur_ai_engine/requirements.txt
-   ```
 
-3. Create a `.env` file in the root directory with your API keys:
-   ```
-   GROQ_API_KEY=your_groq_api_key
-   OPENWEATHER_API_KEY=your_openweather_api_key
-   OPENAI_API_KEY=your_openai_api_key
-   GOOGLE_API_KEY=your_google_api_key
-   ```
+Bash
+pip install -r udaipur_ai_engine/requirements.txt
+
+----
+
+3. Environment Variables:
+Create a .env file in the root directory with your API keys:
+
+Code snippet
+GROQ_API_KEY=your_groq_api_key
+OPENWEATHER_API_KEY=your_openweather_api_key
+OPENAI_API_KEY=your_openai_api_key
+GOOGLE_API_KEY=your_google_api_key
+
+----
+
 
 4. Run the application:
-   ```
-   python udaipur_ai_engine/app.py
-   ```
 
-## Features
+Bash
+streamlit run udaipur_ai_engine/app.py
 
 - Traffic prediction and management
 - Waste collection optimization
