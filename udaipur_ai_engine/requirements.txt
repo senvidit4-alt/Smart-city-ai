@@ -1,7 +1,13 @@
-
 langgraph
 pandas
 joblib
 requests
 langchain-groq
+langchain-google-genai
 python-dotenv
+streamlit
+folium
+streamlit-folium
+scikit-learn
+fastapi
+uvicorn[standard]

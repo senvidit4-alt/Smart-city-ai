@@ -1,0 +1,19 @@
+area,staff_type,count,on_duty
+Sector 14,Traffic Controller,7,2
+Sector 14,Waste Collector,12,2
+Sector 14,Water Technician,11,2
+Hiran Magri,Traffic Controller,12,2
+Hiran Magri,Waste Collector,10,4
+Hiran Magri,Water Technician,8,4
+Panchwati,Traffic Controller,13,2
+Panchwati,Waste Collector,6,3
+Panchwati,Water Technician,11,3
+Fatehpura,Traffic Controller,8,3
+Fatehpura,Waste Collector,12,2
+Fatehpura,Water Technician,11,2
+Shobhagpura,Traffic Controller,12,3
+Shobhagpura,Waste Collector,10,2
+Shobhagpura,Water Technician,5,4
+Madhuban,Traffic Controller,14,4
+Madhuban,Waste Collector,14,2
+Madhuban,Water Technician,14,2
