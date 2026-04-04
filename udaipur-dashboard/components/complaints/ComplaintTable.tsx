@@ -9,7 +9,7 @@ import type { Complaint, Severity } from "@/types";
 import { useAppStore } from "@/store/useAppStore";
 
 interface ComplaintTableProps {
-  complaints: Complaint[];
+  complaints: (Complaint & { isNew?: boolean })[];
   isLoading: boolean;
 }
 
@@ -79,7 +79,12 @@ export function ComplaintTable({ complaints, isLoading }: ComplaintTableProps) {
               <tr
                 key={c.id}
                 onClick={() => setSelected(c)}
-                className="border-b border-civic-border/40 hover:bg-white/3 cursor-pointer transition-colors"
+                className={cn(
+                  "border-b border-civic-border/40 cursor-pointer transition-colors",
+                  c.isNew
+                    ? "animate-flash bg-civic-red/8"
+                    : "hover:bg-white/3"
+                )}
               >
                 <td className="px-3 py-2.5 font-mono text-civic-muted">{c.id}</td>
                 <td className="px-3 py-2.5 text-civic-text">{formatDate(c.date)}</td>

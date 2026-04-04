@@ -343,71 +343,72 @@ def get_events(upcoming: bool = Query(default=True)):
 
 @app.get("/api/water/current")
 def get_water():
-    df = _load("lake_levels.csv")
+    try:
+        df = _load("lake_levels.csv")
+        if df is None or df.empty:
+            raise ValueError("lake_levels.csv not found or empty")
 
-    fateh_ft = 20.4  # defaults
-    pichola_ft = 15.7
+        # cols: date, lake_name, level_ft
+        df_sorted = df.sort_values("date")
+        fs_rows = df_sorted[df_sorted["lake_name"] == "Fateh Sagar"]
+        pc_rows = df_sorted[df_sorted["lake_name"] == "Pichola"]
 
-    if df is not None:
-        df.columns = [c.lower().strip() for c in df.columns]
-        fs = df[df["lake_name"].str.lower().str.contains("fateh", na=False)]["level_ft"]
-        pc = df[df["lake_name"].str.lower().str.contains("pichola", na=False)]["level_ft"]
-        if not fs.empty:
-            fateh_ft = float(fs.iloc[0])
-        if not pc.empty:
-            pichola_ft = float(pc.iloc[0])
+        fs_ft = float(fs_rows.iloc[-1]["level_ft"]) if not fs_rows.empty else 12.0
+        pc_ft = float(pc_rows.iloc[-1]["level_ft"]) if not pc_rows.empty else 10.0
+        fs_prev_ft = float(fs_rows.iloc[-2]["level_ft"]) if len(fs_rows) > 1 else fs_ft
 
-    def ft_to_m(ft: float) -> float:
-        return round(ft * 0.3048, 1)
+        # Convert feet → metres
+        fs_m = round(fs_ft * 0.3048, 2)
+        pc_m = round(pc_ft * 0.3048, 2)
 
-    def risk(ft: float, min_safe_ft: float) -> str:
-        if ft < min_safe_ft * 0.7:
-            return "critical"
-        if ft < min_safe_ft:
-            return "high"
-        if ft < min_safe_ft * 1.2:
-            return "medium"
-        return "normal"
+        # Fateh Sagar capacity 14.5m, critical threshold 3.5m
+        risk_level = "critical" if fs_m < 3.5 else "high" if fs_m < 4.5 else "medium" if fs_m < 6.0 else "low"
 
-    fateh_m = ft_to_m(fateh_ft)
-    pichola_m = ft_to_m(pichola_ft)
-
-    return {
-        "fateh_sagar": {
-            "name": "Fateh Sagar Lake",
-            "current_level": fateh_m,
-            "max_capacity": 10.5,
-            "min_safe": 4.0,
-            "risk_level": risk(fateh_ft, 13.0),
-            "last_updated": datetime.now().isoformat(),
-        },
-        "pichola": {
-            "name": "Lake Pichola",
-            "current_level": pichola_m,
-            "max_capacity": 8.8,
-            "min_safe": 3.5,
-            "risk_level": risk(pichola_ft, 10.0),
-            "last_updated": datetime.now().isoformat(),
-        },
-        "supply_mld": 142,
-        "demand_mld": 168,
-        "tankers_deployed": 28,
-        "tankers_recommended": 35,
-        "risk_areas": [
-            {"name": "Hiran Magri Sector 4", "ward": "Hiran Magri", "risk_level": "high", "lat": 24.5854, "lng": 73.6784},
-            {"name": "Badi Village", "ward": "Badi", "risk_level": "critical", "lat": 24.6234, "lng": 73.6123},
-            {"name": "Pratap Nagar East", "ward": "Pratap Nagar", "risk_level": "medium", "lat": 24.5612, "lng": 73.7012},
-            {"name": "Old City Core", "ward": "Old City", "risk_level": "medium", "lat": 24.5764, "lng": 73.6851},
-        ],
-        "forecast": [
-            {"month": "Apr", "fateh_sagar": fateh_m, "pichola": pichola_m, "supply_availability": 85, "risk_level": "medium"},
-            {"month": "May", "fateh_sagar": round(fateh_m - 0.8, 1), "pichola": round(pichola_m - 0.7, 1), "supply_availability": 72, "risk_level": "high"},
-            {"month": "Jun", "fateh_sagar": round(fateh_m - 1.4, 1), "pichola": round(pichola_m - 1.2, 1), "supply_availability": 60, "risk_level": "high"},
-            {"month": "Jul", "fateh_sagar": round(fateh_m - 0.1, 1), "pichola": round(pichola_m + 0.4, 1), "supply_availability": 88, "risk_level": "medium"},
-            {"month": "Aug", "fateh_sagar": round(fateh_m + 2.2, 1), "pichola": round(pichola_m + 2.3, 1), "supply_availability": 98, "risk_level": "low"},
-            {"month": "Sep", "fateh_sagar": round(fateh_m + 3.0, 1), "pichola": round(pichola_m + 3.0, 1), "supply_availability": 100, "risk_level": "normal"},
-        ],
-    }
+        return {
+            "fateh_sagar": {
+                "name": "Fateh Sagar Lake",
+                "current_level": fs_m,
+                "max_capacity": 14.5,
+                "min_safe": 3.5,
+                "risk_level": risk_level,
+                "last_updated": datetime.now().isoformat(),
+            },
+            "pichola": {
+                "name": "Lake Pichola",
+                "current_level": pc_m,
+                "max_capacity": 8.8,
+                "min_safe": 3.0,
+                "risk_level": "low" if pc_m > 4.0 else "medium",
+                "last_updated": datetime.now().isoformat(),
+            },
+            "supply_mld": 110,
+            "demand_mld": 135,
+            "tankers_deployed": 12 if fs_m < 4.0 else 4,
+            "tankers_recommended": 18 if fs_m < 3.5 else 8,
+            "risk_areas": [
+                {"name": "Hiran Magri Sector 4", "ward": "Hiran Magri", "risk_level": "high",     "lat": 24.5710, "lng": 73.7170},
+                {"name": "Badi Village",          "ward": "Badi",        "risk_level": "critical", "lat": 24.6320, "lng": 73.6580},
+                {"name": "Pratap Nagar East",     "ward": "Pratap Nagar","risk_level": "medium",   "lat": 24.5480, "lng": 73.7050},
+                {"name": "Old City Core",          "ward": "Old City",    "risk_level": "medium",   "lat": 24.5764, "lng": 73.6851},
+            ] if fs_m < 5.0 else [],
+            "forecast": [
+                {"month": "Apr", "fateh_sagar": fs_m,                  "pichola": pc_m,                  "supply_availability": 85,  "risk_level": risk_level},
+                {"month": "May", "fateh_sagar": round(fs_m - 0.8, 1),  "pichola": round(pc_m - 0.7, 1),  "supply_availability": 72,  "risk_level": "high"},
+                {"month": "Jun", "fateh_sagar": round(fs_m - 1.4, 1),  "pichola": round(pc_m - 1.2, 1),  "supply_availability": 60,  "risk_level": "high"},
+                {"month": "Jul", "fateh_sagar": round(fs_m + 0.5, 1),  "pichola": round(pc_m + 0.8, 1),  "supply_availability": 88,  "risk_level": "medium"},
+                {"month": "Aug", "fateh_sagar": round(fs_m + 2.2, 1),  "pichola": round(pc_m + 2.3, 1),  "supply_availability": 98,  "risk_level": "low"},
+                {"month": "Sep", "fateh_sagar": round(fs_m + 3.0, 1),  "pichola": round(pc_m + 3.0, 1),  "supply_availability": 100, "risk_level": "normal"},
+            ],
+        }
+    except Exception as e:
+        print(f"[water] error: {e}")
+        return {
+            "fateh_sagar": {"name": "Fateh Sagar Lake", "current_level": 3.8, "max_capacity": 14.5, "min_safe": 3.5, "risk_level": "medium", "last_updated": datetime.now().isoformat()},
+            "pichola":     {"name": "Lake Pichola",     "current_level": 4.2, "max_capacity": 8.8,  "min_safe": 3.0, "risk_level": "low",    "last_updated": datetime.now().isoformat()},
+            "supply_mld": 110, "demand_mld": 135,
+            "tankers_deployed": 8, "tankers_recommended": 12,
+            "risk_areas": [], "forecast": [],
+        }
 
 
 # ── Staff ──────────────────────────────────────────────────────────────────────
@@ -504,70 +505,69 @@ def get_alerts():
     try:
         complaints_df = _load("complaints_data.csv")
         if complaints_df is not None and not complaints_df.empty:
-            # Pending complaints as high-severity alerts (latest 3)
-            pending = complaints_df[
-                complaints_df["status"].str.lower() == "pending"
-            ].tail(4)
+            # complaints_data cols: id, category, area, date, status, lat, lon
+            pending = complaints_df[complaints_df["status"].str.lower() == "pending"].tail(4)
             severity_cycle = ["critical", "high", "high", "medium"]
             for i, (_, row) in enumerate(pending.iterrows()):
                 area = str(row.get("area", "Unknown"))
                 category = str(row.get("category", "Issue"))
-                date_str = str(row.get("date", ""))
                 alerts.append({
-                    "id": f"ALT-C{str(row.get('id', i))}",
+                    "id": f"ALT-C{row.get('id', i)}",
                     "severity": severity_cycle[i % len(severity_cycle)],
                     "description": f"{category} complaint pending in {area}",
                     "ward": area,
                     "category": "Complaints",
-                    "time_ago": "Recently" if not date_str else date_str,
+                    "time_ago": str(row.get("date", "Recently")),
                     "timestamp": now.isoformat(),
                 })
-    except Exception:
-        pass
+    except Exception as e:
+        print(f"[alerts] complaints error: {e}")
 
     try:
         lakes_df = _load("lake_levels.csv")
         if lakes_df is not None and not lakes_df.empty:
+            # lake_levels cols: date, lake_name, level_ft
             fs = lakes_df[lakes_df["lake_name"] == "Fateh Sagar"].sort_values("date").iloc[-1]
             level_ft = float(fs["level_ft"])
-            level_m = round(level_ft * 0.3048, 1)
-            if level_ft < 13.0:
-                sev = "critical" if level_ft < 10 else "medium"
+            level_m = round(level_ft * 0.3048, 2)
+            if level_ft < 15.0:  # below ~4.6m
+                sev = "critical" if level_ft < 11.5 else "medium"
                 alerts.append({
                     "id": "ALT-W001",
                     "severity": sev,
-                    "description": f"Fateh Sagar at {level_m}m — monitor closely through summer",
+                    "description": f"Fateh Sagar at {level_m}m — {'CRITICAL: supply cuts imminent' if sev == 'critical' else 'monitor closely through summer'}",
                     "ward": "Fateh Sagar",
                     "category": "Water",
                     "time_ago": "Live",
                     "timestamp": now.isoformat(),
                 })
-    except Exception:
-        pass
+    except Exception as e:
+        print(f"[alerts] water error: {e}")
 
     try:
         events_df = _load("events_data.csv")
         if events_df is not None and not events_df.empty:
+            # events_data cols: event_name, area, crowd, impact_traffic, impact_waste, date
             events_df["date"] = pd.to_datetime(events_df["date"], errors="coerce")
             upcoming = events_df[events_df["date"] >= pd.Timestamp(now)].sort_values("date")
             if not upcoming.empty:
-                evt = upcoming.iloc[0]
-                days_away = (evt["date"] - pd.Timestamp(now)).days
+                ev = upcoming.iloc[0]
+                days_away = (ev["date"] - pd.Timestamp(now)).days
                 sev = "critical" if days_away <= 5 else "high" if days_away <= 14 else "medium"
                 alerts.append({
                     "id": "ALT-E001",
                     "severity": sev,
-                    "description": f"{evt['event_name']} in {days_away}d — deployment plan required",
-                    "ward": str(evt.get("area", "Udaipur")),
+                    "description": f"{ev['event_name']} in {days_away}d — deployment plan required",
+                    "ward": str(ev.get("area", "Udaipur")),
                     "category": "Events",
                     "time_ago": f"{days_away}d away",
                     "timestamp": now.isoformat(),
                 })
-    except Exception:
-        pass
+    except Exception as e:
+        print(f"[alerts] events error: {e}")
 
-    # Always return at least the static fallback alerts so the feed is never empty
-    if len(alerts) < 3:
+    # Fallback so feed is never empty
+    if len(alerts) < 2:
         alerts += [
             {
                 "id": "ALT-S001",
@@ -594,54 +594,94 @@ def get_alerts():
 
 
 
+
 @app.get("/api/briefing")
 def get_briefing(mode: str = Query(default="summary")):
-    complaints_df = _load("complaints_data.csv")
-    lakes_df = _load("lake_levels.csv")
+    try:
+        complaints_df = _load("complaints_data.csv")
+        lakes_df      = _load("lake_levels.csv")
+        staff_df      = _load("staff_data.csv")
+        events_df     = _load("events_data.csv")
 
-    pending = 127
-    if complaints_df is not None:
-        pending = int(len(complaints_df[complaints_df.get("status", pd.Series()).str.lower() == "pending"]))
+        # complaints: id, category, area, date, status, lat, lon
+        pending  = int(len(complaints_df[complaints_df["status"].str.lower() == "pending"])) if complaints_df is not None else 127
+        critical = int(len(complaints_df[complaints_df["category"].str.lower().str.contains("water|road|sewage", na=False)])) if complaints_df is not None else 18
 
-    lake_level = "6.2m"
-    if lakes_df is not None:
-        fs = lakes_df[lakes_df["lake_name"] == "Fateh Sagar"]["level_ft"]
-        if not fs.empty:
-            lake_level = f"{round(float(fs.iloc[0]) * 0.3048, 1)}m"
+        # lake_levels: date, lake_name, level_ft
+        fs_ft = 12.0
+        if lakes_df is not None:
+            fs_rows = lakes_df[lakes_df["lake_name"] == "Fateh Sagar"].sort_values("date")
+            if not fs_rows.empty:
+                fs_ft = float(fs_rows.iloc[-1]["level_ft"])
+        fs_m = round(fs_ft * 0.3048, 1)
 
-    today = datetime.now().strftime("%d %b %Y")
+        # staff: area, staff_type, count, on_duty
+        efficiency = 82
+        if staff_df is not None and not staff_df.empty:
+            total   = staff_df["count"].sum()
+            on_duty = staff_df["on_duty"].sum()
+            efficiency = round((on_duty / total) * 100, 1) if total > 0 else 82
 
-    if mode == "critical":
-        points = [
-            "CRITICAL: Holi celebrations in 5 days — crowd estimate 1.2L, emergency response teams must be briefed by tomorrow 0900 hrs.",
-            f"CRITICAL: {pending} complaints pending — Badi ward water supply failure affecting 3 tanker routes.",
-            "HIGH: Gangaur Fair deployment plan incomplete — 72 officers and 10 trucks still unconfirmed.",
-        ]
-    elif mode == "full":
-        points = [
-            f"{pending} complaints pending across 10 wards — Hiran Magri leads with 34 open cases, 8 marked critical severity.",
-            f"Fateh Sagar at {lake_level} — trending down 0.3m/week. Summer forecast projects critical threshold breach by June.",
-            "Gangaur Fair in 12 days — deployment plan incomplete. 180 officers and 24 trucks required; only 60% resources confirmed.",
-            "Staff efficiency at 82% city-wide — Sanitation at 74% with ₹28,600 overtime cost this week. 3 AI reallocation actions available.",
-            "Holi celebrations in 5 days flagged CRITICAL — crowd estimate 1.2L, all emergency response teams must be briefed by tomorrow.",
-            "Traffic: Surajpole and Chetak Circle showing elevated congestion patterns — recommend pre-positioning 4 traffic officers.",
-            "Water tanker gap: 28 deployed vs 35 recommended — Badi and Hiran Magri most affected zones.",
-        ]
-    else:  # summary
-        points = [
-            f"{pending} complaints pending across 10 wards — Hiran Magri leads with 34 open cases, 8 marked critical severity requiring same-day resolution.",
-            f"Fateh Sagar at {lake_level} (59% capacity) — trending down 0.3m/week. Summer forecast projects critical threshold breach by June if monsoon delayed.",
-            "Gangaur Fair in 12 days — deployment plan incomplete. 180 officers and 24 trucks required; only 60% resources confirmed as of this morning.",
-            "Staff efficiency at 82% city-wide — Sanitation department at 74% with ₹28,600 overtime cost this week. AI recommends 3 reallocation actions.",
-            "Holi celebrations in 5 days flagged CRITICAL — crowd estimate 1.2L, all emergency response teams must be briefed by tomorrow 0900 hrs.",
-        ]
+        # events: event_name, area, crowd, impact_traffic, impact_waste, date
+        next_event = "Gangaur Fair"
+        days_away  = 12
+        if events_df is not None and not events_df.empty:
+            events_df["date"] = pd.to_datetime(events_df["date"], errors="coerce")
+            upcoming = events_df[events_df["date"] >= pd.Timestamp(datetime.now())].sort_values("date")
+            if not upcoming.empty:
+                ev = upcoming.iloc[0]
+                next_event = str(ev["event_name"])
+                days_away  = (ev["date"] - pd.Timestamp(datetime.now())).days
 
-    return {
-        "mode": mode,
-        "title": f"Morning Briefing — Udaipur Municipal Corporation ({today})",
-        "points": points,
-        "generated_at": datetime.now().isoformat(),
-    }
+        today = datetime.now().strftime("%d %b %Y")
+
+        if mode == "critical":
+            points = [
+                f"CRITICAL: {pending} complaints pending — {critical} flagged high-priority requiring same-day resolution.",
+                f"CRITICAL: Fateh Sagar at {fs_m}m ({round((fs_m/14.5)*100,1)}% capacity) — {'supply cuts imminent below 3.5m' if fs_m < 4.0 else 'monitor daily through summer'}.",
+                f"HIGH: {next_event} in {days_away} days — deployment plan {'incomplete, immediate action required' if days_away < 7 else 'in progress, review resourcing'}.",
+            ]
+        elif mode == "full":
+            points = [
+                f"{pending} complaints pending across 10 wards — {critical} marked high-priority requiring same-day resolution.",
+                f"Fateh Sagar at {fs_m}m ({round((fs_m/14.5)*100,1)}% capacity) — {'trending down, summer stress expected' if fs_m < 5.0 else 'stable, monitor weekly'}.",
+                f"{next_event} in {days_away} days — deployment plan {'incomplete, immediate action required' if days_away < 7 else 'in progress, review resourcing'}.",
+                f"Staff efficiency at {efficiency}% city-wide — {'below target, reallocation recommended' if efficiency < 80 else 'on track, maintain current deployment'}.",
+                f"Water supply: 110 MLD capacity vs 135 MLD demand — {'pre-deploy tankers to Hiran Magri and Sector 14' if fs_m < 4.0 else 'routine monitoring sufficient'}.",
+                f"Traffic peak hours 8–10 AM and 5–8 PM — {'festival traffic management required' if days_away < 14 else 'standard deployment adequate'}.",
+                f"Monsoon flood risk zones (Ambavgarh, Balicha, Bedla Road) — pre-monsoon drain clearance {'overdue' if datetime.now().month >= 5 else 'on schedule'}.",
+            ]
+        else:  # summary
+            points = [
+                f"{pending} complaints pending across 10 wards — {critical} marked high-priority requiring same-day resolution.",
+                f"Fateh Sagar at {fs_m}m ({round((fs_m/14.5)*100,1)}% capacity) — {'trending down, summer stress expected' if fs_m < 5.0 else 'stable, monitor weekly'}.",
+                f"{next_event} in {days_away} days — deployment plan {'incomplete, immediate action required' if days_away < 7 else 'in progress, review resourcing'}.",
+                f"Staff efficiency at {efficiency}% city-wide — {'below target, reallocation recommended' if efficiency < 80 else 'on track, maintain current deployment'}.",
+                f"{'ALERT: Water supply risk HIGH — pre-deploy tankers to Hiran Magri and Sector 14 before 9 AM.' if fs_m < 4.0 else 'Water supply stable — routine monitoring sufficient.'}",
+            ]
+
+        return {
+            "mode": mode,
+            "title": f"Morning Briefing — Udaipur Municipal Corporation ({today})",
+            "points": points,
+            "generated_at": datetime.now().isoformat(),
+        }
+
+    except Exception as e:
+        print(f"[briefing] error: {e}")
+        today = datetime.now().strftime("%d %b %Y")
+        return {
+            "mode": mode,
+            "title": f"Morning Briefing — Udaipur Municipal Corporation ({today})",
+            "points": [
+                "127 complaints pending across 10 wards — Hiran Magri leads with 34 open cases.",
+                "Fateh Sagar at 3.8m (26% capacity) — trending down, summer stress expected.",
+                "Gangaur Fair in 12 days — deployment plan incomplete, immediate action required.",
+                "Staff efficiency at 82% city-wide — 3 AI reallocation actions available.",
+                "Water supply stable — routine monitoring sufficient.",
+            ],
+            "generated_at": datetime.now().isoformat(),
+        }
 
 
 # ── Chat ───────────────────────────────────────────────────────────────────────

@@ -46,6 +46,7 @@ const config: Config = {
         "shimmer":      "shimmer 1.6s ease-in-out infinite",
         "fade-in":      "fadeIn 0.25s ease forwards",
         "slide-up":     "slideUp 0.3s cubic-bezier(0.16,1,0.3,1) forwards",
+        "flash":        "flash 1.2s ease-in-out",
       },
       keyframes: {
         shimmer: {
@@ -59,6 +60,10 @@ const config: Config = {
         slideUp: {
           from: { opacity: "0", transform: "translateY(12px)" },
           to:   { opacity: "1", transform: "translateY(0)" },
+        },
+        flash: {
+          "0%, 100%": { backgroundColor: "transparent" },
+          "50%":      { backgroundColor: "rgba(255,68,68,0.12)" },
         },
       },
     },

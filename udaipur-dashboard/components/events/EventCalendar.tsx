@@ -79,7 +79,7 @@ export function EventCalendar({ events }: EventCalendarProps) {
                 <button
                   onClick={(e) => {
                     e.stopPropagation();
-                    setPrefillMessage(`Generate deployment plan for ${event.name}`);
+                    setPrefillMessage(`Get full deployment plan for ${event.name} at ${event.location}`);
                     setChatOpen(true);
                   }}
                   className="w-full py-1.5 rounded-lg bg-civic-accent/10 border border-civic-accent/30 text-civic-accent text-xs hover:bg-civic-accent/20 transition-colors"

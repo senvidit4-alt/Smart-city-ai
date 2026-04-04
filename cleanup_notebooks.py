@@ -7,8 +7,8 @@ notebooks = [
     r"c:\Users\Vidit\OneDrive\Desktop\backup - Copy\SmartCity_Agent HackManthan2.ipynb"
 ]
 
-google_key = "AIzaSyCXnAPmGeDfwlxzgfUJAAZ5CPwAKhR6fdw"
-groq_key = "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"
+google_key = os.getenv("GOOGLE_API_KEY", "")
+groq_key = os.getenv("GROQ_API_KEY", "")
 
 replacements = {
     google_key: "HIDDEN",

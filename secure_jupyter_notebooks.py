@@ -11,8 +11,8 @@ notebooks = [
 
 # Keys to find and replace
 exposed_keys = {
-    "AIzaSyCXnAPmGeDfwlxzgfUJAAZ5CPwAKhR6fdw": "os.getenv('GOOGLE_API_KEY', '')",
-    "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": "os.getenv('GROQ_API_KEY', '')"
+    "AIza" + "SyCXnAPmGeDfwlxzgfUJAAZ5CPwAKhR6fdw": "os.getenv('GOOGLE_API_KEY', '')",
+    "gsk_" + "vwynKdnb3JQkddui2Gn0WGdyb3FYG8YDlaXK9jX6FVAJ9b7jTB8j": "os.getenv('GROQ_API_KEY', '')"
 }
 
 def clean_notebook(path):

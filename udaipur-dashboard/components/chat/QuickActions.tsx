@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { ChevronDown, ChevronUp, AlertTriangle, CalendarDays, Users, LayoutDashboard } from "lucide-react";
+import { ChevronDown, ChevronUp, AlertTriangle, CalendarDays, Users, LayoutDashboard, Zap } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface QuickActionsProps {
@@ -10,8 +10,21 @@ interface QuickActionsProps {
 
 const groups = [
   {
+    label: "DEMO QUERIES",
+    icon: <Zap className="h-3 w-3" />,
+    highlight: true,
+    actions: [
+      { label: "Gangaur Fair readiness", prompt: "Is Udaipur ready for Gangaur Fair next week?" },
+      { label: "Ward needing attention", prompt: "Which ward needs immediate attention today?" },
+      { label: "Commissioner briefing", prompt: "Generate morning briefing for Municipal Commissioner" },
+      { label: "Monsoon preparedness", prompt: "Full monsoon preparedness report" },
+      { label: "Monsoon delay forecast", prompt: "Water supply forecast if monsoon delayed 30 days" },
+    ],
+  },
+  {
     label: "Overview",
     icon: <LayoutDashboard className="h-3 w-3" />,
+    highlight: false,
     actions: [
       { label: "Morning briefing", prompt: "Give me the morning briefing for Udaipur Municipal Corporation" },
       { label: "City status", prompt: "What is the overall city status right now?" },
@@ -20,6 +33,7 @@ const groups = [
   {
     label: "Complaints",
     icon: <AlertTriangle className="h-3 w-3" />,
+    highlight: false,
     actions: [
       { label: "Hiran Magri status", prompt: "Analyse Hiran Magri ward — complaints, risk level, and recommended actions" },
       { label: "Surge analysis", prompt: "Which wards are seeing complaint surges this week?" },
@@ -29,6 +43,7 @@ const groups = [
   {
     label: "Events",
     icon: <CalendarDays className="h-3 w-3" />,
+    highlight: false,
     actions: [
       { label: "Gangaur Fair plan", prompt: "Generate deployment plan for Gangaur Fair" },
       { label: "Festival readiness", prompt: "Festival readiness check — are we prepared for upcoming events?" },
@@ -37,6 +52,7 @@ const groups = [
   {
     label: "Staff",
     icon: <Users className="h-3 w-3" />,
+    highlight: false,
     actions: [
       { label: "Thursday shifts", prompt: "Optimise staff shifts for Thursday — identify overtime and reallocation opportunities" },
       { label: "Cost savings", prompt: "What are the top staff cost saving opportunities this week?" },
@@ -59,10 +75,13 @@ export function QuickActions({ onSelect }: QuickActionsProps) {
       </button>
 
       {open && (
-        <div className="px-3 pb-3 space-y-2.5">
+        <div className="px-3 pb-3 space-y-3">
           {groups.map((group) => (
             <div key={group.label}>
-              <div className="flex items-center gap-1.5 text-[10px] text-civic-muted uppercase tracking-wider mb-1.5 px-1">
+              <div className={cn(
+                "flex items-center gap-1.5 text-[10px] uppercase tracking-wider mb-1.5 px-1",
+                group.highlight ? "text-civic-accent font-semibold" : "text-civic-muted"
+              )}>
                 {group.icon}
                 {group.label}
               </div>
@@ -73,8 +92,9 @@ export function QuickActions({ onSelect }: QuickActionsProps) {
                     onClick={() => onSelect(action.prompt)}
                     className={cn(
                       "px-2.5 py-1 rounded-full text-[11px] border transition-all duration-200",
-                      "bg-civic-bg border-civic-border text-civic-muted",
-                      "hover:border-civic-accent/40 hover:text-civic-accent hover:bg-civic-accent/5"
+                      group.highlight
+                        ? "bg-civic-accent/10 border-civic-accent/40 text-civic-accent hover:bg-civic-accent/20"
+                        : "bg-civic-bg border-civic-border text-civic-muted hover:border-civic-accent/40 hover:text-civic-accent hover:bg-civic-accent/5"
                     )}
                   >
                     {action.label}
