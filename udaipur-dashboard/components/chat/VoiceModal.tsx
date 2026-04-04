@@ -9,36 +9,38 @@ interface VoiceModalProps {
 }
 
 export function VoiceModal({ onResult, onClose }: VoiceModalProps) {
-  const [status, setStatus] = useState<"listening" | "processing" | "error">("listening");
+  const [status, setStatus] = useState<"listening" | "processing" | "error" | "done">("listening");
   const [transcript, setTranscript] = useState("");
   const [volume, setVolume] = useState(0);
-  const [errorDetail, setErrorDetail] = useState("");
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const recognitionRef = useRef<any>(null);
-  const animRef = useRef<number>(0);
   const mountedRef = useRef(true);
+  const mediaRecorderRef = useRef<MediaRecorder | null>(null);
+  const chunksRef = useRef<Blob[]>([]);
+  const streamRef = useRef<MediaStream | null>(null);
+  const animRef = useRef<number>(0);
+  const silenceTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
     mountedRef.current = true;
-
-    // 300ms delay prevents instant-close from strict-mode double-invoke
-    const timer = setTimeout(() => {
-      if (mountedRef.current) startVoice();
+    const t = setTimeout(() => {
+      if (mountedRef.current) startRecording();
     }, 300);
-
     return () => {
       mountedRef.current = false;
-      clearTimeout(timer);
-      recognitionRef.current?.stop();
+      clearTimeout(t);
+      stopRecording();
       cancelAnimationFrame(animRef.current);
+      if (silenceTimerRef.current) clearTimeout(silenceTimerRef.current);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const startVoice = async () => {
+  const startRecording = async () => {
     try {
-      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      const stream = await navigator.mediaDevices.getUserMedia({
+        audio: true,
+      });
+      streamRef.current = stream;
 
       // Volume visualiser
       const ctx = new AudioContext();
@@ -46,81 +48,111 @@ export function VoiceModal({ onResult, onClose }: VoiceModalProps) {
       const analyser = ctx.createAnalyser();
       analyser.fftSize = 256;
       source.connect(analyser);
-
       const tick = () => {
         if (!mountedRef.current) return;
         const data = new Uint8Array(analyser.frequencyBinCount);
         analyser.getByteFrequencyData(data);
-        const avg = data.reduce((a, b) => a + b, 0) / data.length;
-        setVolume(avg);
+        setVolume(data.reduce((a, b) => a + b, 0) / data.length);
         animRef.current = requestAnimationFrame(tick);
       };
       tick();
 
-      // Speech recognition
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      const SR = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
-      console.log("[VoiceModal] SR available:", !!SR, "| URL:", window.location.href);
-      if (!SR) {
-        if (mountedRef.current) { setErrorDetail("SpeechRecognition not supported"); setStatus("error"); }
+      const mimeType = MediaRecorder.isTypeSupported("audio/webm;codecs=opus")
+        ? "audio/webm;codecs=opus"
+        : "audio/webm";
+
+      const recorder = new MediaRecorder(stream, { mimeType });
+      mediaRecorderRef.current = recorder;
+      chunksRef.current = [];
+
+      recorder.ondataavailable = (e) => {
+        if (e.data.size > 0) chunksRef.current.push(e.data);
+      };
+
+      recorder.onstop = async () => {
+        if (!mountedRef.current) return;
+        setStatus("processing");
+        await sendToGroq();
+      };
+
+      recorder.start(250); // 250ms chunks — better quality than 100ms
+      setStatus("listening");
+
+      // Auto-stop after 10s (was 8s — give more time to speak)
+      silenceTimerRef.current = setTimeout(() => {
+        if (mediaRecorderRef.current?.state === "recording") {
+          mediaRecorderRef.current.stop();
+        }
+      }, 10000);
+    } catch {
+      if (mountedRef.current) setStatus("error");
+    }
+  };
+
+  const stopRecording = () => {
+    if (mediaRecorderRef.current?.state === "recording") {
+      mediaRecorderRef.current.stop();
+    }
+    streamRef.current?.getTracks().forEach((t) => t.stop());
+    if (silenceTimerRef.current) clearTimeout(silenceTimerRef.current);
+  };
+
+  const sendToGroq = async () => {
+    try {
+      const audioBlob = new Blob(chunksRef.current, { type: "audio/webm" });
+      console.log("[VoiceModal] Audio blob size:", audioBlob.size, "bytes");
+
+      if (audioBlob.size < 500) {
+        console.log("[VoiceModal] Audio too small, closing");
+        onClose();
         return;
       }
 
-      const recognition = new SR();
-      recognition.lang = "en-IN";
-      recognition.continuous = false;
-      recognition.interimResults = true;
-      recognitionRef.current = recognition;
+      const formData = new FormData();
+      formData.append("audio", audioBlob, "recording.webm");
 
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      recognition.onresult = (event: any) => {
-        if (!mountedRef.current) return;
-        let finalText = "";
-        let interimText = "";
-        for (let i = event.resultIndex; i < event.results.length; i++) {
-          if (event.results[i].isFinal) finalText += event.results[i][0].transcript;
-          else interimText += event.results[i][0].transcript;
-        }
-        setTranscript(finalText || interimText);
-        if (finalText && mountedRef.current) {
-          setStatus("processing");
-          stream.getTracks().forEach((t) => t.stop());
-          setTimeout(() => {
-            if (mountedRef.current) onResult(finalText.trim());
-          }, 600);
-        }
-      };
+      console.log("[VoiceModal] Sending to Groq STT...");
+      const res = await fetch(
+        `${process.env.NEXT_PUBLIC_API_URL}/api/speech-to-text`,
+        { method: "POST", body: formData }
+      );
+      const data = await res.json();
+      console.log("[VoiceModal] Groq response:", data);
 
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      recognition.onerror = (e: any) => {
-        if (!mountedRef.current) return;
-        console.error("[VoiceModal] SpeechRecognition error:", e.error, e.message);
-        setErrorDetail(e.error);
-        if (e.error === "not-allowed") setStatus("error");
-      };
-
-      // NOTE: no onend handler — that was causing the instant-close bug
-      console.log("[VoiceModal] Starting recognition...");
-
-      recognition.onstart = () => console.log("🎤 Recognition started");
-      recognition.onspeechstart = () => console.log("🗣️ Speech detected");
-      recognition.onspeechend = () => console.log("⏹️ Speech ended");
-      recognition.onend = () => console.log("🔚 Recognition ended");
-
-      setTimeout(() => {
-        try {
-          recognition.start();
-          console.log("Recognition started");
-        } catch (e) {
-          console.log("Recognition start error:", e);
-        }
-      }, 500);
-    } catch (err: unknown) {
-      console.error("[VoiceModal] getUserMedia error:", err);
-      if (mountedRef.current) {
-        const name = err instanceof Error ? err.name : "";
-        if (name === "NotAllowedError") setStatus("error");
+      if (data.text && mountedRef.current) {
+        setTranscript(data.text);
+        setStatus("done");
+        setTimeout(() => {
+          if (mountedRef.current) {
+            console.log("[VoiceModal] Calling onResult with:", data.text);
+            onResult(data.text);
+          }
+        }, 800);
+      } else if (data.error === "hallucination") {
+        // Whisper got noise — show retry message
+        setTranscript("Samajh nahi aaya, dobara bolein...");
+        setStatus("listening");
+        chunksRef.current = [];
+        // Restart recording
+        setTimeout(() => {
+          if (mountedRef.current && mediaRecorderRef.current?.state !== "recording") {
+            startRecording();
+          }
+        }, 1500);
+      } else {
+        console.log("[VoiceModal] No text in response, closing");
+        onClose();
       }
+    } catch (err) {
+      console.error("[VoiceModal] Groq STT error:", err);
+      if (mountedRef.current) onClose();
+    }
+  };
+
+  const handleMicClick = () => {
+    if (status === "listening") {
+      if (silenceTimerRef.current) clearTimeout(silenceTimerRef.current);
+      stopRecording();
     }
   };
 
@@ -128,42 +160,47 @@ export function VoiceModal({ onResult, onClose }: VoiceModalProps) {
 
   return (
     <div
-      className="fixed inset-0 z-[200] flex flex-col items-center justify-end pb-20"
+      className="fixed inset-0 z-[200] flex flex-col items-center justify-end pb-16"
       style={{ background: "rgba(8,12,20,0.92)", backdropFilter: "blur(12px)" }}
-      // No onClick on backdrop — was causing instant close
     >
       {/* Status */}
-      <div className="mb-8 text-center px-6">
+      <div className="mb-6 text-center px-6 min-h-[4rem]">
         {status === "listening" && (
           <>
-            <p className="text-civic-accent text-xl font-medium mb-1">Listening…</p>
-            <p className="text-civic-muted text-sm">Speak your query clearly</p>
+            <p className="text-civic-accent text-xl font-medium mb-1">
+              सुन रहा हूं... / Listening...
+            </p>
+            <p className="text-civic-muted text-sm">
+              Hindi, Hinglish ya English mein bolein
+            </p>
+            <p className="text-civic-muted text-xs mt-1">
+              Tap mic to stop early • Auto-stops in 8s
+            </p>
           </>
         )}
         {status === "processing" && (
-          <p className="text-civic-green text-xl font-medium">Got it! ✓</p>
+          <>
+            <p className="text-civic-yellow text-xl font-medium mb-1">Processing...</p>
+            <p className="text-civic-muted text-sm">Groq Whisper se transcribe ho raha hai</p>
+          </>
+        )}
+        {status === "done" && (
+          <p className="text-civic-green text-xl font-medium">समझ गया! / Got it! ✓</p>
         )}
         {status === "error" && (
           <>
             <p className="text-civic-red text-xl font-medium mb-1">Mic access denied</p>
-            <p className="text-civic-muted text-sm">
-              Click the 🔒 icon in your browser address bar and allow microphone
-            </p>
-            {errorDetail && (
-              <p className="text-civic-muted text-xs mt-2 font-mono bg-civic-bg px-3 py-1 rounded">
-                error: {errorDetail}
-              </p>
-            )}
-            <p className="text-civic-muted text-xs mt-2">
-              Must use Chrome/Edge on localhost or HTTPS
-            </p>
+            <p className="text-civic-muted text-sm">Browser mein mic permission allow karein</p>
           </>
         )}
       </div>
 
-      {/* Live transcript */}
+      {/* Transcript bubble */}
       {transcript && (
-        <div className="mb-6 mx-8 bg-civic-surface border border-civic-border rounded-2xl px-5 py-3 text-center max-w-xs">
+        <div className="mb-6 mx-8 bg-civic-surface border border-civic-border rounded-2xl px-5 py-3 text-center max-w-sm">
+          <p className="text-[10px] text-civic-accent font-semibold uppercase tracking-wider mb-1">
+            Groq Whisper
+          </p>
           <p className="text-civic-text text-sm">&ldquo;{transcript}&rdquo;</p>
         </div>
       )}
@@ -185,40 +222,43 @@ export function VoiceModal({ onResult, onClose }: VoiceModalProps) {
             />
           ))}
 
-        <div
+        <button
+          onClick={handleMicClick}
+          aria-label="Stop recording"
           className="relative w-20 h-20 rounded-full flex items-center justify-center"
           style={{
             background:
-              status === "processing"
-                ? "#00FF88"
-                : status === "error"
-                ? "#FF4444"
-                : "#00F3FF",
+              status === "processing" ? "#FFCC00"
+              : status === "done"       ? "#00FF88"
+              : status === "error"      ? "#FF4444"
+              : "#00F3FF",
             boxShadow:
-              status === "processing"
-                ? "0 0 50px rgba(0,255,136,0.6)"
-                : status === "error"
-                ? "none"
-                : "0 0 50px rgba(0,243,255,0.6)",
+              status === "processing" ? "0 0 50px rgba(255,204,0,0.6)"
+              : status === "done"       ? "0 0 50px rgba(0,255,136,0.6)"
+              : status === "error"      ? "none"
+              : "0 0 50px rgba(0,243,255,0.6)",
             transform: status === "listening" ? `scale(${1 + volume / 400})` : "scale(1)",
             transition: "transform 0.08s ease",
           }}
         >
           <Mic size={30} className="text-civic-bg" />
-        </div>
+        </button>
+      </div>
+
+      {/* Powered by badge */}
+      <div className="mb-4 flex items-center gap-2 px-3 py-1.5 rounded-full bg-civic-surface border border-civic-border">
+        <span className="w-1.5 h-1.5 rounded-full bg-civic-accent" />
+        <span className="text-xs text-civic-muted">STT: Groq Whisper · TTS: Sarvam AI</span>
       </div>
 
       {/* Cancel */}
       <button
-        onClick={(e) => {
-          e.stopPropagation();
-          onClose();
-        }}
+        onClick={(e) => { e.stopPropagation(); onClose(); }}
         className="flex items-center gap-2 px-6 py-2.5 rounded-full bg-civic-surface border border-civic-border text-civic-muted hover:text-civic-text transition-colors"
-        aria-label="Cancel voice input"
+        aria-label="Cancel"
       >
         <X size={14} />
-        <span className="text-sm">Cancel</span>
+        <span className="text-sm">Cancel / रद्द करें</span>
       </button>
     </div>
   );

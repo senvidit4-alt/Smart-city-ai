@@ -11,6 +11,7 @@ import os
 import sys
 import asyncio
 import concurrent.futures
+import tempfile
 from datetime import datetime, timedelta
 from typing import Any, Optional
 
@@ -18,6 +19,8 @@ import pandas as pd
 from dotenv import load_dotenv, find_dotenv
 from fastapi import FastAPI, Query, Form, UploadFile, File, Request
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import Response
+from groq import Groq
 from pydantic import BaseModel
 
 # ── Load env & fix working directory ──────────────────────────────────────────
@@ -27,6 +30,9 @@ os.chdir(HERE)
 sys.path.insert(0, HERE)
 
 load_dotenv(find_dotenv(), override=True)
+
+# ── Groq client (for Whisper STT + PlayAI TTS) ────────────────────────────────
+groq_client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 # ── Import the existing agent (after chdir so joblib paths resolve) ───────────
 # Wrapped in try/except — if agent.py fails (missing key, model error etc.)
@@ -48,8 +54,8 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://localhost:3001", "http://127.0.0.1:3000", "http://127.0.0.1:3001"],
-    allow_credentials=True,
+    allow_origins=["*"],
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -686,6 +692,63 @@ def get_briefing(mode: str = Query(default="summary")):
 
 # ── Chat ───────────────────────────────────────────────────────────────────────
 
+def _detect_language(text: str) -> str:
+    """Comprehensive Hinglish/Hindi/English detector."""
+    if any('\u0900' <= c <= '\u097F' for c in text):
+        return "hindi"
+
+    text_lower = text.lower().strip()
+    words = text_lower.split()
+
+    hinglish_patterns = {
+        "kya","kyun","kyu","kab","kaise","kaisa","kaisi","kaun","kahan",
+        "kidhar","kitna","kitni","kitne","konsa","konsi","konse","kaafi","ketna",
+        "hai","hain","tha","thi","the","hoga","hogi","hoge","ho","karo","kare",
+        "karta","karti","karte","batao","bata","btao","btaao","bataiye","bataye",
+        "dekho","dekhe","dekhao","dikhao","dikha","lao","lana","leke","dalo",
+        "dena","do","dijiye","bhejo","bhej","bhejdo","lagao","laga","chalao",
+        "roko","band","shuru","banao","bana","nikalo","hatao","badhao","ghatao",
+        "chahiye","chahie","chaahiye","jaroorat","zaroorat",
+        "mein","me","pe","par","se","ko","ka","ki","ke","tak","liye","lye",
+        "saath","baad","pehle","upar","neeche","andar","bahar","paas","door",
+        "saamne","peeche","beech","bich","ander",
+        "main","mujhe","mera","meri","mere","hum","humara","hamara","hamari",
+        "hamare","aap","aapka","aapki","aapke","tum","tumhara","tumhari","wo",
+        "woh","yeh","ye","iska","iski","iske","unka","unki","unke","inhe","unhe",
+        "aur","toh","to","lekin","magar","kyunki","isliye","isiliye","phir",
+        "fir","warna","nahi","nhi","na","mat","bhi","sirf","bas","hi","agar",
+        "jab","tab","jaise","waisa",
+        "aaj","kal","parso","abhi","subah","shaam","raat","dopahar","jaldi",
+        "der","turant","filhaal","filhal",
+        "bahut","bohot","bahot","thoda","thodi","thode","zyada","jyada","kam",
+        "bilkul","ekdum","pura","poora","poori","saara","sara","sab","kuch",
+        "koi","har","dono","teen","char","paanch",
+        "accha","achha","acha","bura","theek","sahi","galat","naya","nayi",
+        "naye","purana","purani","bada","badi","bade","chota","choti","chhota",
+        "lamba","lambi","mushkil","aasaan","zaruri","jaruri","jruri",
+        "truck","trucks","tanker","tankers","officer","deploy","bhejo","lagao",
+        "status","batao","report","plan","banao","ward","complain","complaint",
+        "complaints","overflow","traffic","water","supply","festival","sanitation",
+        "workers","karna","chahiye","kitne","liye","ke",
+        "matlab","yani","seedha","seedhi","suno","suniye","yaar","bhai","sir",
+        "sahab","janab","haan","han","haanji","jee","waise","aise","shukriya",
+        "dhanyawad","lagega","aayega","rahega","rahegi","rahenge",
+    }
+
+    score = sum(1 for w in words if w in hinglish_patterns)
+
+    for p in ["wala","wali","wale","raha","rahi","rahe","rahega","rahegi",
+              "aaya","aayi","aaye","gaya","gayi","gaye","dega","degi","denge",
+              "lega","legi","lenge","pata nahi","samajh","lagta","lagti"]:
+        if p in text_lower:
+            score += 1
+
+    print(f"🌐 Language detection | Score: {score} | Words: {words[:5]}")
+
+    if score >= 1:
+        return "hinglish"
+    return "english"
+
 @app.post("/api/chat")
 async def chat(request: Request):
     content_type = request.headers.get("content-type", "")
@@ -711,11 +774,39 @@ async def chat(request: Request):
 
     if agent_executor is None:
         return {
-            "reply": f"⚠️ AI agent unavailable: {_agent_import_error or 'import failed'}. "
-                     "Check GOOGLE_API_KEY and dependencies.",
-            "tools_used": [],
-            "thinking_steps": [],
+            "reply": f"⚠️ AI agent unavailable: {_agent_import_error or 'import failed'}.",
+            "tools_used": [], "thinking_steps": [],
         }
+
+    # ── Language detection & instruction ─────────────────────────────────────
+    lang = _detect_language(message)
+
+    if lang == "hindi":
+        lang_instruction = (
+            "अनिवार्य भाषा निर्देश: उपयोगकर्ता ने हिंदी में पूछा है। "
+            "आपका संपूर्ण उत्तर केवल हिंदी (देवनागरी लिपि) में होना चाहिए। "
+            "## 🔍 स्थिति विश्लेषण, ## ⚠️ जोखिम मूल्यांकन, ## ✅ अनुशंसित कार्रवाई, "
+            "## 📊 मुख्य आंकड़े, ## 🤖 AI विश्वास स्तर — सभी हेडिंग हिंदी में। "
+            "सख्त नियम: एक भी अंग्रेज़ी शब्द नहीं (केवल वार्ड नाम, संख्याएं, ₹ allowed हैं)। "
+            "पहले tools call करें, फिर पूरा response हिंदी में दें।"
+        )
+    elif lang == "hinglish":
+        lang_instruction = (
+            "CRITICAL LANGUAGE INSTRUCTION — MUST FOLLOW: "
+            "User ne Hinglish (Hindi+English mix, Roman script) mein pucha hai. "
+            "AAPKA POORA RESPONSE HINGLISH MEIN HONA CHAHIYE — koi pure English paragraph nahi.\n\n"
+            "Hinglish format EXACTLY aise hona chahiye:\n"
+            "## 🔍 Situation Analysis\n[Ward/topic] mein abhi [data] hai. Main problem [issue] ki wajah se hai.\n\n"
+            "## ⚠️ Risk Assessment\n- [Risk type]: [LEVEL] — [explanation Hinglish mein]\n\n"
+            "## ✅ Recommended Actions\n1. [Action Hinglish mein] — [time] tak — ₹[amount]\n\n"
+            "## 📊 Key Numbers\n- [Metric]: [value]\n\n"
+            "## 🤖 AI Confidence: [HIGH/MEDIUM/LOW]\n[Explanation Hinglish mein]\n\n"
+            "STRICT RULES: Numbers, ward names, ₹ same rahenge. "
+            "\"Deploy\", \"trucks\", \"status\" jaise technical words English mein theek hain. "
+            "Baaki sab Hinglish mein likhein."
+        )
+    else:
+        lang_instruction = "LANGUAGE INSTRUCTION: Respond in English."
 
     # ── Build file context ────────────────────────────────────────────────────
     file_context = ""
@@ -746,20 +837,23 @@ async def chat(request: Request):
 
     now = datetime.now()
     full_message = (
-        message
+        f"{lang_instruction}\n\nUser query: {message}"
         + file_context
         + f"\n\n[Context: Date: {now.strftime('%Y-%m-%d')}, "
         f"Time: {now.strftime('%H:%M')}, Day: {now.strftime('%A')}]"
     )
 
     def _run_agent() -> dict:
-        response = agent_executor.invoke(
-            {"messages": [("user", full_message)]}
-        )
+        response = agent_executor.invoke({"messages": [("user", full_message)]})
         messages = response.get("messages", [])
         reply = _content_to_text(messages[-1].content) if messages else "No response."
         tools_used, thinking_steps = _extract_tool_calls(messages)
-        return {"reply": reply, "tools_used": tools_used, "thinking_steps": thinking_steps}
+        return {
+            "reply": reply,
+            "tools_used": tools_used,
+            "thinking_steps": thinking_steps,
+            "detected_language": lang,
+        }
 
     try:
         with concurrent.futures.ThreadPoolExecutor(max_workers=1) as pool:
@@ -769,15 +863,105 @@ async def chat(request: Request):
             except concurrent.futures.TimeoutError:
                 return {
                     "reply": "⏱️ Agent timed out (>2.5 min). Try a shorter question.",
-                    "tools_used": [],
-                    "thinking_steps": [],
+                    "tools_used": [], "thinking_steps": [], "detected_language": lang,
                 }
     except Exception as e:
         err = str(e)
         if "RESOURCE_EXHAUSTED" in err or "429" in err or "quota" in err.lower():
             return {
                 "reply": "⚠️ Gemini API quota reached. Please wait a few minutes and retry.",
-                "tools_used": [],
-                "thinking_steps": [],
+                "tools_used": [], "thinking_steps": [], "detected_language": lang,
             }
-        return {"reply": f"Engine error: {err[:300]}", "tools_used": [], "thinking_steps": []}
+        return {
+            "reply": f"Engine error: {err[:300]}",
+            "tools_used": [], "thinking_steps": [], "detected_language": lang,
+        }
+
+
+# ── Speech-to-Text (Whisper via Groq) ─────────────────────────────────────────
+
+@app.post("/api/speech-to-text")
+async def speech_to_text(audio: UploadFile = File(...)):
+    try:
+        audio_data = await audio.read()
+        with tempfile.NamedTemporaryFile(suffix=".webm", delete=False) as tmp:
+            tmp.write(audio_data)
+            tmp_path = tmp.name
+
+        with open(tmp_path, "rb") as f:
+            transcription = groq_client.audio.transcriptions.create(
+                file=("recording.webm", f.read()),
+                model="whisper-large-v3-turbo",
+                response_format="verbose_json",
+            )
+
+        os.unlink(tmp_path)
+        text = transcription.text.strip()
+
+        # Filter Whisper hallucinations — common phrases it outputs for silence/noise
+        hallucinations = {
+            ".", "..", "...", "thank you.", "thanks.", "gracias.", "merci.",
+            "thank you so much.", "thanks for watching.", "bye.", "goodbye.",
+            "subscribe.", "like and subscribe.", "see you next time.",
+            "धन्यवाद।", "शुक्रिया।", "नमस्ते।",
+        }
+        if text.lower() in hallucinations or len(text) < 3:
+            print(f"[STT] Hallucination filtered: '{text}'")
+            return {"text": "", "error": "hallucination"}
+
+        print(f"🎤 Groq transcribed: '{text}'")
+        return {
+            "text": text,
+            "detected_lang": _detect_language(text),
+        }
+
+    except Exception as e:
+        print(f"[STT] Error: {e}")
+        return {"text": "", "error": str(e)}
+
+
+# ── Text-to-Speech (Sarvam AI — natural Hindi/Hinglish voice) ─────────────────
+
+SARVAM_API_KEY = os.getenv("SARVAM_API_KEY", "")
+
+@app.post("/api/text-to-speech")
+async def text_to_speech(request: Request):
+    try:
+        body = await request.json()
+        text = str(body.get("text", ""))[:500]
+
+        lang = _detect_language(text)
+        target_lang = "hi-IN" if lang in ("hindi", "hinglish") else "en-IN"
+
+        sarvam_res = requests.post(
+            "https://api.sarvam.ai/text-to-speech",
+            headers={
+                "api-subscription-key": SARVAM_API_KEY,
+                "Content-Type": "application/json",
+            },
+            json={
+                "inputs": [text],
+                "target_language_code": target_lang,
+                "speaker": "meera",
+                "pitch": 0,
+                "pace": 1.0,
+                "loudness": 1.5,
+                "speech_sample_rate": 22050,
+                "enable_preprocessing": True,
+                "model": "bulbul:v1",
+            },
+            timeout=15,
+        )
+
+        if sarvam_res.status_code == 200:
+            import base64
+            audio_b64 = sarvam_res.json().get("audios", [""])[0]
+            audio_bytes = base64.b64decode(audio_b64)
+            return Response(content=audio_bytes, media_type="audio/wav")
+
+        print(f"[TTS] Sarvam error {sarvam_res.status_code}: {sarvam_res.text[:200]}")
+        return Response(status_code=503)
+
+    except Exception as e:
+        print(f"[TTS] Error: {e}")
+        return Response(status_code=500)

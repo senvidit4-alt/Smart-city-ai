@@ -5,6 +5,7 @@ import { Bell, Bot, Search } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useAppStore } from "@/store/useAppStore";
 import { cn } from "@/lib/utils";
+import { useState, useEffect } from "react";
 
 const routeTitles: Record<string, { title: string; breadcrumb: string }> = {
   "/complaints": { title: "Complaints",     breadcrumb: "Dashboard / Complaints" },
@@ -17,9 +18,17 @@ export function TopBar() {
   const { toggleChat, unreadAlertCount, markAlertsRead } = useAppStore();
   const route = routeTitles[pathname] ?? { title: "Dashboard", breadcrumb: "Dashboard" };
 
-  const now = new Date().toLocaleTimeString("en-IN", {
-    hour: "2-digit", minute: "2-digit", hour12: true,
-  });
+  // Client-only time to avoid SSR hydration mismatch
+  const [time, setTime] = useState("");
+  useEffect(() => {
+    const fmt = () =>
+      new Date().toLocaleTimeString("en-IN", {
+        hour: "2-digit", minute: "2-digit", hour12: true,
+      });
+    setTime(fmt());
+    const id = setInterval(() => setTime(fmt()), 60000);
+    return () => clearInterval(id);
+  }, []);
 
   return (
     <header className="h-14 bg-civic-surface/80 backdrop-blur-md sticky top-0 z-40 border-b border-civic-border flex items-center px-6 gap-4">
@@ -51,7 +60,7 @@ export function TopBar() {
 
       {/* Right */}
       <div className="flex items-center gap-2">
-        <span className="text-[11px] text-civic-muted hidden lg:block font-mono">{now}</span>
+        <span className="text-[11px] text-civic-muted hidden lg:block font-mono">{time}</span>
 
         {/* Alert bell */}
         <motion.button

@@ -67,17 +67,46 @@ export function CopilotPanel() {
   }, [prefillMessage, chatOpen, setPrefillMessage]);
 
   // ── Voice output ─────────────────────────────────────────────────────────────
-  const speak = useCallback((text: string) => {
+  const speak = useCallback(async (text: string) => {
     if (!voiceEnabled || typeof window === "undefined") return;
+    try {
+      setIsSpeaking(true);
+      // Try Groq PlayAI TTS first, fall back to browser speechSynthesis
+      const res = await fetch(
+        `${process.env.NEXT_PUBLIC_API_URL}/api/text-to-speech`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ text: text.slice(0, 500) }),
+        }
+      );
+
+      if (res.ok && res.headers.get("content-type")?.includes("audio")) {
+        const audioBlob = await res.blob();
+        const audioUrl = URL.createObjectURL(audioBlob);
+        const audio = new Audio(audioUrl);
+        audio.onended = () => { setIsSpeaking(false); URL.revokeObjectURL(audioUrl); };
+        audio.onerror = () => { setIsSpeaking(false); fallbackSpeak(text); };
+        audio.play().catch(() => fallbackSpeak(text));
+      } else {
+        fallbackSpeak(text);
+      }
+    } catch {
+      fallbackSpeak(text);
+    }
+  }, [voiceEnabled]);
+
+  const fallbackSpeak = useCallback((text: string) => {
     window.speechSynthesis.cancel();
     const utt = new SpeechSynthesisUtterance(text.slice(0, 400));
-    utt.lang = "en-IN";
-    utt.rate = 0.92;
-    utt.pitch = 1;
+    const isHindi = /[\u0900-\u097F]/.test(text);
+    const isHinglish = /(kya|hai|mein|ka|ki|ko|se|aur|nahi|hain)\b/i.test(text);
+    utt.lang = isHindi || isHinglish ? "hi-IN" : "en-IN";
+    utt.rate = 0.9;
     utt.onstart = () => setIsSpeaking(true);
     utt.onend = () => setIsSpeaking(false);
     window.speechSynthesis.speak(utt);
-  }, [voiceEnabled]);
+  }, []);
 
   const stopSpeaking = useCallback(() => {
     window.speechSynthesis?.cancel();
@@ -358,8 +387,10 @@ export function CopilotPanel() {
         {showVoiceModal && (
           <VoiceModal
             onResult={(text) => {
+              console.log("[CopilotPanel] onResult received:", text);
               setInput(text);
               setShowVoiceModal(false);
+              setTimeout(() => textareaRef.current?.focus(), 100);
               textareaRef.current?.focus();
             }}
             onClose={() => setShowVoiceModal(false)}
